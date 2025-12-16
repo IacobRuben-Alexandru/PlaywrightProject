@@ -1,5 +1,5 @@
-import { Page } from "@playwright/test";
-import { URL, PATHS } from "../config/constants";
+import { expect, Page } from "@playwright/test";
+import { URL, PATHS,USERS } from "../config/constants";
 import { randomNumber, randomString, generateRandomPassword } from "../utils/helpers";
 export class RegisterAnAccountPage {
     readonly page: Page;
@@ -13,7 +13,7 @@ export class RegisterAnAccountPage {
     async load() {
         await this.page.waitForLoadState("load");
     }
-    async register(name: string, email: string) {
+    async registerWithExistingAccount(name: string, email: string) {
         await this.page.getByRole("textbox", { name: "Name" }).click();
         await this.page.getByRole("textbox", { name: "Name" }).fill(name);
         await this.page
@@ -27,8 +27,25 @@ export class RegisterAnAccountPage {
             .getByPlaceholder("Email Address")
             .fill(email);
         await this.page.getByRole("button", { name: "Signup" }).click();
+    }
+    async register(name: string, email: string) {
+        
+        await this.page.getByRole("textbox", { name: "Name" }).click();
+        await this.page.getByRole("textbox", { name: "Name" }).fill(name);
+        await this.page
+            .locator("form")
+            .filter({ hasText: "Signup" })
+            .getByPlaceholder("Email Address")
+            .click();
+        await this.page
+            .locator("form")
+            .filter({ hasText: "Signup" })
+            .getByPlaceholder("Email Address")
+            .fill(email);
+        await this.page.getByRole("button", { name: "Signup" }).click();
+        await expect(this.page.getByText('Enter Account Information')).toBeVisible();
         await this.page.getByRole("textbox", { name: "Password *" }).click();
-        await this.page.getByRole("textbox", { name: "Password *" }).fill(generateRandomPassword());
+        await this.page.getByRole("textbox", { name: "Password *" }).fill(USERS.password);
 
         
         await this.page.getByRole("textbox", { name: "First name *" }).click();

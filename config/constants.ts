@@ -6,5 +6,10 @@ export const PATHS = {
 };
 
 export const USERS = {
+    name: 'Test User',
+    email: 'Test321@Test123.com',
+    password: 'Test@1234',
+    name1: 'Real User',
+    email1: 'RealUser@Real123.com',
     
 };

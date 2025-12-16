@@ -12,4 +12,7 @@ test("Create account", async ({page, randomUser})=>{
     await registerPage.register(randomUser.name, randomUser.email);
     await expect(page.locator('b')).toContainText('Account Created!');
     await page.getByRole('link', { name: 'Continue' }).click();
+    await page.getByRole('link', { name: ' Delete Account' }).click();
+    await page.getByText('Account Deleted!').isVisible();
+    await page.getByRole('link', { name: 'Continue' }).click();
 });
