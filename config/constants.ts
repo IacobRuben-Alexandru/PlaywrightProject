@@ -3,8 +3,12 @@ export const URL = 'https://automationexercise.com';
 
 export const PATHS = {
     login: '/login',
+    contactUs: '/contact_us',
+    file: 'D:\\Development\\PlaywrightProject\\ContactUsFile.txt',
 };
-
+export const FileInput = {
+    fileInput: 'input[type="file"]',
+};
 export const USERS = {
     name: 'Test User',
     email: 'Test321@Test123.com',

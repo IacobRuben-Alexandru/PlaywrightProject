@@ -8,7 +8,7 @@ test("Register with an existing account", async ({page})=>{
     const consentPage = new ConsentPage(page);
     await registerPage.goto();
     await registerPage.load();
-    consentPage.giveConsent();
+    await consentPage.giveConsent();
     await registerPage.registerWithExistingAccount(USERS.name1, USERS.email1);
     await expect(page.getByText("Email Address already exist!")).toBeVisible();
 });

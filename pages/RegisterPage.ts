@@ -28,6 +28,7 @@ export class RegisterAnAccountPage {
             .fill(email);
         await this.page.getByRole("button", { name: "Signup" }).click();
     }
+    
     async register(name: string, email: string) {
         
         await this.page.getByRole("textbox", { name: "Name" }).click();

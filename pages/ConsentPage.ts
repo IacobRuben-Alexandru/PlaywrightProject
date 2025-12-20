@@ -1,4 +1,4 @@
-import { Page } from "@playwright/test";
+import { expect, Page } from "@playwright/test";
 
 export class ConsentPage {
   readonly page: Page;
@@ -7,7 +7,7 @@ export class ConsentPage {
   }
 
   async giveConsent() {
-    const button = this.page.getByRole("button", { name: "Consent" });
+    const button = this.page.getByRole("button", { name: "Consent", exact: true });
     if (await button.isVisible()) {
       await button.click();
     }
