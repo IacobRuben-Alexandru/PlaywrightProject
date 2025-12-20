@@ -4,7 +4,7 @@ export const URL = 'https://automationexercise.com';
 export const PATHS = {
     login: '/login',
     contactUs: '/contact_us',
-    file: 'D:\\Development\\PlaywrightProject\\ContactUsFile.txt',
+    file: './ContactUsFile.txt',
 };
 export const FileInput = {
     fileInput: 'input[type="file"]',
