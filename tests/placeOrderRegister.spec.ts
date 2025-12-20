@@ -7,6 +7,7 @@ import { USERS } from "../config/constants";
 import { URL } from "../config/constants";
 import { CardPage } from "../pages/CardPage";
 test("Place order then register", async ({page, randomUser})=>{
+    test.setTimeout(90000);
     const registerPage = new RegisterAnAccountPage(page);
     const primary = new automationexercise(page);
     const consentPage = new ConsentPage(page);

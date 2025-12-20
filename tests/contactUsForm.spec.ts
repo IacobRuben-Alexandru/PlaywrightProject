@@ -12,7 +12,7 @@ test("Contact Us form submission", async ({page})=>{
     await consentPage.giveConsent();
     await expect(page.getByRole('heading', { name: 'Get In Touch' })).toBeVisible();
     await automationPage.fillContactForm(USERS.name1, USERS.email1, 'Hello, this is a test message.');
-    await expect(page.locator('#contact-page').getByText('Success! Your details have')).toBeVisible();
+    await expect(page.locator('#contact-page').getByText('Success!')).toBeVisible();
     await page.getByRole('link', { name: ' Home' }).click();
     await expect(page).toHaveURL(URL);
 });

@@ -18,10 +18,10 @@ test("Add products to cart", async ({page})=>{
     await firstProduct.hover();
     await page.getByText('Add to cart').nth(0).click();
     await page.getByRole('button', { name: 'Continue Shopping' }).click();
-    const secondProduct = product.nth(1); 
+    const secondProduct = page.locator('.product-image-wrapper').nth(1);
     await secondProduct.scrollIntoViewIfNeeded();
-    await secondProduct.hover()
-    await page.getByText('Add to cart').nth(3).click();
+    await secondProduct.hover();
+    await secondProduct.locator('a.add-to-cart').last().click(); 
     await page.getByRole('button', { name: 'Continue Shopping' }).click();
     await automationPage.navigateToCart();
     await expect(page.getByRole('link', { name: 'Blue Top' })).toBeVisible();

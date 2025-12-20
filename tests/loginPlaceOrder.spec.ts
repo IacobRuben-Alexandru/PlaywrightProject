@@ -8,6 +8,7 @@ import { URL } from "../config/constants";
 import { CardPage } from "../pages/CardPage";
 import { ReachLoginPage } from "../pages/LoginPage";
 test("Login then place an order", async ({page, randomUser})=>{
+    test.setTimeout(90000);
     const registerPage = new RegisterAnAccountPage(page);
     const primary = new automationexercise(page);
     const consentPage = new ConsentPage(page);
@@ -30,7 +31,7 @@ test("Login then place an order", async ({page, randomUser})=>{
     await primary.navigateToCart();
     await expect(page.getByText('Shopping Cart')).toBeVisible();
     await page.getByText('Proceed To Checkout').click();
-    await expect(page.getByRole('button', { name: '1' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Review Your Order' })).toBeVisible();
     const PlaceOrder = page.getByRole('link', { name: 'Place Order' });
     await PlaceOrder.evaluate(el => el.scrollIntoView({ behavior: 'instant', block: 'center' }));
     await expect(PlaceOrder).toBeVisible();

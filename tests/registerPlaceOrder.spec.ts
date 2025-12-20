@@ -6,7 +6,7 @@ import { automationexercise} from "../pages/AutomationPage";
 import { USERS } from "../config/constants";
 import { URL } from "../config/constants";
 import { CardPage } from "../pages/CardPage";
-test("Register with an existing account then place an order", async ({page, randomUser})=>{
+test("Register an account then place an order", async ({page, randomUser})=>{
     const registerPage = new RegisterAnAccountPage(page);
     const primary = new automationexercise(page);
     const consentPage = new ConsentPage(page);
