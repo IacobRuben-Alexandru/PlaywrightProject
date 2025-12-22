@@ -17,14 +17,17 @@ test("Scroll down", async ({page})=>{
     await test.step("Scroll down using keyboard arrows", async ()=> {
         let isVisibleInViewport = false;
         while (isVisibleInViewport === false) {
-            await page.keyboard.press('ArrowDown');
+            for(let i = 0; i < 3; i++) {
+                await page.keyboard.press('ArrowDown');
+            }
+            await page.waitForTimeout(20);
             isVisibleInViewport = await subscriptionHeader.evaluate((el) => {
             const rect = el.getBoundingClientRect();
             return (
                 rect.top >= 0 &&
                 rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
             );});
-            await page.waitForTimeout(50); 
+            
         }
         await expect(subscriptionHeader).toBeVisible();
     });
@@ -33,12 +36,15 @@ test("Scroll down", async ({page})=>{
         const topText = page.getByRole('heading', { name: 'Full-Fledged practice website' }).first();
         let isTopVisible = false;
         while (!isTopVisible) {
-            await page.keyboard.press('ArrowUp');
+            for(let i = 0; i < 3; i++) {
+                await page.keyboard.press('ArrowDown');
+            }
+            await page.waitForTimeout(20);
             isTopVisible = await topText.evaluate((el) => {
                 const rect = el.getBoundingClientRect();
                 return rect.top >= 0 && rect.top <= window.innerHeight;
             });
-            await page.waitForTimeout(50);
+            
         }
         await expect(topText).toBeVisible();
     });
