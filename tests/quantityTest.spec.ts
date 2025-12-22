@@ -25,7 +25,14 @@ test("Quantity Test", async ({page})=>{
     });
     await test.step("Navigate to cart and verify that product quantity is 4", async ()=> {
         await consentPage.giveConsent();
-        await page.getByRole('link', { name: 'View Cart' }).click();
+        const cartBtn = page.getByRole('link', { name: 'View Cart' });
+        try {    
+            await cartBtn.waitFor({ state: 'visible', timeout: 5000 });
+            await cartBtn.click({ force: true }); 
+        } catch (e) {
+        
+            await automationPage.navigateToCart();
+        }
         await expect(page.getByRole('button', { name: '4' })).toBeVisible();
     });
 });

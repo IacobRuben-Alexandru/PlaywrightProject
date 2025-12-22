@@ -12,10 +12,13 @@ test("Create account", async ({page, randomUser})=>{
         await consentPage.giveConsent();
         await expect(page).toHaveURL(/.*login/);
     });
+    const Email = randomUser.email;
+    const Name = randomUser.name;
     await test.step("Register a new user account", async ()=> {
-        await registerPage.register(randomUser.name, randomUser.email);
+        await registerPage.register(Name, Email);
         await expect(page.locator('b')).toContainText('Account Created!');
         await page.getByRole('link', { name: 'Continue' }).click();
+        await expect(page.getByText(`Logged in as ${Name}`)).toBeVisible();
         await page.getByRole('link', { name: ' Delete Account' }).click();
         await expect(page.getByText('Account Deleted!')).toBeVisible();
         await page.getByRole('link', { name: 'Continue' }).click();

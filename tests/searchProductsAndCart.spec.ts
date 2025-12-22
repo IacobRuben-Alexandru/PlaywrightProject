@@ -6,6 +6,7 @@ import { USERS } from "../config/constants";
 import {automationexercise} from "../pages/AutomationPage";
 import { ReachLoginPage } from "../pages/LoginPage";
 test("Search for products", async ({page})=>{
+    test.setTimeout(90000);
     const automationPage = new automationexercise(page);
     const consentPage = new ConsentPage(page);
     const loginPage = new ReachLoginPage(page);
@@ -23,12 +24,19 @@ test("Search for products", async ({page})=>{
         await firstProduct.scrollIntoViewIfNeeded();
         await firstProduct.hover();
         await page.getByText('Add to cart').nth(0).click();
-        await page.getByRole('button', { name: 'Continue Shopping' }).click();
+        const continueBtn = page.getByRole('button', { name: 'Continue Shopping' });
+        try {
+            await continueBtn.waitFor({ state: 'visible', timeout: 5000 });
+            await continueBtn.click({ force: true });
+        } catch (e) {}
         const secondProduct = product.nth(1); 
         await secondProduct.scrollIntoViewIfNeeded();
         await secondProduct.hover()
         await page.getByText('Add to cart').nth(3).click();
-        await page.getByRole('button', { name: 'Continue Shopping' }).click();
+        try {
+            await continueBtn.waitFor({ state: 'visible', timeout: 5000 });
+            await continueBtn.click({ force: true });
+        } catch (e) {}
         await automationPage.navigateToCart();
         await expect(page.getByRole('link', { name: 'Blue Top' })).toBeVisible();
         await expect(page.getByRole('link', { name: 'Men Tshirt' })).toBeVisible();

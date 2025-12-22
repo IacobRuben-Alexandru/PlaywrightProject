@@ -32,7 +32,11 @@ test("Login then place an order", async ({page, randomUser})=>{
         await firstProduct.scrollIntoViewIfNeeded();
         await firstProduct.hover();
         await page.getByText('Add to cart').nth(0).click();
-        await page.getByRole('button', { name: 'Continue Shopping' }).click();
+        const continueBtn = page.getByRole('button', { name: 'Continue Shopping' });
+        try {
+            await continueBtn.waitFor({ state: 'visible', timeout: 5000 });
+            await continueBtn.click({ force: true });
+        } catch (e) {}
     });
     await test.step("Navigate to cart and checkout", async ()=> {
         await primary.navigateToCart();

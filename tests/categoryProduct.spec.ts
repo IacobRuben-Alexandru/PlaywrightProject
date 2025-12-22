@@ -19,6 +19,7 @@ test("Product category", async ({page})=>{
         await page.getByRole('link', { name: ' Women' }).click();
         await page.getByRole('link', { name: 'Dress' }).click();
         await expect(page.getByRole('heading', { name: 'Women - Dress Products'})).toBeVisible();
+        await page.getByRole('link', { name: ' Women' }).click();
         await page.getByRole('link', { name: ' Men' }).click();
         await page.getByRole('link', { name: 'Jeans' }).click();
         await expect(page.getByRole('heading', { name: 'Men - Jeans Products'})).toBeVisible();

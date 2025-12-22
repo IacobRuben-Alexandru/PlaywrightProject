@@ -37,7 +37,7 @@ test("Scroll down", async ({page})=>{
         let isTopVisible = false;
         while (!isTopVisible) {
             for(let i = 0; i < 3; i++) {
-                await page.keyboard.press('ArrowDown');
+                await page.keyboard.press('ArrowUp');
             }
             await page.waitForTimeout(20);
             isTopVisible = await topText.evaluate((el) => {

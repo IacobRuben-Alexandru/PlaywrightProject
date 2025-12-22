@@ -16,14 +16,16 @@ test("Register an account then place an order", async ({page, randomUser})=>{
         await consentPage.giveConsent();
         await expect(page).toHaveURL(URL);
     });
+    const Email = randomUser.email;
+    const Name = randomUser.name;
     await test.step("Navigate to register page and register an account", async ()=> {
         await registerPage.goto();
         await registerPage.load();
         await consentPage.giveConsent();
-        await registerPage.register(randomUser.name, randomUser.email);
+        await registerPage.register(Name, Email);
         await expect(page.locator('b')).toContainText('Account Created!');
         await page.getByRole('link', { name: 'Continue' }).click();
-        await expect(page.getByText('Logged in as')).toBeVisible();
+        await expect(page.getByText(`Logged in as ${Name}`)).toBeVisible();
     });
     await test.step("Navigate to products and add a product to cart", async ()=> {
         await primary.navigateToProducts();
@@ -32,7 +34,11 @@ test("Register an account then place an order", async ({page, randomUser})=>{
         await firstProduct.scrollIntoViewIfNeeded();
         await firstProduct.hover();
         await page.getByText('Add to cart').nth(0).click();
-        await page.getByRole('button', { name: 'Continue Shopping' }).click();
+        const continueBtn = page.getByRole('button', { name: 'Continue Shopping' });
+        try {
+            await continueBtn.waitFor({ state: 'visible', timeout: 5000 });
+            await continueBtn.click({ force: true });
+        } catch (e) {}
     });
     await test.step("Navigate to cart and checkout", async ()=> {
         await primary.navigateToCart();

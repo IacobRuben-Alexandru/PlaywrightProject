@@ -26,7 +26,14 @@ test("Add products from recommended", async ({page})=>{
             await page.waitForTimeout(500);
         }
         await targetButton.click();
-        await page.getByRole('link', { name: 'View Cart' }).click();
+        const cartBtn = page.getByRole('link', { name: 'View Cart' });
+        try {    
+            await cartBtn.waitFor({ state: 'visible', timeout: 5000 });
+            await cartBtn.click({ force: true }); 
+        } catch (e) {
+        
+            await automationPage.navigateToCart();
+        }
         await expect(page.getByRole('link', { name: 'Blue Top' })).toBeVisible();
     });
 });

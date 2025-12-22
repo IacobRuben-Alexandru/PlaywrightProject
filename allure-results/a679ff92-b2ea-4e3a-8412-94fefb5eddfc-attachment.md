@@ -1,0 +1,241 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e5]:
+      - link "Website for automation practice" [ref=e8] [cursor=pointer]:
+        - /url: /
+        - img "Website for automation practice" [ref=e9]
+      - list [ref=e12]:
+        - listitem [ref=e13]:
+          - link " Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e15]: 
+            - text: Home
+        - listitem [ref=e16]:
+          - link " Products" [ref=e17] [cursor=pointer]:
+            - /url: /products
+            - generic [ref=e18]: 
+            - text: Products
+        - listitem [ref=e19]:
+          - link " Cart" [ref=e20] [cursor=pointer]:
+            - /url: /view_cart
+            - generic [ref=e21]: 
+            - text: Cart
+        - listitem [ref=e22]:
+          - link " Signup / Login" [ref=e23] [cursor=pointer]:
+            - /url: /login
+            - generic [ref=e24]: 
+            - text: Signup / Login
+        - listitem [ref=e25]:
+          - link " Test Cases" [ref=e26] [cursor=pointer]:
+            - /url: /test_cases
+            - generic [ref=e27]: 
+            - text: Test Cases
+        - listitem [ref=e28]:
+          - link " API Testing" [ref=e29] [cursor=pointer]:
+            - /url: /api_list
+            - generic [ref=e30]: 
+            - text: API Testing
+        - listitem [ref=e31]:
+          - link " Video Tutorials" [ref=e32] [cursor=pointer]:
+            - /url: https://www.youtube.com/c/AutomationExercise
+            - generic [ref=e33]: 
+            - text: Video Tutorials
+        - listitem [ref=e34]:
+          - link " Contact us" [ref=e35] [cursor=pointer]:
+            - /url: /contact_us
+            - generic [ref=e36]: 
+            - text: Contact us
+  - generic [ref=e38]:
+    - list [ref=e40]:
+      - listitem [ref=e41]:
+        - link "Products" [ref=e42] [cursor=pointer]:
+          - /url: /products
+      - listitem [ref=e43]: Women > Dress
+    - generic [ref=e44]:
+      - generic [ref=e46]:
+        - heading "Category" [level=2] [ref=e47]
+        - generic [ref=e48]:
+          - heading " Women" [level=4] [ref=e51]:
+            - link " Women" [ref=e52] [cursor=pointer]:
+              - /url: "#Women"
+              - generic [ref=e54]: 
+              - text: Women
+          - generic [ref=e55]:
+            - heading " Men" [level=4] [ref=e57]:
+              - link " Men" [ref=e58] [cursor=pointer]:
+                - /url: "#Men"
+                - generic [ref=e60]: 
+                - text: Men
+            - list [ref=e63]:
+              - listitem [ref=e64]:
+                - link "Tshirts" [ref=e65] [cursor=pointer]:
+                  - /url: /category_products/3
+              - listitem [ref=e66]:
+                - link "Jeans" [active] [ref=e67] [cursor=pointer]:
+                  - /url: /category_products/6
+          - heading " Kids" [level=4] [ref=e70]:
+            - link " Kids" [ref=e71] [cursor=pointer]:
+              - /url: "#Kids"
+              - generic [ref=e73]: 
+              - text: Kids
+        - generic [ref=e74]:
+          - heading "Brands" [level=2] [ref=e75]
+          - list [ref=e77]:
+            - listitem [ref=e78]:
+              - link "(6) Polo" [ref=e79] [cursor=pointer]:
+                - /url: /brand_products/Polo
+                - generic [ref=e80]: (6)
+                - text: Polo
+            - listitem [ref=e81]:
+              - link "(5) H&M" [ref=e82] [cursor=pointer]:
+                - /url: /brand_products/H&M
+                - generic [ref=e83]: (5)
+                - text: H&M
+            - listitem [ref=e84]:
+              - link "(5) Madame" [ref=e85] [cursor=pointer]:
+                - /url: /brand_products/Madame
+                - generic [ref=e86]: (5)
+                - text: Madame
+            - listitem [ref=e87]:
+              - link "(3) Mast & Harbour" [ref=e88] [cursor=pointer]:
+                - /url: /brand_products/Mast & Harbour
+                - generic [ref=e89]: (3)
+                - text: Mast & Harbour
+            - listitem [ref=e90]:
+              - link "(4) Babyhug" [ref=e91] [cursor=pointer]:
+                - /url: /brand_products/Babyhug
+                - generic [ref=e92]: (4)
+                - text: Babyhug
+            - listitem [ref=e93]:
+              - link "(3) Allen Solly Junior" [ref=e94] [cursor=pointer]:
+                - /url: /brand_products/Allen Solly Junior
+                - generic [ref=e95]: (3)
+                - text: Allen Solly Junior
+            - listitem [ref=e96]:
+              - link "(3) Kookie Kids" [ref=e97] [cursor=pointer]:
+                - /url: /brand_products/Kookie Kids
+                - generic [ref=e98]: (3)
+                - text: Kookie Kids
+            - listitem [ref=e99]:
+              - link "(5) Biba" [ref=e100] [cursor=pointer]:
+                - /url: /brand_products/Biba
+                - generic [ref=e101]: (5)
+                - text: Biba
+      - generic [ref=e103]:
+        - heading "Women - Dress Products" [level=2] [ref=e104]
+        - generic [ref=e106]:
+          - generic [ref=e107]:
+            - generic [ref=e108]:
+              - img "ecommerce website products" [ref=e109]
+              - heading "Rs. 1000" [level=2] [ref=e110]
+              - paragraph [ref=e111]: Sleeveless Dress
+              - link " Add to cart" [ref=e112] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=e113]: 
+                - text: Add to cart
+            - generic [ref=e114]:
+              - heading "Rs. 1000" [level=2] [ref=e115]
+              - paragraph [ref=e116]: Sleeveless Dress
+              - link " Add to cart" [ref=e117] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=e118]: 
+                - text: Add to cart
+          - list [ref=e120]:
+            - listitem [ref=e121]:
+              - link " View Product" [ref=e122] [cursor=pointer]:
+                - /url: /product_details/3
+                - generic [ref=e123]: 
+                - text: View Product
+        - generic [ref=e125]:
+          - generic [ref=e126]:
+            - generic [ref=e127]:
+              - img "ecommerce website products" [ref=e128]
+              - heading "Rs. 1500" [level=2] [ref=e129]
+              - paragraph [ref=e130]: Stylish Dress
+              - link " Add to cart" [ref=e131] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=e132]: 
+                - text: Add to cart
+            - generic [ref=e133]:
+              - heading "Rs. 1500" [level=2] [ref=e134]
+              - paragraph [ref=e135]: Stylish Dress
+              - link " Add to cart" [ref=e136] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=e137]: 
+                - text: Add to cart
+          - list [ref=e139]:
+            - listitem [ref=e140]:
+              - link " View Product" [ref=e141] [cursor=pointer]:
+                - /url: /product_details/4
+                - generic [ref=e142]: 
+                - text: View Product
+        - generic [ref=e144]:
+          - generic [ref=e145]:
+            - generic [ref=e146]:
+              - img "ecommerce website products" [ref=e147]
+              - heading "Rs. 2300" [level=2] [ref=e148]
+              - paragraph [ref=e149]: Rose Pink Embroidered Maxi Dress
+              - link " Add to cart" [ref=e150] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=e151]: 
+                - text: Add to cart
+            - generic [ref=e152]:
+              - heading "Rs. 2300" [level=2] [ref=e153]
+              - paragraph [ref=e154]: Rose Pink Embroidered Maxi Dress
+              - link " Add to cart" [ref=e155] [cursor=pointer]:
+                - /url: javascript:void();
+                - generic [ref=e156]: 
+                - text: Add to cart
+          - list [ref=e158]:
+            - listitem [ref=e159]:
+              - link " View Product" [ref=e160] [cursor=pointer]:
+                - /url: /product_details/38
+                - generic [ref=e161]: 
+                - text: View Product
+  - insertion [ref=e163]:
+    - iframe [ref=e165]:
+      - generic [active] [ref=f1e1]:
+        - generic [ref=f1e6]:
+          - generic [ref=f1e8]:
+            - link [ref=f1e11] [cursor=pointer]:
+              - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=Cwz4B0k5JaajFHZux2fcPt6Kt8AOX_9edhAGeyK_55RShpvjz0B0QASD9tJ6VAWCDhYCAvBygAbvundkDyAEJqQIotfILkK-zPqgDAcgDywSqBPYBT9DS0udMRhBDcbrAbpG733uPigsb93Ly8rjDwlRwFfyKzgivo-yLXuMnJYPNDKoPIZo5lDk3xu2D7mkuYgtowddXe61ts8wNg0YsrFw5GfTMWDXfqosU8oixc_7FANAtG9V4VNiHa46KAY0bs631bbo4so5O2xs6Wj3I6wFX4D1JmNVmCfRMnIHffUfuWfVZsk8PzNt70ohMK07OKL74c75fkkEbHMjtUwtj3HKqs2aB3CUv4Vd1nUNMreTp7mVEIJgzBfwB4QSjypE7C3eH86FFSktnC12kxzibuqR5CQRN7Mjongr72l3-iiaeUWR-zTKI2jybwAS76pqOmgWIBaralM9TwAUF-gUGCCUQARgAoAYugAetkeImqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH4tixAqgH4tixAqgH4tixAtgHAMAIAdIIMgiA4YAQEAEYnwMyCKqCgICAgIAIOg6AwAOAgISAgJSu4AOoB0i9_cE6WMHK7Let0ZEDgAoBkAsDmAsByAsBgAwBogwFSAGQAQGqDQJST8gNAeoNEwis1Y24rdGRAxWbWPYIHTdRCz7wDQKIDgngEvPAibid28-YnAGiE1UKOAgDQAFSCAoGEgQIARABaIPu5LWWAXIhEh8gAigBOAJAqtqUz1NYAWj-__________8BgAEBmAEDGhkKF2NhLXB1Yi0xNjc3NTk3NDAzMzExMDE52BML0BUB8BW2m-UE-hUGNjI3MDE5mBYByhYCCgD4FgGAFwGyFwIYAboXAjgBshgJEgLBTxguIgEA0BgBwhkCCAE&ae=1&gclid=EAIaIQobChMIqPbst63RkQMVm1j2CB03UQs-EAEYASABEgJfUfD_BwE&num=1&cid=CAQSPgDCSxrRo7kZsA_Nff36Kll10sEz9ldPpT-oiWEX2Tn94kqkQN6pVUTZfhdkiFyPeQlSmOdFIZBuyRYhHzyfGAE&sig=AOD64_290oeMzgz6CXBWZWJAi3-z6IxneQ&ctype=5&client=ca-pub-1677597403311019&nb=9&adurl=https://www.dasha.ro/geanta-dama-din-piele-neagra-cu-aspect-matlasat-627019.html%3Fgad_source%3D5%26gad_campaignid%3D22446157098%26gclid%3DEAIaIQobChMIqPbst63RkQMVm1j2CB03UQs-EAEYASABEgJfUfD_BwE
+            - link [ref=f1e16] [cursor=pointer]:
+              - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=Cazpf0k5JaajFHZux2fcPt6Kt8AOX_9edhAGeyK_55RShpvjz0B0QASD9tJ6VAWCDhYCAvBygAbvundkDyAEJqQIotfILkK-zPqgDAcgDywSqBPYBT9DS0udMRhBDcbrAbpG733uPigsb93Ly8rjDwlRwFfyKzgivo-yLXuMnJYPNDKoPIZo5lDk3xu2D7mkuYgtowddXe61ts8wNg0YsrFw5GfTMWDXfqosU8oixc_7FANAtG9V4VNiHa46KAY0bs631bbo4so5O2xs6Wj3I6wFX4D1JmNVmCfRMnIHffUfuWfVZsk8PzNt70ohMK07OKL74c75fkkEbHMjtUwtj3HKqs2aB3CUv4Vd1nUNMreTp7mVEIJgzBfwB4QSjypE7C3eH86FFSktnC12kxzibuqR5CQRN7Mjongr72l3-iiaeUWR-zTKI2jybwAS76pqOmgWIBaralM9TwAUF-gUGCCUQARgBoAYugAetkeImqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAtgHAMAIAtIIMgiA4YAQEAEYnwMyCKqCgICAgIAIOg6AwAOAgISAgJSu4AOoB0i9_cE6WMHK7Let0ZEDgAoBkAsDmAsByAsBgAwBogwFSAGQAQGqDQJST8gNAeoNEwis1Y24rdGRAxWbWPYIHTdRCz7wDQKIDgngEuqssvWOy66tK6ITVQo4CANAAVIICgYSBAgBEAFog-7ktZYBciESHyACKAE4AkCq2pTPU1gBaP7__________wGAAQGYAQMaGQoXY2EtcHViLTE2Nzc1OTc0MDMzMTEwMTnYEwvQFQHpFadqz1Wc9PfV8BW2m-UE-hUGNjkzNzIymBYByhYCCgD4FgGAFwGyFwIYAboXAjgBshgJEgLBTxguIgEA0BgBwhkCCAE&ae=1&gclid=EAIaIQobChMIqPbst63RkQMVm1j2CB03UQs-EAEYASACEgK9TPD_BwE&num=1&cid=CAQSPgDCSxrRo7kZsA_Nff36Kll10sEz9ldPpT-oiWEX2Tn94kqkQN6pVUTZfhdkiFyPeQlSmOdFIZBuyRYhHzyfGAE&sig=AOD64_1MHZnbDv4DZqLFSHB0OQ7DGGHy_Q&ctype=5&client=ca-pub-1677597403311019&nb=9&adurl=https://www.dasha.ro/botine-dama-maro-din-piele-naturala-cu-fermoar-in-fata-693722.html%3Fgad_source%3D5%26gad_campaignid%3D22446157098%26gclid%3DEAIaIQobChMIqPbst63RkQMVm1j2CB03UQs-EAEYASACEgK9TPD_BwE
+            - link [ref=f1e21] [cursor=pointer]:
+              - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=C6gXm0k5JaajFHZux2fcPt6Kt8AOX_9edhAGeyK_55RShpvjz0B0QASD9tJ6VAWCDhYCAvBygAbvundkDyAEJqQIotfILkK-zPqgDAcgDywSqBPYBT9DS0udMRhBDcbrAbpG733uPigsb93Ly8rjDwlRwFfyKzgivo-yLXuMnJYPNDKoPIZo5lDk3xu2D7mkuYgtowddXe61ts8wNg0YsrFw5GfTMWDXfqosU8oixc_7FANAtG9V4VNiHa46KAY0bs631bbo4so5O2xs6Wj3I6wFX4D1JmNVmCfRMnIHffUfuWfVZsk8PzNt70ohMK07OKL74c75fkkEbHMjtUwtj3HKqs2aB3CUv4Vd1nUNMreTp7mVEIJgzBfwB4QSjypE7C3eH86FFSktnC12kxzibuqR5CQRN7Mjongr72l3-iiaeUWR-zTKI2jybwAS76pqOmgWIBaralM9TwAUF-gUGCCUQARgCoAYugAetkeImqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAtgHAMAIA9IIMgiA4YAQEAEYnwMyCKqCgICAgIAIOg6AwAOAgISAgJSu4AOoB0i9_cE6WMHK7Let0ZEDgAoBkAsDmAsByAsBgAwBogwFSAGQAQGqDQJST8gNAeoNEwis1Y24rdGRAxWbWPYIHTdRCz7wDQKIDgngEsTLq_-ahKXbcKITVQo4CANAAVIICgYSBAgBEAFog-7ktZYBciESHyACKAE4AkCq2pTPU1gBaP7__________wGAAQGYAQMaGQoXY2EtcHViLTE2Nzc1OTc0MDMzMTEwMTnYEwvQFQHwFbab5QT6FQY3NjMyNjiYFgHKFgIKAPgWAYAXAbIXAhgBuhcCOAGyGAkSAsFPGC4iAQDQGAHCGQIIAQ&ae=1&gclid=EAIaIQobChMIqPbst63RkQMVm1j2CB03UQs-EAEYASADEgKp9_D_BwE&num=1&cid=CAQSPgDCSxrRo7kZsA_Nff36Kll10sEz9ldPpT-oiWEX2Tn94kqkQN6pVUTZfhdkiFyPeQlSmOdFIZBuyRYhHzyfGAE&sig=AOD64_0S2TvypUjeIDbODhdWL-XIRj58OQ&ctype=5&client=ca-pub-1677597403311019&nb=9&adurl=https://www.dasha.ro/ghete-dama-nur-negre-din-piele-naturala-si-material-textil-763268.html%3Fgad_source%3D5%26gad_campaignid%3D22446157098%26gclid%3DEAIaIQobChMIqPbst63RkQMVm1j2CB03UQs-EAEYASADEgKp9_D_BwE
+            - link [ref=f1e26] [cursor=pointer]:
+              - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CXkH60k5JaajFHZux2fcPt6Kt8AOX_9edhAGeyK_55RShpvjz0B0QASD9tJ6VAWCDhYCAvBygAbvundkDyAEJqQIotfILkK-zPqgDAcgDywSqBPYBT9DS0udMRhBDcbrAbpG733uPigsb93Ly8rjDwlRwFfyKzgivo-yLXuMnJYPNDKoPIZo5lDk3xu2D7mkuYgtowddXe61ts8wNg0YsrFw5GfTMWDXfqosU8oixc_7FANAtG9V4VNiHa46KAY0bs631bbo4so5O2xs6Wj3I6wFX4D1JmNVmCfRMnIHffUfuWfVZsk8PzNt70ohMK07OKL74c75fkkEbHMjtUwtj3HKqs2aB3CUv4Vd1nUNMreTp7mVEIJgzBfwB4QSjypE7C3eH86FFSktnC12kxzibuqR5CQRN7Mjongr72l3-iiaeUWR-zTKI2jybwAS76pqOmgWIBaralM9TwAUF-gUGCCUQARgDoAYugAetkeImqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAtgHAMAIBNIIMgiA4YAQEAEYnwMyCKqCgICAgIAIOg6AwAOAgISAgJSu4AOoB0i9_cE6WMHK7Let0ZEDgAoBkAsDmAsByAsBgAwBogwFSAGQAQGqDQJST8gNAeoNEwis1Y24rdGRAxWbWPYIHTdRCz7wDQKIDgngEor_xceqwr66CaITVQo4CANAAVIICgYSBAgBEAFog-7ktZYBciESHyACKAE4AkCq2pTPU1gBaP7__________wGAAQGYAQMaGQoXY2EtcHViLTE2Nzc1OTc0MDMzMTEwMTnYEwvQFQHwFbab5QT6FQY2OTM5OTiYFgHKFgIKAPgWAYAXAbIXAhgBuhcCOAGyGAkSAsFPGC4iAQDQGAHCGQIIAQ&ae=1&gclid=EAIaIQobChMIqPbst63RkQMVm1j2CB03UQs-EAEYASAEEgJbY_D_BwE&num=1&cid=CAQSPgDCSxrRo7kZsA_Nff36Kll10sEz9ldPpT-oiWEX2Tn94kqkQN6pVUTZfhdkiFyPeQlSmOdFIZBuyRYhHzyfGAE&sig=AOD64_0gNFhI1H2kOgd6KOwG6XbHJTO5rQ&ctype=5&client=ca-pub-1677597403311019&nb=9&adurl=https://www.dasha.ro/ghete-dama-nur-negre-cu-maro-din-piele-naturala-693998.html%3Fgad_source%3D5%26gad_campaignid%3D22446157098%26gclid%3DEAIaIQobChMIqPbst63RkQMVm1j2CB03UQs-EAEYASAEEgJbY_D_BwE
+            - link [ref=f1e31] [cursor=pointer]:
+              - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=C2I3u0k5JaajFHZux2fcPt6Kt8AOX_9edhAGeyK_55RShpvjz0B0QASD9tJ6VAWCDhYCAvBygAbvundkDyAEJqQIotfILkK-zPqgDAcgDywSqBPYBT9DS0udMRhBDcbrAbpG733uPigsb93Ly8rjDwlRwFfyKzgivo-yLXuMnJYPNDKoPIZo5lDk3xu2D7mkuYgtowddXe61ts8wNg0YsrFw5GfTMWDXfqosU8oixc_7FANAtG9V4VNiHa46KAY0bs631bbo4so5O2xs6Wj3I6wFX4D1JmNVmCfRMnIHffUfuWfVZsk8PzNt70ohMK07OKL74c75fkkEbHMjtUwtj3HKqs2aB3CUv4Vd1nUNMreTp7mVEIJgzBfwB4QSjypE7C3eH86FFSktnC12kxzibuqR5CQRN7Mjongr72l3-iiaeUWR-zTKI2jybwAS76pqOmgWIBaralM9TwAUF-gUGCCUQARgEoAYugAetkeImqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAqgH4tixAtgHAMAIBdIIMgiA4YAQEAEYnwMyCKqCgICAgIAIOg6AwAOAgISAgJSu4AOoB0i9_cE6WMHK7Let0ZEDgAoBkAsDmAsByAsBgAwBogwFSAGQAQGqDQJST8gNAeoNEwis1Y24rdGRAxWbWPYIHTdRCz7wDQKIDgngEpnMyv-954zq1wGiE1UKOAgDQAFSCAoGEgQIARABaIPu5LWWAXIhEh8gAigBOAJAqtqUz1NYAWj-__________8BgAEBmAEDGhkKF2NhLXB1Yi0xNjc3NTk3NDAzMzExMDE52BML0BUB8BW2m-UE-hUGNjI5NjA4mBYByhYCCgD4FgGAFwGyFwIYAboXAjgBshgJEgLBTxguIgEA0BgBwhkCCAE&ae=1&gclid=EAIaIQobChMIqPbst63RkQMVm1j2CB03UQs-EAEYASAFEgLBgvD_BwE&num=1&cid=CAQSPgDCSxrRo7kZsA_Nff36Kll10sEz9ldPpT-oiWEX2Tn94kqkQN6pVUTZfhdkiFyPeQlSmOdFIZBuyRYhHzyfGAE&sig=AOD64_1iic9Q3zEE5hWa4AN2MriKVvds0A&ctype=5&client=ca-pub-1677597403311019&nb=9&adurl=https://www.dasha.ro/botine-dama-nur-din-piele-maro-cu-elastic-629608.html%3Fgad_source%3D5%26gad_campaignid%3D22446157098%26gclid%3DEAIaIQobChMIqPbst63RkQMVm1j2CB03UQs-EAEYASAFEgLBgvD_BwE
+          - link "Vezi noile modele din magazin Dasha.ro" [ref=f1e34] [cursor=pointer]:
+            - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=Cwz4B0k5JaajFHZux2fcPt6Kt8AOX_9edhAGeyK_55RShpvjz0B0QASD9tJ6VAWCDhYCAvBygAbvundkDyAEJqQIotfILkK-zPqgDAcgDywSqBPYBT9DS0udMRhBDcbrAbpG733uPigsb93Ly8rjDwlRwFfyKzgivo-yLXuMnJYPNDKoPIZo5lDk3xu2D7mkuYgtowddXe61ts8wNg0YsrFw5GfTMWDXfqosU8oixc_7FANAtG9V4VNiHa46KAY0bs631bbo4so5O2xs6Wj3I6wFX4D1JmNVmCfRMnIHffUfuWfVZsk8PzNt70ohMK07OKL74c75fkkEbHMjtUwtj3HKqs2aB3CUv4Vd1nUNMreTp7mVEIJgzBfwB4QSjypE7C3eH86FFSktnC12kxzibuqR5CQRN7Mjongr72l3-iiaeUWR-zTKI2jybwAS76pqOmgWIBaralM9TwAUF-gUGCCUQARgAoAYugAetkeImqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH4tixAqgH4tixAqgH4tixAtgHAMAIAdIIMgiA4YAQEAEYnwMyCKqCgICAgIAIOg6AwAOAgISAgJSu4AOoB0i9_cE6WMHK7Let0ZEDgAoBkAsDmAsByAsBgAwBogwFSAGQAQGqDQJST8gNAeoNEwis1Y24rdGRAxWbWPYIHTdRCz7wDQKIDgngEvPAibid28-YnAGiE1UKOAgDQAFSCAoGEgQIARABaIPu5LWWAXIhEh8gAigBOAJAqtqUz1NYAWj-__________8BgAEBmAEDGhkKF2NhLXB1Yi0xNjc3NTk3NDAzMzExMDE52BML0BUB8BW2m-UE-hUGNjI3MDE5mBYByhYCCgD4FgGAFwGyFwIYAboXAjgBshgJEgLBTxguIgEA0BgBwhkCCAE&ae=1&gclid=EAIaIQobChMIqPbst63RkQMVm1j2CB03UQs-EAEYASABEgJfUfD_BwE&num=1&cid=CAQSPgDCSxrRo7kZsA_Nff36Kll10sEz9ldPpT-oiWEX2Tn94kqkQN6pVUTZfhdkiFyPeQlSmOdFIZBuyRYhHzyfGAE&sig=AOD64_290oeMzgz6CXBWZWJAi3-z6IxneQ&ctype=5&client=ca-pub-1677597403311019&nb=19&adurl=https://www.dasha.ro/geanta-dama-din-piele-neagra-cu-aspect-matlasat-627019.html%3Fgad_source%3D5%26gad_campaignid%3D22446157098%26gclid%3DEAIaIQobChMIqPbst63RkQMVm1j2CB03UQs-EAEYASABEgJfUfD_BwE
+            - generic [ref=f1e35]:
+              - img [ref=f1e37]
+              - generic [ref=f1e38]:
+                - generic [ref=f1e41]:
+                  - text: Vezi noile modele din
+                  - text: magazin
+                - generic [ref=f1e43]: Dasha.ro
+        - img [ref=f1e47] [cursor=pointer]
+        - button [ref=f1e50] [cursor=pointer]:
+          - img [ref=f1e51]
+        - iframe
+  - contentinfo [ref=e166]:
+    - generic [ref=e171]:
+      - heading "Subscription" [level=2] [ref=e172]
+      - generic [ref=e173]:
+        - textbox "Your email address" [ref=e174]
+        - button "" [ref=e175] [cursor=pointer]:
+          - generic [ref=e176]: 
+        - paragraph [ref=e177]:
+          - text: Get the most recent updates from
+          - text: our site and be updated your self...
+    - paragraph [ref=e181]: Copyright © 2021 All rights reserved
+  - text: 
+  - generic [ref=e183]:
+    - button "Privacy and cookie settings" [ref=e184] [cursor=pointer]
+    - generic [ref=e185]: "Managed by Google. Complies with IAB TCF. CMP ID: 300"
+```

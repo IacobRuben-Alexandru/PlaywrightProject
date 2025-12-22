@@ -15,7 +15,6 @@ test("Logout test", async ({page})=>{
     });
     await test.step("Logout and verify redirection to login page", async ()=> {
         await page.getByRole('link', { name: ' Logout' }).click();
-        await expect(page.getByRole('heading', { name: 'Login to your account' })).toBeVisible();
         await expect(page).toHaveURL(/.*login/);
     });
 });

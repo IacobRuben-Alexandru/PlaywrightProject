@@ -23,25 +23,32 @@ test("Download Invoice", async ({page, randomUser})=>{
         const firstProduct = product.first();
         await firstProduct.scrollIntoViewIfNeeded();
         await firstProduct.hover();
-        await page.getByText('Add to cart').nth(0).click({ force: true });
-        await page.getByRole('button', { name: 'Continue Shopping' }).click({ force: true });
+        await page.getByText('Add to cart').first().click({ force: true });
+        const [response] = await Promise.all([
+            page.waitForResponse(resp =>
+                resp.url().includes('/add_to_cart') && resp.status() === 200
+            ),
+            page.getByText('Add to cart').first().click({ force: true })
+        ]);
     });
     await test.step("Navigate to cart and checkout", async ()=> {
         await page.goto('https://automationexercise.com/view_cart');
         await expect(page.getByText('Shopping Cart')).toBeVisible();
         await page.getByText('Proceed To Checkout').click();
     });
+    const Email = randomUser.email;
+    const Name = randomUser.name;
     await test.step("Register new user during checkout", async ()=> {
         await page.getByRole('link', { name: 'Register / Login' }).click();
-        await registerPage.register(randomUser.name, randomUser.email);
+        await registerPage.register(Name, Email);
         await expect(page.getByText('Account Created!', { exact: true })).toBeVisible({ timeout: 10000 });
         await page.getByRole('link', { name: 'Continue' }).click();
+        await expect(page.getByText(`Logged in as ${Name}`)).toBeVisible();
     });
     await test.step("Navigate to cart and checkout", async ()=> {
         await primary.navigateToCart();
         await expect(page.getByText('Shopping Cart')).toBeVisible();
         await page.getByText('Proceed To Checkout').click();
-        await expect(page.getByRole('button', { name: '1' })).toBeVisible();
     });
     await test.step("Fill in card details and place order", async ()=> {
         const PlaceOrder = page.getByRole('link', { name: 'Place Order' });

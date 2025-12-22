@@ -14,6 +14,7 @@ test("Contact Us form submission", async ({page})=>{
         await expect(page).toHaveURL(`${URL}/contact_us`);
     });
     await test.step("Fill contact us form and submit", async ()=> {
+        await consentPage.giveConsent();
         await expect(page.getByRole('heading', { name: 'Get In Touch' })).toBeVisible();
         await automationPage.fillContactForm(USERS.name1, USERS.email1, 'Hello, this is a test message.');
         await expect(page.locator('#contact-page').getByText('Success!')).toBeVisible();

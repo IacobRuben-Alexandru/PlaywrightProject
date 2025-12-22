@@ -5,7 +5,7 @@ import {ConsentPage} from "../pages/ConsentPage";
 import {ReachLoginPage} from "../pages/LoginPage";
 import { USERS } from "../config/constants";
 
-test("Loggin with correct user", async ({page})=>{
+test("Loggin with correct user", async ({page,randomUser})=>{
     const registerPage = new RegisterAnAccountPage(page);
     const consentPage = new ConsentPage(page);
     const loginPage = new ReachLoginPage(page);
@@ -15,8 +15,10 @@ test("Loggin with correct user", async ({page})=>{
         await consentPage.giveConsent();
         await expect(page).toHaveURL(/.*login/);
     });
+    const Email = randomUser.email;
+    const Name = randomUser.name;
     await test.step("Register a new user account and logout", async ()=> {
-        await registerPage.register(USERS.name, USERS.email);
+        await registerPage.register(Name, Email);
         await expect(page.locator('b')).toContainText('Account Created!');
         await page.getByRole('link', { name: 'Continue' }).click();
         await page.getByRole('link', { name: ' Logout' }).click();
@@ -24,8 +26,8 @@ test("Loggin with correct user", async ({page})=>{
     await test.step("Login with registered user credentials and delete account", async ()=> {
         await loginPage.goto();
         await consentPage.giveConsent();
-        await loginPage.login(USERS.email, USERS.password);
-        await expect(page.getByText(`Logged in as ${USERS.name}`)).toBeVisible();
+        await loginPage.login(Email, USERS.password);
+        await expect(page.getByText(`Logged in as ${Name}`)).toBeVisible();
         await page.getByRole('link', { name: ' Delete Account' }).click();
         await page.getByText('Account Deleted!').isVisible();
         await page.getByRole('link', { name: 'Continue' }).click();

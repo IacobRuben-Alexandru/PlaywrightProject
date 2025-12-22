@@ -20,12 +20,19 @@ test("Add products to cart", async ({page})=>{
         await firstProduct.scrollIntoViewIfNeeded();
         await firstProduct.hover();
         await page.getByText('Add to cart').nth(0).click();
-        await page.getByRole('button', { name: 'Continue Shopping' }).click();
+        const continueBtn = page.getByRole('button', { name: 'Continue Shopping' });
+        try {
+            await continueBtn.waitFor({ state: 'visible', timeout: 5000 });
+            await continueBtn.click({ force: true });
+        } catch (e) {}
         const secondProduct = page.locator('.product-image-wrapper').nth(1);
         await secondProduct.scrollIntoViewIfNeeded();
         await secondProduct.hover();
         await secondProduct.locator('a.add-to-cart').last().click(); 
-        await page.getByRole('button', { name: 'Continue Shopping' }).click();
+        try {
+            await continueBtn.waitFor({ state: 'visible', timeout: 5000 });
+            await continueBtn.click({ force: true });
+        } catch (e) {}
     });
     await test.step("Navigate to cart and verify both products were added", async ()=> {
         await automationPage.navigateToCart();

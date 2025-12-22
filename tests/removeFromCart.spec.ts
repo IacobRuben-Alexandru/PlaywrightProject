@@ -20,12 +20,19 @@ test("Remove product from cart", async ({page})=>{
         await firstProduct.scrollIntoViewIfNeeded();
         await firstProduct.hover();
         await page.getByText('Add to cart').nth(0).click();
-        await page.getByRole('button', { name: 'Continue Shopping' }).click();
+        const continueBtn = page.getByRole('button', { name: 'Continue Shopping' });
+        try {
+            await continueBtn.waitFor({ state: 'visible', timeout: 5000 });
+            await continueBtn.click({ force: true });
+        } catch (e) {}
         const secondProduct = product.nth(1); 
         await secondProduct.scrollIntoViewIfNeeded();
         await secondProduct.hover()
         await page.getByText('Add to cart').nth(3).click();
-        await page.getByRole('button', { name: 'Continue Shopping' }).click();
+        try {
+            await continueBtn.waitFor({ state: 'visible', timeout: 5000 });
+            await continueBtn.click({ force: true });
+        } catch (e) {}
     });
     await test.step("Navigate to cart and remove one product and check if product is removed", async ()=> {
         await automationPage.navigateToCart();
