@@ -1,0 +1,45 @@
+import {expect} from "@playwright/test";
+import {ConsentPage} from "../pages/ConsentPage";
+import { USERS,URL } from "../config/constants";
+import {automationexercise} from "../pages/AutomationPage";
+import {test} from "../fixtures/createuserFixture";
+
+test("Scroll up", async ({page})=>{
+    const automationPage = new automationexercise(page);
+    const consentPage = new ConsentPage(page);
+    await test.step("Launch browser and navigate to home page", async ()=> {
+        await automationPage.goto();
+        await automationPage.load();
+        await consentPage.giveConsent();
+        await expect(page).toHaveURL(URL);
+    });
+    const subscriptionHeader = page.getByRole('heading', { name: 'Subscription' });
+    await test.step("Scroll down using keyboard arrows", async ()=> {
+        let isVisibleInViewport = false;
+        while (isVisibleInViewport === false) {
+            await page.keyboard.press('ArrowDown');
+            isVisibleInViewport = await subscriptionHeader.evaluate((el) => {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+            );});
+            await page.waitForTimeout(5); 
+        }
+    });
+    await test.step("Scroll up using keyboard arrows", async ()=> {
+        await expect(subscriptionHeader).toBeVisible();
+        const topText = page.getByRole('heading', { name: 'Full-Fledged practice website' }).first();
+        let isTopVisible = false;
+        while (!isTopVisible) {
+            await page.keyboard.press('ArrowUp');
+            isTopVisible = await topText.evaluate((el) => {
+                const rect = el.getBoundingClientRect();
+                return rect.top >= 0 && rect.top <= window.innerHeight;
+            });
+            await page.waitForTimeout(5);
+        }
+        await expect(topText).toBeVisible();
+        await expect(topText).toBeInViewport();
+    });
+});

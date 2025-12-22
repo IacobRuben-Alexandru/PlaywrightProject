@@ -14,27 +14,38 @@ test("Login then place an order", async ({page, randomUser})=>{
     const consentPage = new ConsentPage(page);
     const card = new CardPage(page);
     const loginPage = new ReachLoginPage(page);
-    await primary.goto();
-    await consentPage.giveConsent();
-    await expect(page).toHaveURL(URL);
-    await loginPage.goto();
-    await consentPage.giveConsent();
-    await loginPage.login(USERS.email1, USERS.password);
-    await expect(page.getByText(`Logged in as ${USERS.name1}`)).toBeVisible();
-    await primary.navigateToProducts();
-    const product = page.locator('[class="product-image-wrapper"]');
-    const firstProduct = product.first();
-    await firstProduct.scrollIntoViewIfNeeded();
-    await firstProduct.hover();
-    await page.getByText('Add to cart').nth(0).click();
-    await page.getByRole('button', { name: 'Continue Shopping' }).click();
-    await primary.navigateToCart();
-    await expect(page.getByText('Shopping Cart')).toBeVisible();
-    await page.getByText('Proceed To Checkout').click();
-    await expect(page.getByRole('heading', { name: 'Review Your Order' })).toBeVisible();
-    const PlaceOrder = page.getByRole('link', { name: 'Place Order' });
-    await PlaceOrder.evaluate(el => el.scrollIntoView({ behavior: 'instant', block: 'center' }));
-    await expect(PlaceOrder).toBeVisible();
-    await page.getByRole('link', { name: 'Place Order' }).click();
-    await card.Card();
+    await test.step("Launch browser and navigate to home page", async ()=> {
+        await primary.goto();
+        await consentPage.giveConsent();
+        await expect(page).toHaveURL(URL);
+    });
+    await test.step("Navigate to login page and login", async ()=> {
+        await loginPage.goto();
+        await consentPage.giveConsent();
+        await loginPage.login(USERS.email1, USERS.password);
+        await expect(page.getByText(`Logged in as ${USERS.name1}`)).toBeVisible();
+    });
+    await test.step("Navigate to products and add a product to cart", async ()=> {
+        await primary.navigateToProducts();
+        const product = page.locator('[class="product-image-wrapper"]');
+        const firstProduct = product.first();
+        await firstProduct.scrollIntoViewIfNeeded();
+        await firstProduct.hover();
+        await page.getByText('Add to cart').nth(0).click();
+        await page.getByRole('button', { name: 'Continue Shopping' }).click();
+    });
+    await test.step("Navigate to cart and checkout", async ()=> {
+        await primary.navigateToCart();
+        await expect(page.getByText('Shopping Cart')).toBeVisible();
+        await page.getByText('Proceed To Checkout').click();
+        await expect(page.getByRole('heading', { name: 'Review Your Order' })).toBeVisible();
+        const PlaceOrder = page.getByRole('link', { name: 'Place Order' });
+        await PlaceOrder.evaluate(el => el.scrollIntoView({ behavior: 'instant', block: 'center' }));
+        await expect(PlaceOrder).toBeVisible();
+        await page.getByRole('link', { name: 'Place Order' }).click();
+    });
+    await test.step("Fill in card details and place order", async ()=> {
+        await card.Card();
+        await expect(page.getByText('Congratulations! Your order')).toBeVisible();
+    });
 });

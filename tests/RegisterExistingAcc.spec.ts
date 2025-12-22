@@ -6,9 +6,14 @@ import { USERS } from "../config/constants";
 test("Register with an existing account", async ({page})=>{
     const registerPage = new RegisterAnAccountPage(page);
     const consentPage = new ConsentPage(page);
-    await registerPage.goto();
-    await registerPage.load();
-    await consentPage.giveConsent();
-    await registerPage.registerWithExistingAccount(USERS.name1, USERS.email1);
-    await expect(page.getByText("Email Address already exist!")).toBeVisible();
+    await test.step("Launch browser and navigate to register page", async ()=> {
+        await registerPage.goto();
+        await registerPage.load();
+        await consentPage.giveConsent();
+        await expect(page).toHaveURL(/.*login/);
+    });
+    await test.step("Attempt to register with an existing account", async ()=> {
+        await registerPage.registerWithExistingAccount(USERS.name1, USERS.email1);
+        await expect(page.getByText("Email Address already exist!")).toBeVisible();
+    });
 });
