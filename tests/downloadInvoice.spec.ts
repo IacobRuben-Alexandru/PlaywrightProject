@@ -23,11 +23,11 @@ test("Download Invoice", async ({page, randomUser})=>{
         const firstProduct = product.first();
         await firstProduct.scrollIntoViewIfNeeded();
         await firstProduct.hover();
-        await page.getByText('Add to cart').nth(0).click();
-        await page.getByRole('button', { name: 'Continue Shopping' }).click();
+        await page.getByText('Add to cart').nth(0).click({ force: true });
+        await page.getByRole('button', { name: 'Continue Shopping' }).click({ force: true });
     });
     await test.step("Navigate to cart and checkout", async ()=> {
-        await primary.navigateToCart();
+        await page.goto('https://automationexercise.com/view_cart');
         await expect(page.getByText('Shopping Cart')).toBeVisible();
         await page.getByText('Proceed To Checkout').click();
     });

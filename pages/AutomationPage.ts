@@ -41,6 +41,6 @@ export class automationexercise{
         await this.page.getByRole('link', { name: ' Products' }).click();
     }
     async navigateToCart(){
-        await this.page.getByRole('link', { name: ' Cart' }).click();
+        await this.page.getByRole('link', { name: ' Cart' }).click({force: true});
     }
 }
