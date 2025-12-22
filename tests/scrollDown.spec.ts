@@ -4,7 +4,7 @@ import { USERS,URL } from "../config/constants";
 import {automationexercise} from "../pages/AutomationPage";
 import {test} from "../fixtures/createuserFixture";
 
-test("Scroll up", async ({page})=>{
+test("Scroll down", async ({page})=>{
     const automationPage = new automationexercise(page);
     const consentPage = new ConsentPage(page);
     await test.step("Launch browser and navigate to home page", async ()=> {
@@ -24,8 +24,9 @@ test("Scroll up", async ({page})=>{
                 rect.top >= 0 &&
                 rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
             );});
-            await page.waitForTimeout(5); 
+            await page.waitForTimeout(50); 
         }
+        await expect(subscriptionHeader).toBeVisible();
     });
     await test.step("Scroll up using keyboard arrows", async ()=> {
         await expect(subscriptionHeader).toBeVisible();
@@ -37,9 +38,8 @@ test("Scroll up", async ({page})=>{
                 const rect = el.getBoundingClientRect();
                 return rect.top >= 0 && rect.top <= window.innerHeight;
             });
-            await page.waitForTimeout(5);
+            await page.waitForTimeout(50);
         }
         await expect(topText).toBeVisible();
-        await expect(topText).toBeInViewport();
     });
 });

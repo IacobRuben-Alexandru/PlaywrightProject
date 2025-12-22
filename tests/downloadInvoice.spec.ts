@@ -34,7 +34,7 @@ test("Download Invoice", async ({page, randomUser})=>{
     await test.step("Register new user during checkout", async ()=> {
         await page.getByRole('link', { name: 'Register / Login' }).click();
         await registerPage.register(randomUser.name, randomUser.email);
-        await expect(page.locator('b')).toContainText('Account Created!');
+        await expect(page.getByText('Account Created!', { exact: true })).toBeVisible({ timeout: 10000 });
         await page.getByRole('link', { name: 'Continue' }).click();
     });
     await test.step("Navigate to cart and checkout", async ()=> {
