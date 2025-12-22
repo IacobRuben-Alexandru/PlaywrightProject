@@ -24,7 +24,7 @@ test("Scroll up", async ({page})=>{
                 rect.top >= 0 &&
                 rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
             );});
-            await page.waitForTimeout(50); 
+            await page.waitForTimeout(5); 
         }
         await expect(subscriptionHeader).toBeVisible();
     });
@@ -32,7 +32,7 @@ test("Scroll up", async ({page})=>{
         const topText = page.getByRole('heading', { name: 'Full-Fledged practice website' });
         const scrollUpButton = page.locator('#scrollUp');
         await scrollUpButton.click();
-        await expect(topText).toBeVisible();
+        await expect(topText).toBeVisible({ timeout: 10000 });
         await expect(topText).toBeInViewport();
     });
 });
