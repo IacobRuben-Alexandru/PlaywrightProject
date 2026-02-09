@@ -103,7 +103,8 @@ export class automationexercise{
         });
     }
     async addReview(){
-        await this.page.getByRole('link', { name: ' View Product' }).first().click();
+        //await this.hideAds();
+        await this.page.locator('a[href="/product_details/2"]').click();
         await this.page.getByRole('textbox', { name: 'Your Name' }).fill(USERS.name1);
         await this.page.getByRole('textbox', { name: 'Email Address', exact: true }).fill(USERS.email1);
         await this.page.getByRole('textbox', { name: 'Add Review Here!' }).fill('Great product, highly recommend!');
