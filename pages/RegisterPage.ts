@@ -1,11 +1,13 @@
 import { expect, Page } from "@playwright/test";
 import { URL, PATHS,USERS } from "../config/constants";
 import { randomNumber, randomString, generateRandomPassword } from "../utils/helpers";
+import { ConsentPage } from "./ConsentPage";
 export class RegisterAnAccountPage {
     readonly page: Page;
-
-    constructor(page: Page) {
+    readonly consentPage: ConsentPage;
+    constructor(page: Page,consentPage: ConsentPage=new ConsentPage(page)) {
         this.page = page;
+        this.consentPage = consentPage;
     }
     async goto() {
         await this.page.goto(`${URL}${PATHS.login}`);
@@ -73,6 +75,25 @@ export class RegisterAnAccountPage {
         await this.page.getByRole("textbox", { name: "Mobile Number *" }).click();
         await this.page.getByRole("textbox", { name: "Mobile Number *" }).fill(randomString(randomNumber()));
         await this.page.getByRole("button", { name: "Create Account" }).click();
+    }
+    async hideAds() {
+        await this.page.addStyleTag({
+            content: `
+                iframe,
+                ins.adsbygoogle,
+                .fc-consent-root,
+                .fc-dialog-container {
+                    display: none !important;
+                }
+            `
+        });
+    }
+    async launchAndConsent() {
+        await this.goto();
+        await this.load();
+        await this.consentPage.giveConsent();
+        //await this.hideAds();
+        await expect(this.page).toHaveURL(/.*login/);
     }
 }
 

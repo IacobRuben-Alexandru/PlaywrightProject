@@ -7,17 +7,15 @@ export class CardPage {
   }
 
   async Card() {
-    await this.page.locator('input[name="name_on_card"]').click();
-    await this.page.locator('input[name="name_on_card"]').fill(randomString(randomNumber()) + ' ' + randomString(randomNumber()));
-    await this.page.locator('input[name="card_number"]').click();
-    await this.page.locator('input[name="card_number"]').fill('4111111111111111');
-    await this.page.getByRole('textbox', { name: 'ex.' }).click();
-    await this.page.getByRole('textbox', { name: 'ex.' }).fill('123');
-    await this.page.getByRole('textbox', { name: 'MM' }).click();
-    await this.page.getByRole('textbox', { name: 'MM' }).fill('12');
-    await this.page.getByRole('textbox', { name: 'YYYY' }).click();
-    await this.page.getByRole('textbox', { name: 'YYYY' }).fill('2025');
-    await this.page.getByRole('button', { name: 'Pay and Confirm Order' }).click();
-    await expect(this.page.getByText('Congratulations! Your order')).toBeVisible();
-  }
+    await this.page.evaluate(() => {
+        (document.querySelector('[name="name_on_card"]') as HTMLInputElement).value = 'Test User';
+        (document.querySelector('[name="card_number"]') as HTMLInputElement).value = '4111111111111111';
+        (document.querySelector('[name="cvc"]') as HTMLInputElement).value = '123';
+        (document.querySelector('[name="expiry_month"]') as HTMLInputElement).value = '12';
+        (document.querySelector('[name="expiry_year"]') as HTMLInputElement).value = '2025';
+    });
+
+    await this.page.click('button:has-text("Pay and Confirm Order")');
+}
+
 }

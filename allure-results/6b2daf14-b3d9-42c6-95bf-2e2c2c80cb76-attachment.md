@@ -1,0 +1,128 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e5]:
+      - link "Website for automation practice" [ref=e8] [cursor=pointer]:
+        - /url: /
+        - img "Website for automation practice" [ref=e9]
+      - list [ref=e12]:
+        - listitem [ref=e13]:
+          - link " Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e15]: 
+            - text: Home
+        - listitem [ref=e16]:
+          - link " Products" [ref=e17] [cursor=pointer]:
+            - /url: /products
+            - generic [ref=e18]: 
+            - text: Products
+        - listitem [ref=e19]:
+          - link " Cart" [ref=e20] [cursor=pointer]:
+            - /url: /view_cart
+            - generic [ref=e21]: 
+            - text: Cart
+        - listitem [ref=e22]:
+          - link " Logout" [ref=e23] [cursor=pointer]:
+            - /url: /logout
+            - generic [ref=e24]: 
+            - text: Logout
+        - listitem [ref=e25]:
+          - link " Delete Account" [ref=e26] [cursor=pointer]:
+            - /url: /delete_account
+            - generic [ref=e27]: 
+            - text: Delete Account
+        - listitem [ref=e28]:
+          - link " Test Cases" [ref=e29] [cursor=pointer]:
+            - /url: /test_cases
+            - generic [ref=e30]: 
+            - text: Test Cases
+        - listitem [ref=e31]:
+          - link " API Testing" [ref=e32] [cursor=pointer]:
+            - /url: /api_list
+            - generic [ref=e33]: 
+            - text: API Testing
+        - listitem [ref=e34]:
+          - link " Video Tutorials" [ref=e35] [cursor=pointer]:
+            - /url: https://www.youtube.com/c/AutomationExercise
+            - generic [ref=e36]: 
+            - text: Video Tutorials
+        - listitem [ref=e37]:
+          - link " Contact us" [ref=e38] [cursor=pointer]:
+            - /url: /contact_us
+            - generic [ref=e39]: 
+            - text: Contact us
+        - listitem [ref=e40]:
+          - generic [ref=e41]:
+            - generic [ref=e42]: 
+            - text: Logged in as hjdAvNwv
+  - generic [ref=e44]:
+    - list [ref=e46]:
+      - listitem [ref=e47]:
+        - link "Home" [ref=e48] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e49]: Shopping Cart
+    - generic [ref=e54] [cursor=pointer]: Proceed To Checkout
+    - table [ref=e56]:
+      - rowgroup [ref=e57]:
+        - row "Item Description Price Quantity Total" [ref=e58]:
+          - cell "Item" [ref=e59]
+          - cell "Description" [ref=e60]
+          - cell "Price" [ref=e61]
+          - cell "Quantity" [ref=e62]
+          - cell "Total" [ref=e63]
+          - cell [ref=e64]
+      - rowgroup [ref=e65]:
+        - row "Product Image Blue Top Women > Tops Rs. 500 1 Rs. 500 " [ref=e66]:
+          - cell "Product Image" [ref=e67]:
+            - link "Product Image" [ref=e68] [cursor=pointer]:
+              - /url: ""
+              - img "Product Image" [ref=e69]
+          - cell "Blue Top Women > Tops" [ref=e70]:
+            - heading "Blue Top" [level=4] [ref=e71]:
+              - link "Blue Top" [ref=e72] [cursor=pointer]:
+                - /url: /product_details/1
+            - paragraph [ref=e73]: Women > Tops
+          - cell "Rs. 500" [ref=e74]:
+            - paragraph [ref=e75]: Rs. 500
+          - cell "1" [ref=e76]:
+            - button "1" [ref=e77] [cursor=pointer]
+          - cell "Rs. 500" [ref=e78]:
+            - paragraph [ref=e79]: Rs. 500
+          - cell "" [ref=e80]:
+            - generic [ref=e82] [cursor=pointer]: 
+  - contentinfo [ref=e83]:
+    - generic [ref=e88]:
+      - heading "Subscription" [level=2] [ref=e89]
+      - generic [ref=e90]:
+        - textbox "Your email address" [ref=e91]
+        - button "" [ref=e92] [cursor=pointer]:
+          - generic [ref=e93]: 
+        - paragraph [ref=e94]:
+          - text: Get the most recent updates from
+          - text: our site and be updated your self...
+    - paragraph [ref=e98]: Copyright © 2021 All rights reserved
+  - text: 
+  - generic:
+    - insertion:
+      - generic:
+        - iframe
+  - insertion [ref=e99]:
+    - iframe [ref=e102]:
+      - iframe [ref=f1e1]:
+        - generic [ref=f2e1]:
+          - generic [ref=f2e2]:
+            - link "Advertisement" [ref=f2e4] [cursor=pointer]:
+              - /url: https://ad.doubleclick.net/pcs/click?xai=AKAOjstd-Nfi7eRngry65XNy7Jv7LwnSqsFuiFeupugbPA85_GtQ5IDc7NoRhVEjPswAMNzREkqj4PDxMqzWXmijy5ur6_QvUAPL_RqzcXfiYzO51G4x3Z9K9MBvoxCkTrkZXNMQDpiPAkkQoiiPsjtSsK4fd9PL0euAG4aOv7NoiW3wq1Hrk6hzwQmQKNysXV4v03IVrcPOPjAzNZ6goi4c7h3ZPtd7s-bIpitTJ9D59avwioQNGr9Db5fP634Gm56cmYN-E30fPHHfgWY2vXcNBllpOfj1yW5RLxM8Uv0EWa66pQhC5T_m4VL3AiiEuh-73y3zVkkdTRh8IgkKzYyuTJYZ3ZdcrYfMQlQoQGEkLgXMR5ZYl3fGa8vBRtUNkhafKNG8l56ExfqXZX2GsdMcMF1vDPUfn0mwLBAxW8EqUIWxhqcZ_Li9JDLCzY4UCfDsmtA7Ho37unvSgD2G3s0gp030grLn7rkP0Lv1eqUMqmiiUQLB4s0B_E89NEBJ-zn6pHvYwnIqJcxUJcIZ9aweG27ujRoXwH96binNRn0JFOtfnQBd3eSZc6sUC1eFpQZEopim4iLsUv349MlVtWvHEvlltLUwN2Pgm0LNWoJ1s4ghAtmMqZg_GxnyVYVWxJxYcgEoN9zKZLXn8UDIWQHHjxUSHHPfOf1yHyZRMilRkxz9ld58ZZB9rkJYiocnkwcgwqA4Jws1YIYT90IqnGa9OqRF2dzaqsV5XR9lC9rZLa0tua2-ME_ZYEnn5Bj1-Gc_AwnvaR7arRP4V3QIzl3cc2PT63ZK5i5-LMt6rRhCSN6mRZZ915AdOYiRl3S4LveOlAFiiHeW-uGndKhMXLhfKViOBWhHVD4Fkf5v-evKFAbGgoa_kvBezMlXDQeOKSTEpSWn_syrJHVPTLQxzlO7JZWKTObq_aShIs1m7S79OxyYC9w7lmhWqK2a02NQcM_h_ICUBL5K54odRrtl3XtNL4FUt9txhIpTPq99b5LDTz0JrF-P3m_ksGtwINq9K7GnGRtzX7lZh-K424jgi60lowr2C1azRtQzeFTjfFRCECtGJgIOji-G5Uqbo_xe9n878OI7q5xfln4OYXw7-9-ojh9xhZKwTYip3WklocBay6ySyOSjdgEb2hGYwsHcz3kh61GuSSSzg_yaBfD-8JjkVavsazPskI5nXHjGvI-5Ct2aLXEJnb9ZdRtj6xCk-5tuRBkbTI79ZFoL6BbQomMNqhLXLsvLz8S9tdA0clWXDI6tOl6D6Qjt94l31EYBLsdJQhV_pnE3FoaYlKceHjwP4tCJJxKqOLdOD1mb1k2nF7GQOnnrpmPqh6b794MaUmDO5I4KrKAr-jHb6xXz4RPyjzLDTfd7Ns11QHLPxbwMnzkmPRCwOuvDVNNqiGDOeFo3KCDwjM40h83Mc4QgAt5QkERxoZUhoUPAqAo6shTvbNr34-AJP8McStjthrUmeBRlXLcXeB7l1uI9q8H2rKvjxnu1Jlogmh2BltppqbfyeNb3APSVHOdh4Zx9heIsK9EgzNBqQDFK3uKpd4deZDg38wjX5DaQVmhE4JLWWtxcru62TqMgwUW9z8fDUjPcOU_bx57mf6UsGH2ToQzgPqwcNy0A3acJGCv-MXwb-BWbcK7Q5s5rmlNghZ-ZCZ_vgP_nb8BP-ArM6LaPkJCqT7GnovLShT5aDul62_X-RRf-PlJfXATcGJpaT03X7RwRjCEy1ZPSlDiZ2xbx9yDyQeZ9xdzyaNNlNGIj23bpuDqZDnFRYwhzCoHqfEyHIwZap39TBvaEn-GVo6RKM7IprfkrR6_I7cCG-FAf_EYiTgVz4bLwjH3GhG0n5JBFjqlltRJcd_-L3FDBoE8knACmgeYmIugJi9IbcoiVte2UEE7DRcnPb2qfsSAKuui4XGkfkXI6f66GH8e3DtNIpc9eShblM1bC1Hllmovl264&sai=AMfl-YSh5vtxHjIVXuVmOpjlWuNclacWHmdTYRwWd8Dkwx6f6XEhuQ1dd2prMZQEeOJQ9N0d_JaezrM9UnEaiwB5CYBj4KPkgNC_-ygs5_jmRgCwXVQxvaDulD78BtG2NCQvEslQPND3ic6uRnmD7vOtytEFFiLUVpZc-x4Zzc6VWHi02qkXFv2GGcr31f6y2STef6-WmIEYuadGENWvOde1IeeKnZeqzRWYf56ok1Dp1DOZnv6Y-sxMEpJSlQ1sTnVydFcF5bKkrP-GCvbnQRxiVsE2C0UbkEp01L1WPOCfWQsvcPMR&sig=Cg0ArKJSzFRcfzutAcmN&fbs_aeid=%5Bgw_fbsaeid%5D&crd=aHR0cHM6Ly9kb3VibGVjbGljay5uZXQ&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N2318029.279382DBMTP-PAYSAFE-BL/B34597367.433881022%3Bdc_trk_aid%3D627145785%3Bdc_trk_cid%3D245121631%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bgdpr%3D1%3Bgdpr_consent%3DCQc_PEAQc_PEAEsACBENCKFoAP_gAEPgABBoK1IB_C7EbCFCiDJ3IKMEMAhHABBAYsAwAAYBAwAADBIQIAQCgkEYBASAFCACCAAAKASBAAAgCAAAAUAAIAAFAABAAAwAIBAIIAAAgAAAAEAIAAAACIAAEQCAAAAEAEAAkAgAAAIASAAAAAAAAACBAAAAAAAAAAAAAAAABAAAAQAAQAAAAAAAiAAAAAAAABAIAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAABAAAAAAAQR2QD-F2I2EKFEGCuQUYIYBCuACAAxYBgAAwCBgAAGCQgQAgFJIIkCAEAIEAAEAAAQAgCAABQEBAAAIAAAAAqAACAABgAQCAQQIABAAAAgIAAAAAAEQAAIgEAAAAIAIABABAAAAQAkAAAAAAAAAECAAAAAAAAAAAAAAAAAAAAAEABgAAAAAABEAAAAAAAACAQIAAA%3Bltd%3D%3Bdc_tdv%3D1%3Fdclid%3D%25edclid!%26gad_source%3D7
+              - img "Advertisement" [ref=f2e5]
+            - generic [ref=f2e6]:
+              - generic:
+                - img [ref=f2e10] [cursor=pointer]
+                - button [ref=f2e13] [cursor=pointer]:
+                  - img [ref=f2e14]
+          - img "Advertisement" [ref=f2e21]
+  - generic [ref=e104]:
+    - button "Privacy and cookie settings" [ref=e105] [cursor=pointer]
+    - generic [ref=e106]: "Managed by Google. Complies with IAB TCF. CMP ID: 300"
+```
