@@ -5,7 +5,6 @@ import { automationexercise} from "../../pages/AutomationPage";
 import { CardPage } from "../../pages/CardPage";
 
 test("Download Invoice", async ({page, randomUser})=>{
-    test.setTimeout(90000);
     const registerPage = new RegisterAnAccountPage(page);
     const primary = new automationexercise(page);
     const card = new CardPage(page);
@@ -26,7 +25,7 @@ test("Download Invoice", async ({page, randomUser})=>{
     await test.step("Register new user during checkout", async ()=> {
         await page.getByRole('link', { name: 'Register / Login' }).click();
         await registerPage.register(Name, Email);
-        await expect(page.getByText('Account Created!', { exact: true })).toBeVisible({ timeout: 10000 });
+        await expect(page.locator('h2[data-qa="account-created"]')).toBeVisible();
         await page.getByRole('link', { name: 'Continue' }).click();
         await expect(page.getByText(`Logged in as ${Name}`)).toBeVisible();
     });
@@ -37,7 +36,7 @@ test("Download Invoice", async ({page, randomUser})=>{
     });
     await test.step("Fill in card details", async ()=> {
         await card.Card();
-        await expect(page.getByText('Congratulations! Your order')).toBeVisible();
+        await expect(page.locator('h2[data-qa="order-placed"]')).toBeVisible();
     });
     await test.step("Download invoice and delete account", async ()=> {
         await primary.downloadInvoice();

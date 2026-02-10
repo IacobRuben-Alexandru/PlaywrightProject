@@ -56,12 +56,12 @@ export class automationexercise{
         await this.continueShopping();
     }
     async navigateToProducts(){
-        await this.page.getByRole('link', { name: ' Products' }).click();
+        await this.page.locator('a[href="/products"]').click();
         await this.load();
         //await this.hideAds();
     }
     async navigateToCart(){
-        await this.page.getByRole('link', { name: ' Cart' }).click();
+        await this.page.locator('a[href="/view_cart"]').first().click();
         await this.load();
         //await this.hideAds();
     }
@@ -111,7 +111,7 @@ export class automationexercise{
         await this.page.getByRole('button', { name: 'Submit' }).click();
     }
     async deleteAccount(){
-        await this.page.getByRole('link', { name: ' Delete Account' }).click();
+        await this.page.locator('a[href="/delete_account"]').click();
         await expect(this.page.getByText('Account Deleted!')).toBeVisible();
         await this.page.getByRole('link', { name: 'Continue' }).click();
     }

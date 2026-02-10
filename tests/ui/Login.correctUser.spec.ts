@@ -18,9 +18,9 @@ test("Loggin with correct user", async ({page,randomUser})=>{
     const Name = randomUser.name;
     await test.step("Register a new user account and logout", async ()=> {
         await registerPage.register(Name, Email);
-        await expect(page.locator('b')).toContainText('Account Created!');
+        await expect(page.locator('h2[data-qa="account-created"]')).toBeVisible();
         await page.getByRole('link', { name: 'Continue' }).click();
-        await page.getByRole('link', { name: ' Logout' }).click();
+        await page.locator('a[href="/logout"]').click();
     });
     await test.step("Login with registered user credentials and delete account", async ()=> {
         await loginPage.launchAndConsent();

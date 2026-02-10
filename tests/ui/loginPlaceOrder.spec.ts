@@ -29,6 +29,6 @@ test("Login then place an order", async ({page})=>{
     });
     await test.step("Fill in card details and place order", async ()=> {
         await card.Card();
-        await expect(page.getByText('Congratulations! Your order')).toBeVisible();
+        await expect(page.locator('h2[data-qa="order-placed"]')).toBeVisible();
     });
 });

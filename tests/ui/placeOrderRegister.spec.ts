@@ -25,7 +25,7 @@ test("Place order then register", async ({page, randomUser})=>{
         await page.getByText('Proceed To Checkout').click();
         await page.getByRole('link', { name: 'Register / Login' }).click();
         await registerPage.register(Name, Email);
-        await expect(page.locator('b')).toContainText('Account Created!');
+        await expect(page.locator('h2[data-qa="account-created"]')).toBeVisible();
         await page.getByRole('link', { name: 'Continue' }).click();
         await expect(page.getByText(`Logged in as ${Name}`)).toBeVisible();
     });
@@ -37,7 +37,7 @@ test("Place order then register", async ({page, randomUser})=>{
     });
     await test.step("Fill in card details, place order, and delete account", async ()=> {
         await card.Card();
-        await expect(page.getByText('Congratulations! Your order')).toBeVisible();
+        await expect(page.locator('h2[data-qa="order-placed"]')).toBeVisible();
         await primary.deleteAccount();
     });
 });

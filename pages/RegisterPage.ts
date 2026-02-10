@@ -46,6 +46,7 @@ export class RegisterAnAccountPage {
             .getByPlaceholder("Email Address")
             .fill(email);
         await this.page.getByRole("button", { name: "Signup" }).click();
+        await this.consentPage.giveConsent();
         await expect(this.page.getByText('Enter Account Information')).toBeVisible();
         await this.page.getByRole("textbox", { name: "Password *" }).click();
         await this.page.getByRole("textbox", { name: "Password *" }).fill(USERS.password);

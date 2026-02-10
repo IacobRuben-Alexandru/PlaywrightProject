@@ -12,7 +12,7 @@ test("Navigate to All Products", async ({page})=>{
         await expect(page.getByRole('heading', { name: 'All Products' })).toBeVisible();
     });
     await test.step("Click on 'View Product' and verify product details", async ()=> {
-        await page.getByRole('link', { name: ' View Product' }).first().click();
+        await page.locator('a[href="/product_details/1"]').first().click();
         await expect(page.getByText('Availability:')).toBeVisible();
         await expect(page.getByText('Condition:')).toBeVisible();
         await expect(page.getByText('Brand:')).toBeVisible();

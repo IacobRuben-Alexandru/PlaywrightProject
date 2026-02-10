@@ -13,7 +13,7 @@ test("Create account", async ({page, randomUser})=>{
     const Name = randomUser.name;
     await test.step("Register a new user account", async ()=> {
         await registerPage.register(Name, Email);
-        await expect(page.locator('b')).toContainText('Account Created!');
+        await expect(page.locator('h2[data-qa="account-created"]')).toBeVisible();
         await page.getByRole('link', { name: 'Continue' }).click();
         await expect(page.getByText(`Logged in as ${Name}`)).toBeVisible();
         await automationPage.deleteAccount();
