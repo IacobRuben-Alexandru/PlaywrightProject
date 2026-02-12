@@ -2,7 +2,7 @@ import { expect } from "@playwright/test";
 import { automationexercise } from "../../pages/AutomationPage";
 import { test } from "../../fixtures/createuserFixture";
 
-test("Scroll up", async ({ page }) => {
+test("Scroll up and down using functionality", async ({ page }) => {
     const automationPage = new automationexercise(page);
 
     await test.step("Launch browser and navigate to home page", async () => {
