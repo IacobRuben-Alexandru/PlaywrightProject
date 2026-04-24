@@ -1,10 +1,11 @@
 import { test } from '../../fixtures/createuserFixture';
 import { expect } from '@playwright/test';
+import { faker } from '@faker-js/faker'
 
 test('Get user details with invalid email', async ({ request }) => {
   const response2 = await request.get('/api/getUserDetailByEmail', {
     params: {
-      email: 'invalidemail@example.com',
+      email: faker.internet.email(),
     },
   });
 

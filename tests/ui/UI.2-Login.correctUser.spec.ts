@@ -1,7 +1,6 @@
 import { test } from '../../fixtures/createuserFixture';
 import { expect } from '@playwright/test';
 import { RegisterAnAccountPage } from '../../pages/RegisterPage';
-import { ConsentPage } from '../../pages/ConsentPage';
 import { ReachLoginPage } from '../../pages/LoginPage';
 import { automationexercise } from '../../pages/AutomationPage';
 import { faker } from '@faker-js/faker'
