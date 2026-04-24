@@ -1,6 +1,6 @@
 import { test } from '../../fixtures/createuserFixture';
 import { expect } from '@playwright/test';
-import { USERS, URL } from '../../config/constants';
+import { USERS } from '../../config/constants';
 import { automationexercise } from '../../pages/AutomationPage';
 
 test('Supscription', async ({ page }) => {

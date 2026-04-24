@@ -1,7 +1,7 @@
 import { test } from '../../fixtures/createuserFixture';
 import { expect } from '@playwright/test';
 import { ConsentPage } from '../../pages/ConsentPage';
-import { USERS, URL } from '../../config/constants';
+import {  URL } from '../../config/constants';
 import { automationexercise } from '../../pages/AutomationPage';
 
 test('Contact Us form submission', async ({ page }) => {
@@ -18,11 +18,7 @@ test('Contact Us form submission', async ({ page }) => {
     await expect(
       page.getByRole('heading', { name: 'Get In Touch' }),
     ).toBeVisible();
-    await automationPage.fillContactForm(
-      USERS.name1,
-      USERS.email1,
-      'Hello, this is a test message.',
-    );
+    await automationPage.fillContactForm();
     await expect(
       page.locator('#contact-page').getByText('Success!'),
     ).toBeVisible();

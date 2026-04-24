@@ -1,11 +1,8 @@
 import { expect, Page } from '@playwright/test';
-import { URL, PATHS, USERS } from '../config/constants';
-import {
-  randomNumber,
-  randomString,
-  generateRandomPassword,
-} from '../utils/helpers';
+import { URL, PATHS } from '../config/constants';
+import { faker } from '@faker-js/faker'
 import { ConsentPage } from './ConsentPage';
+
 export class RegisterAnAccountPage {
   readonly page: Page;
   readonly consentPage: ConsentPage;
@@ -35,7 +32,7 @@ export class RegisterAnAccountPage {
     await this.page.getByRole('button', { name: 'Signup' }).click();
   }
 
-  async register(name: string, email: string) {
+  async register(name: string, email: string, password: string) {
     await this.page.getByRole('textbox', { name: 'Name' }).click();
     await this.page.getByRole('textbox', { name: 'Name' }).fill(name);
     await this.page
@@ -56,17 +53,17 @@ export class RegisterAnAccountPage {
     await this.page.getByRole('textbox', { name: 'Password *' }).click();
     await this.page
       .getByRole('textbox', { name: 'Password *' })
-      .fill(USERS.password);
+      .fill(password);
 
     await this.page.getByRole('textbox', { name: 'First name *' }).click();
     await this.page.getByRole('textbox', { name: 'First name *' }).fill(name);
     await this.page.getByRole('textbox', { name: 'Last name *' }).click();
     await this.page
       .getByRole('textbox', { name: 'Last name *' })
-      .fill(randomString(randomNumber()));
+      .fill(faker.person.lastName());
     await this.page
       .getByRole('textbox', { name: 'Address * (Street address, P.' })
-      .fill(randomString(randomNumber()));
+      .fill(faker.location.streetAddress());
     const options = await this.page
       .getByLabel('Country *')
       .locator('option')
@@ -78,17 +75,17 @@ export class RegisterAnAccountPage {
     await this.page.getByRole('textbox', { name: 'State *' }).click();
     await this.page
       .getByRole('textbox', { name: 'State *' })
-      .fill(randomString(randomNumber()));
+      .fill(faker.location.state());
     await this.page.getByRole('textbox', { name: 'City * Zipcode *' }).click();
     await this.page
       .getByRole('textbox', { name: 'City * Zipcode *' })
-      .fill(randomString(randomNumber()));
+      .fill(faker.location.city());
     await this.page.locator('#zipcode').click();
-    await this.page.locator('#zipcode').fill(randomString(randomNumber()));
+    await this.page.locator('#zipcode').fill(faker.location.zipCode());
     await this.page.getByRole('textbox', { name: 'Mobile Number *' }).click();
     await this.page
       .getByRole('textbox', { name: 'Mobile Number *' })
-      .fill(randomString(randomNumber()));
+      .fill(faker.phone.number());
     await this.page.getByRole('button', { name: 'Create Account' }).click();
   }
   async hideAds() {

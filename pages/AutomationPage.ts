@@ -1,7 +1,9 @@
 import { Page, expect } from '@playwright/test';
 import { URL, PATHS, FileInput } from '../config/constants';
-import { USERS } from '../config/constants';
 import { ConsentPage } from './ConsentPage';
+import { faker } from '@faker-js/faker'
+
+
 export class automationexercise {
   readonly page: Page;
   readonly consentPage: ConsentPage;
@@ -19,19 +21,19 @@ export class automationexercise {
   async load() {
     await this.page.waitForLoadState('load');
   }
-  async fillContactForm(name: string, email: string, message: string) {
+  async fillContactForm() {
     this.page.on('dialog', async (dialog) => {
       console.log(`Mesaj dialog: ${dialog.message()}`);
       await dialog.accept();
     });
     await this.page.getByRole('textbox', { name: 'Name' }).click();
-    await this.page.getByRole('textbox', { name: 'Name' }).fill(name);
+    await this.page.getByRole('textbox', { name: 'Name' }).fill(faker.person.fullName());
     await this.page
       .getByRole('textbox', { name: 'Email', exact: true })
       .click();
     await this.page
       .getByRole('textbox', { name: 'Email', exact: true })
-      .fill(email);
+      .fill(faker.internet.email());
     await this.page
       .getByRole('textbox', { name: 'Subject', exact: true })
       .click();
@@ -43,7 +45,7 @@ export class automationexercise {
       .click();
     await this.page
       .getByRole('textbox', { name: 'Your Message Here', exact: true })
-      .fill(message);
+      .fill('This is a test!');
     const fileInput = this.page.locator(FileInput.fileInput);
     await fileInput.waitFor({ state: 'attached' });
     await fileInput.setInputFiles(PATHS.file);
@@ -116,10 +118,10 @@ export class automationexercise {
     await this.page.locator('a[href="/product_details/2"]').click();
     await this.page
       .getByRole('textbox', { name: 'Your Name' })
-      .fill(USERS.name1);
+      .fill(faker.person.fullName());
     await this.page
       .getByRole('textbox', { name: 'Email Address', exact: true })
-      .fill(USERS.email1);
+      .fill(faker.internet.email());
     await this.page
       .getByRole('textbox', { name: 'Add Review Here!' })
       .fill('Great product, highly recommend!');

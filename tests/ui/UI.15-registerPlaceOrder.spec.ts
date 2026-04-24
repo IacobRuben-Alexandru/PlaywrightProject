@@ -3,10 +3,10 @@ import { expect } from '@playwright/test';
 import { RegisterAnAccountPage } from '../../pages/RegisterPage';
 import { automationexercise } from '../../pages/AutomationPage';
 import { CardPage } from '../../pages/CardPage';
+import { faker } from '@faker-js/faker'
 
 test('Register an account then place an order', async ({
   page,
-  randomUser,
 }) => {
   const registerPage = new RegisterAnAccountPage(page);
   const primary = new automationexercise(page);
@@ -15,11 +15,12 @@ test('Register an account then place an order', async ({
   await test.step('Launch browser and navigate to home page', async () => {
     await primary.launchAndConsent();
   });
-  const Email = randomUser.email;
-  const Name = randomUser.name;
+  const Email = faker.internet.email();
+  const Name = faker.person.fullName();
+  const Password = faker.internet.password().toString();
   await test.step('Navigate to register page and register an account', async () => {
     await registerPage.launchAndConsent();
-    await registerPage.register(Name, Email);
+    await registerPage.register(Name, Email, Password);
     await expect(page.locator('h2[data-qa="account-created"]')).toBeVisible();
     await page.getByRole('link', { name: 'Continue' }).click();
     await expect(page.getByText(`Logged in as ${Name}`)).toBeVisible();

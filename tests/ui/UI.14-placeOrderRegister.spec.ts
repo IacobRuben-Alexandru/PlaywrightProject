@@ -3,8 +3,8 @@ import { expect } from '@playwright/test';
 import { RegisterAnAccountPage } from '../../pages/RegisterPage';
 import { automationexercise } from '../../pages/AutomationPage';
 import { CardPage } from '../../pages/CardPage';
-
-test('Place order then register', async ({ page, randomUser }) => {
+import { faker } from '@faker-js/faker'
+test('Place order then register', async ({ page}) => {
   test.setTimeout(90000);
   const registerPage = new RegisterAnAccountPage(page);
   const primary = new automationexercise(page);
@@ -17,14 +17,15 @@ test('Place order then register', async ({ page, randomUser }) => {
     await primary.navigateToProducts();
     await primary.addProductToCartByIndex(0);
   });
-  const Email = randomUser.email;
-  const Name = randomUser.name;
+  const Email = faker.internet.email();
+  const Name = faker.person.fullName();
+  const Password = faker.internet.password().toString();
   await test.step('Navigate to cart and register while in cart', async () => {
     await primary.navigateToCart();
     await expect(page.getByText('Shopping Cart')).toBeVisible();
     await page.getByText('Proceed To Checkout').click();
     await page.getByRole('link', { name: 'Register / Login' }).click();
-    await registerPage.register(Name, Email);
+    await registerPage.register(Name, Email,Password);
     await expect(page.locator('h2[data-qa="account-created"]')).toBeVisible();
     await page.getByRole('link', { name: 'Continue' }).click();
     await expect(page.getByText(`Logged in as ${Name}`)).toBeVisible();
