@@ -1,1 +1,353 @@
-{"uuid":"27cb2c47-4336-4a5c-8914-9e353555b101","name":"Loggin with correct user","historyId":"e49311894968ad800e2ceab12e58411e:b444eb0fbe6390c71e68b51dd25701fc","status":"failed","statusDetails":{"message":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Enter Account Information')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Enter Account Information')\n","trace":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Enter Account Information')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Enter Account Information')\n\n    at RegisterAnAccountPage.register (D:\\Development\\PlaywrightProject\\pages\\RegisterPage.ts:47:72)\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:19:9\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:18:5"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Launch browser","start":1766412625066,"uuid":"1d3283fb-d819-45bb-b475-6cab27493f75","stop":1766412625830}],"attachments":[],"parameters":[],"name":"Fixture \"browser\"","start":1766412625060,"uuid":"3a8c36d4-dcb6-40b0-83a1-f24b523e65a1","stop":1766412625830},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create context","start":1766412625835,"uuid":"cf0fda60-b802-4d74-8866-8fe452087065","stop":1766412625942}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1766412625832,"uuid":"9a6ea557-1b02-4a98-90cf-fbad220652df","stop":1766412625943},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create page","start":1766412625946,"uuid":"aceb6c8a-62b0-4034-9967-b06be15fe0b1","stop":1766412626972}],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1766412625944,"uuid":"f34823b5-dc26-44bb-aa96-fd88a52db44e","stop":1766412626972}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1766412625040,"uuid":"11899c87-155b-4c26-9fd4-7fde6771a2f6","stop":1766412626972},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766412626980,"name":"Navigate to \"/login\"","uuid":"e7fd903b-245f-48bb-9f97-3c1b5f3707f3","stop":1766412629188},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766412629192,"name":"Wait for load state \"load\"","uuid":"271a4ebb-1f50-46c3-8d76-1d687a647c2f","stop":1766412629193},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766412629427,"name":"Click getByRole('button', { name: 'Consent', exact: true })","uuid":"b419465c-c7a0-411f-af7b-1808772af334","stop":1766412629567},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766412629570,"name":"Expect \"toHaveURL\"","uuid":"f354478a-31d8-4752-a0ed-8bdba639e6d3","stop":1766412629588}],"attachments":[],"parameters":[],"start":1766412626974,"name":"Launch browser and navigate to register page","uuid":"e98a3951-7c29-436a-b41a-945778a26cd7","stop":1766412629589},{"status":"failed","statusDetails":{"message":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Enter Account Information')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Enter Account Information')\n","trace":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Enter Account Information')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Enter Account Information')\n\n    at RegisterAnAccountPage.register (D:\\Development\\PlaywrightProject\\pages\\RegisterPage.ts:47:72)\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:19:9\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:18:5"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766412629591,"name":"Click getByRole('textbox', { name: 'Name' })","uuid":"2e3b8d06-8a41-45ad-92d4-546d07ba3333","stop":1766412629663},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766412629664,"name":"Fill \"Test User\" getByRole('textbox', { name: 'Name' })","uuid":"87908cc6-bd5c-4857-902c-2d4dcea1051b","stop":1766412629682},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766412629685,"name":"Click locator('form').filter({ hasText: 'Signup' }).getByPlaceholder('Email Address')","uuid":"97dcec0b-c993-42ed-b289-180901c0d3e9","stop":1766412629744},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766412629746,"name":"Fill \"Test321@Test123.com\" locator('form').filter({ hasText: 'Signup' }).getByPlaceholder('Email Address')","uuid":"36588724-5852-4df5-a9fb-e13efaae4c93","stop":1766412629763},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766412629765,"name":"Click getByRole('button', { name: 'Signup' })","uuid":"b0906c33-bb9e-441c-a6cb-211efde16636","stop":1766412630123},{"status":"failed","statusDetails":{"message":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Enter Account Information')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Enter Account Information')\n","trace":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Enter Account Information')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Enter Account Information')\n\n    at RegisterAnAccountPage.register (D:\\Development\\PlaywrightProject\\pages\\RegisterPage.ts:47:72)\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:19:9\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:18:5"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766412630124,"name":"Expect \"toBeVisible\"","uuid":"9745b7f3-1402-4485-9c3a-96848a746c88","stop":1766412635128}],"attachments":[],"parameters":[],"start":1766412629589,"name":"Register a new user account and logout","uuid":"f6cc12bf-8285-4003-a535-3f64b085d6e5","stop":1766412635128},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"6fd7b318-5c65-4a41-9c70-080f4ddaf459-attachment.png","type":"image/png"}],"parameters":[],"start":1766412636118,"name":"screenshot","stop":1766412636118},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"error-context","source":"5d4d284d-3b50-4d07-89a1-01bb57e6d396-attachment.md","type":"text/markdown"}],"parameters":[],"start":1766412636119,"name":"error-context","stop":1766412636119},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1766412635258,"uuid":"cc8f59b6-86b9-47a5-825b-da0f993722a0","stop":1766412635258},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Close context","start":1766412635430,"uuid":"a590a0bd-029d-4739-a600-f382b5851968","stop":1766412635443}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1766412635259,"uuid":"480026be-9b0a-4c3d-97bb-04bc64747309","stop":1766412635443}],"attachments":[],"parameters":[],"name":"After Hooks","start":1766412635129,"uuid":"fed87fd0-77c8-485c-b5da-08a85953a788","stop":1766412635454}],"attachments":[],"parameters":[{"name":"Project","value":"firefox"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"Login.correctUser.spec.ts"},{"name":"titlePath","value":" > firefox > Login.correctUser.spec.ts"},{"name":"host","value":"Iacob_Ruben"},{"name":"thread","value":"pid-20024-worker-1"},{"name":"parentSuite","value":"firefox"},{"name":"suite","value":"Login.correctUser.spec.ts"}],"links":[],"start":1766412625041,"testCaseId":"e49311894968ad800e2ceab12e58411e","fullName":"Login.correctUser.spec.ts:8:5","titlePath":["Login.correctUser.spec.ts"],"stop":1766412634654}
+{
+  "uuid": "27cb2c47-4336-4a5c-8914-9e353555b101",
+  "name": "Loggin with correct user",
+  "historyId": "e49311894968ad800e2ceab12e58411e:b444eb0fbe6390c71e68b51dd25701fc",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Enter Account Information')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Enter Account Information')\n",
+    "trace": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Enter Account Information')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Enter Account Information')\n\n    at RegisterAnAccountPage.register (D:\\Development\\PlaywrightProject\\pages\\RegisterPage.ts:47:72)\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:19:9\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:18:5"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Launch browser",
+              "start": 1766412625066,
+              "uuid": "1d3283fb-d819-45bb-b475-6cab27493f75",
+              "stop": 1766412625830
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"browser\"",
+          "start": 1766412625060,
+          "uuid": "3a8c36d4-dcb6-40b0-83a1-f24b523e65a1",
+          "stop": 1766412625830
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create context",
+              "start": 1766412625835,
+              "uuid": "cf0fda60-b802-4d74-8866-8fe452087065",
+              "stop": 1766412625942
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1766412625832,
+          "uuid": "9a6ea557-1b02-4a98-90cf-fbad220652df",
+          "stop": 1766412625943
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create page",
+              "start": 1766412625946,
+              "uuid": "aceb6c8a-62b0-4034-9967-b06be15fe0b1",
+              "stop": 1766412626972
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1766412625944,
+          "uuid": "f34823b5-dc26-44bb-aa96-fd88a52db44e",
+          "stop": 1766412626972
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1766412625040,
+      "uuid": "11899c87-155b-4c26-9fd4-7fde6771a2f6",
+      "stop": 1766412626972
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766412626980,
+          "name": "Navigate to \"/login\"",
+          "uuid": "e7fd903b-245f-48bb-9f97-3c1b5f3707f3",
+          "stop": 1766412629188
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766412629192,
+          "name": "Wait for load state \"load\"",
+          "uuid": "271a4ebb-1f50-46c3-8d76-1d687a647c2f",
+          "stop": 1766412629193
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766412629427,
+          "name": "Click getByRole('button', { name: 'Consent', exact: true })",
+          "uuid": "b419465c-c7a0-411f-af7b-1808772af334",
+          "stop": 1766412629567
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766412629570,
+          "name": "Expect \"toHaveURL\"",
+          "uuid": "f354478a-31d8-4752-a0ed-8bdba639e6d3",
+          "stop": 1766412629588
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766412626974,
+      "name": "Launch browser and navigate to register page",
+      "uuid": "e98a3951-7c29-436a-b41a-945778a26cd7",
+      "stop": 1766412629589
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Enter Account Information')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Enter Account Information')\n",
+        "trace": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Enter Account Information')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Enter Account Information')\n\n    at RegisterAnAccountPage.register (D:\\Development\\PlaywrightProject\\pages\\RegisterPage.ts:47:72)\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:19:9\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:18:5"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766412629591,
+          "name": "Click getByRole('textbox', { name: 'Name' })",
+          "uuid": "2e3b8d06-8a41-45ad-92d4-546d07ba3333",
+          "stop": 1766412629663
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766412629664,
+          "name": "Fill \"Test User\" getByRole('textbox', { name: 'Name' })",
+          "uuid": "87908cc6-bd5c-4857-902c-2d4dcea1051b",
+          "stop": 1766412629682
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766412629685,
+          "name": "Click locator('form').filter({ hasText: 'Signup' }).getByPlaceholder('Email Address')",
+          "uuid": "97dcec0b-c993-42ed-b289-180901c0d3e9",
+          "stop": 1766412629744
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766412629746,
+          "name": "Fill \"Test321@Test123.com\" locator('form').filter({ hasText: 'Signup' }).getByPlaceholder('Email Address')",
+          "uuid": "36588724-5852-4df5-a9fb-e13efaae4c93",
+          "stop": 1766412629763
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766412629765,
+          "name": "Click getByRole('button', { name: 'Signup' })",
+          "uuid": "b0906c33-bb9e-441c-a6cb-211efde16636",
+          "stop": 1766412630123
+        },
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Enter Account Information')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Enter Account Information')\n",
+            "trace": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Enter Account Information')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Enter Account Information')\n\n    at RegisterAnAccountPage.register (D:\\Development\\PlaywrightProject\\pages\\RegisterPage.ts:47:72)\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:19:9\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:18:5"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766412630124,
+          "name": "Expect \"toBeVisible\"",
+          "uuid": "9745b7f3-1402-4485-9c3a-96848a746c88",
+          "stop": 1766412635128
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766412629589,
+      "name": "Register a new user account and logout",
+      "uuid": "f6cc12bf-8285-4003-a535-3f64b085d6e5",
+      "stop": 1766412635128
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "6fd7b318-5c65-4a41-9c70-080f4ddaf459-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1766412636118,
+      "name": "screenshot",
+      "stop": 1766412636118
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "error-context",
+          "source": "5d4d284d-3b50-4d07-89a1-01bb57e6d396-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1766412636119,
+      "name": "error-context",
+      "stop": 1766412636119
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1766412635258,
+          "uuid": "cc8f59b6-86b9-47a5-825b-da0f993722a0",
+          "stop": 1766412635258
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Close context",
+              "start": 1766412635430,
+              "uuid": "a590a0bd-029d-4739-a600-f382b5851968",
+              "stop": 1766412635443
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1766412635259,
+          "uuid": "480026be-9b0a-4c3d-97bb-04bc64747309",
+          "stop": 1766412635443
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1766412635129,
+      "uuid": "fed87fd0-77c8-485c-b5da-08a85953a788",
+      "stop": 1766412635454
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "firefox" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "Login.correctUser.spec.ts" },
+    { "name": "titlePath", "value": " > firefox > Login.correctUser.spec.ts" },
+    { "name": "host", "value": "Iacob_Ruben" },
+    { "name": "thread", "value": "pid-20024-worker-1" },
+    { "name": "parentSuite", "value": "firefox" },
+    { "name": "suite", "value": "Login.correctUser.spec.ts" }
+  ],
+  "links": [],
+  "start": 1766412625041,
+  "testCaseId": "e49311894968ad800e2ceab12e58411e",
+  "fullName": "Login.correctUser.spec.ts:8:5",
+  "titlePath": ["Login.correctUser.spec.ts"],
+  "stop": 1766412634654
+}

@@ -1,19 +1,23 @@
-import {test} from "../../fixtures/createuserFixture";
-import {expect} from "@playwright/test";
-import {automationexercise} from "../../pages/AutomationPage";
+import { test } from '../../fixtures/createuserFixture';
+import { expect } from '@playwright/test';
+import { automationexercise } from '../../pages/AutomationPage';
 
-test("Search for products", async ({page})=>{
-    const automationPage = new automationexercise(page);
+test('Search for products', async ({ page }) => {
+  const automationPage = new automationexercise(page);
 
-    await test.step("Launch browser and navigate to home page", async ()=> {
-        await automationPage.launchAndConsent();
-    });
-    await test.step("Navigate to products and search for 'Blue Top'", async ()=> {
-        await automationPage.navigateToProducts();
-        await expect(page.getByRole('heading', { name: 'All Products' })).toBeVisible();
-        await page.getByRole('textbox', { name: 'Search Product' }).fill('Blue Top');
-        await page.locator('button#submit_search').click();
-        await expect(page.getByText('Searched Products')).toBeVisible();
-        await expect(page.getByText('Blue Top').nth(1)).toBeVisible();
-    });
+  await test.step('Launch browser and navigate to home page', async () => {
+    await automationPage.launchAndConsent();
+  });
+  await test.step("Navigate to products and search for 'Blue Top'", async () => {
+    await automationPage.navigateToProducts();
+    await expect(
+      page.getByRole('heading', { name: 'All Products' }),
+    ).toBeVisible();
+    await page
+      .getByRole('textbox', { name: 'Search Product' })
+      .fill('Blue Top');
+    await page.locator('button#submit_search').click();
+    await expect(page.getByText('Searched Products')).toBeVisible();
+    await expect(page.getByText('Blue Top').nth(1)).toBeVisible();
+  });
 });

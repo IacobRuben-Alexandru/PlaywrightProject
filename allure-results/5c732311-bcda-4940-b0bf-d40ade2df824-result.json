@@ -1,1 +1,455 @@
-{"uuid":"5c732311-bcda-4940-b0bf-d40ade2df824","name":"Search for products","historyId":"127c1d6fca5c7dd6f9e03923b61ced71:b444eb0fbe6390c71e68b51dd25701fc","status":"failed","statusDetails":{"message":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Men Tshirt' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Men Tshirt' })\n","trace":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Men Tshirt' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Men Tshirt' })\n\n    at D:\\Development\\PlaywrightProject\\tests\\searchProductsAndCart.spec.ts:22:70\n    at D:\\Development\\PlaywrightProject\\tests\\searchProductsAndCart.spec.ts:15:5"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Launch browser","start":1766676122713,"uuid":"f6792b01-edd2-46a2-839a-e8b02b3c81bc","stop":1766676124483}],"attachments":[],"parameters":[],"name":"Fixture \"browser\"","start":1766676122704,"uuid":"5692d53f-59d0-49af-9dfc-19cc3b2ec323","stop":1766676124483},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create context","start":1766676124492,"uuid":"c55b116f-39fb-463f-9734-b78a0106ce3f","stop":1766676125195}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1766676124487,"uuid":"5b2814cd-bb85-4831-ab94-23819fa1dda0","stop":1766676125196},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create page","start":1766676125200,"uuid":"ccf88e04-1d5d-4180-8586-2fdc4fa609f2","stop":1766676128613}],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1766676125197,"uuid":"dac5bf5d-f492-4572-9016-a915d5786cff","stop":1766676128613}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1766676122678,"uuid":"9005a02c-6399-4857-bf67-a8a6cd7b706a","stop":1766676128613},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676128673,"name":"Navigate to \"/\"","uuid":"fc4e210b-e8b2-43e3-b6f8-2d04be8c20c2","stop":1766676132728},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676132732,"name":"Wait for load state \"load\"","uuid":"abba8a20-141c-4e4f-8f70-5de9cc3e32f3","stop":1766676132733},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676133295,"name":"Click getByRole('button', { name: 'Consent', exact: true })","uuid":"840e0682-d3c0-4a99-924a-04ab4399bd41","stop":1766676133568},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676133574,"name":"Expect \"toHaveURL\"","uuid":"6982d102-c9f2-4753-bd70-e25e40dc0fc2","stop":1766676133589}],"attachments":[],"parameters":[],"start":1766676128615,"name":"Launch browser and navigate to home page","uuid":"2c24e185-6a5f-4bd6-93c8-fe7db679204b","stop":1766676133589},{"status":"failed","statusDetails":{"message":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Men Tshirt' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Men Tshirt' })\n","trace":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Men Tshirt' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Men Tshirt' })\n\n    at D:\\Development\\PlaywrightProject\\tests\\searchProductsAndCart.spec.ts:22:70\n    at D:\\Development\\PlaywrightProject\\tests\\searchProductsAndCart.spec.ts:15:5"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676133592,"name":"Click getByRole('link', { name: ' Products' })","uuid":"10eecd27-bcec-4b26-beac-d1370f93e5a4","stop":1766676134061},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676134062,"name":"Expect \"toBeVisible\"","uuid":"978be707-0689-4d29-9b06-cd80874111e1","stop":1766676134244},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676134250,"name":"Scroll into view locator('[class=\"product-image-wrapper\"]').first()","uuid":"b012638c-785b-4333-bdfe-4159f64f16b2","stop":1766676134323},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676134325,"name":"Hover locator('[class=\"product-image-wrapper\"]').first()","uuid":"eb14d3eb-0493-4d46-911d-f0403e0c3a0d","stop":1766676134488},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676134491,"name":"Click getByText('Add to cart').first()","uuid":"c0d1dada-9884-4509-abbc-5edd55676118","stop":1766676134701},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676134703,"name":"Wait for selector getByRole('button', { name: 'Continue Shopping' })","uuid":"9593aa09-0e40-4e99-8b9e-81c1e522df34","stop":1766676135133},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676135135,"name":"Click getByRole('button', { name: 'Continue Shopping' })","uuid":"5332c8b7-2e67-400c-b997-115db6aaf4db","stop":1766676135178},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676135180,"name":"Scroll into view locator('.product-image-wrapper').nth(1)","uuid":"e8f41e2c-85ed-4757-a3c3-7880960c27e0","stop":1766676135223},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676135225,"name":"Hover locator('.product-image-wrapper').nth(1)","uuid":"817498ff-4ec1-497c-a08b-54a3a8df741c","stop":1766676135275},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676135277,"name":"Click locator('.product-image-wrapper').nth(1).locator('a.add-to-cart').last()","uuid":"08f057d9-9b58-41d4-94b1-13b195d94e57","stop":1766676135329},{"status":"failed","statusDetails":{"message":"TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Continue Shopping' }) to be visible\n","trace":"TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Continue Shopping' }) to be visible\n\n    at automationexercise.continueShopping (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:76:31)\n    at automationexercise.addSecondProductToCart (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:56:20)\n    at D:\\Development\\PlaywrightProject\\tests\\searchProductsAndCart.spec.ts:19:9\n    at D:\\Development\\PlaywrightProject\\tests\\searchProductsAndCart.spec.ts:15:5"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676135331,"name":"Wait for selector getByRole('button', { name: 'Continue Shopping' })","uuid":"cdb3c8b0-f2cc-4577-bf01-b4bf776afe39","stop":1766676140337},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676140339,"name":"Click getByRole('link', { name: ' Cart' })","uuid":"fd736ac5-5be7-4de5-b28c-e81868612ee9","stop":1766676144751},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676144753,"name":"Expect \"toBeVisible\"","uuid":"c234e8e9-865e-4f95-8b66-5c024e1ae8d4","stop":1766676144815},{"status":"failed","statusDetails":{"message":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Men Tshirt' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Men Tshirt' })\n","trace":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Men Tshirt' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Men Tshirt' })\n\n    at D:\\Development\\PlaywrightProject\\tests\\searchProductsAndCart.spec.ts:22:70\n    at D:\\Development\\PlaywrightProject\\tests\\searchProductsAndCart.spec.ts:15:5"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676144816,"name":"Expect \"toBeVisible\"","uuid":"631bf856-c059-4ff4-ada8-d529a4a204fb","stop":1766676149827}],"attachments":[],"parameters":[],"start":1766676133590,"name":"Add products to cart and verify in cart before and after login","uuid":"d9aa233d-1010-44ef-8e53-01722aa99fae","stop":1766676149827},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"f7247aff-914b-461f-914f-4d0b46e7b82b-attachment.png","type":"image/png"}],"parameters":[],"start":1766676150789,"name":"screenshot","stop":1766676150789},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"error-context","source":"f40729e2-9cab-46bf-b497-c289c1a14cd0-attachment.md","type":"text/markdown"}],"parameters":[],"start":1766676150790,"name":"error-context","stop":1766676150790},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1766676149958,"uuid":"05ec3369-fba0-45c4-9d09-26316b3ea5b1","stop":1766676149959},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Close context","start":1766676150018,"uuid":"af558fb8-5203-4533-99c4-8414735567e9","stop":1766676150037}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1766676149959,"uuid":"501a22a3-6a17-4f4f-a7f8-3c60e3c1bb8c","stop":1766676150037}],"attachments":[],"parameters":[],"name":"After Hooks","start":1766676149829,"uuid":"594a696a-6397-4870-868f-2f9fcd04fa7b","stop":1766676150052}],"attachments":[],"parameters":[{"name":"Project","value":"firefox"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"searchProductsAndCart.spec.ts"},{"name":"titlePath","value":" > firefox > searchProductsAndCart.spec.ts"},{"name":"host","value":"Iacob_Ruben"},{"name":"thread","value":"pid-1352-worker-2"},{"name":"parentSuite","value":"firefox"},{"name":"suite","value":"searchProductsAndCart.spec.ts"}],"links":[],"start":1766676122672,"testCaseId":"127c1d6fca5c7dd6f9e03923b61ced71","fullName":"searchProductsAndCart.spec.ts:7:5","titlePath":["searchProductsAndCart.spec.ts"],"stop":1766676148228}
+{
+  "uuid": "5c732311-bcda-4940-b0bf-d40ade2df824",
+  "name": "Search for products",
+  "historyId": "127c1d6fca5c7dd6f9e03923b61ced71:b444eb0fbe6390c71e68b51dd25701fc",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Men Tshirt' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Men Tshirt' })\n",
+    "trace": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Men Tshirt' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Men Tshirt' })\n\n    at D:\\Development\\PlaywrightProject\\tests\\searchProductsAndCart.spec.ts:22:70\n    at D:\\Development\\PlaywrightProject\\tests\\searchProductsAndCart.spec.ts:15:5"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Launch browser",
+              "start": 1766676122713,
+              "uuid": "f6792b01-edd2-46a2-839a-e8b02b3c81bc",
+              "stop": 1766676124483
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"browser\"",
+          "start": 1766676122704,
+          "uuid": "5692d53f-59d0-49af-9dfc-19cc3b2ec323",
+          "stop": 1766676124483
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create context",
+              "start": 1766676124492,
+              "uuid": "c55b116f-39fb-463f-9734-b78a0106ce3f",
+              "stop": 1766676125195
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1766676124487,
+          "uuid": "5b2814cd-bb85-4831-ab94-23819fa1dda0",
+          "stop": 1766676125196
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create page",
+              "start": 1766676125200,
+              "uuid": "ccf88e04-1d5d-4180-8586-2fdc4fa609f2",
+              "stop": 1766676128613
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1766676125197,
+          "uuid": "dac5bf5d-f492-4572-9016-a915d5786cff",
+          "stop": 1766676128613
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1766676122678,
+      "uuid": "9005a02c-6399-4857-bf67-a8a6cd7b706a",
+      "stop": 1766676128613
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676128673,
+          "name": "Navigate to \"/\"",
+          "uuid": "fc4e210b-e8b2-43e3-b6f8-2d04be8c20c2",
+          "stop": 1766676132728
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676132732,
+          "name": "Wait for load state \"load\"",
+          "uuid": "abba8a20-141c-4e4f-8f70-5de9cc3e32f3",
+          "stop": 1766676132733
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676133295,
+          "name": "Click getByRole('button', { name: 'Consent', exact: true })",
+          "uuid": "840e0682-d3c0-4a99-924a-04ab4399bd41",
+          "stop": 1766676133568
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676133574,
+          "name": "Expect \"toHaveURL\"",
+          "uuid": "6982d102-c9f2-4753-bd70-e25e40dc0fc2",
+          "stop": 1766676133589
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766676128615,
+      "name": "Launch browser and navigate to home page",
+      "uuid": "2c24e185-6a5f-4bd6-93c8-fe7db679204b",
+      "stop": 1766676133589
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Men Tshirt' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Men Tshirt' })\n",
+        "trace": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Men Tshirt' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Men Tshirt' })\n\n    at D:\\Development\\PlaywrightProject\\tests\\searchProductsAndCart.spec.ts:22:70\n    at D:\\Development\\PlaywrightProject\\tests\\searchProductsAndCart.spec.ts:15:5"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676133592,
+          "name": "Click getByRole('link', { name: ' Products' })",
+          "uuid": "10eecd27-bcec-4b26-beac-d1370f93e5a4",
+          "stop": 1766676134061
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676134062,
+          "name": "Expect \"toBeVisible\"",
+          "uuid": "978be707-0689-4d29-9b06-cd80874111e1",
+          "stop": 1766676134244
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676134250,
+          "name": "Scroll into view locator('[class=\"product-image-wrapper\"]').first()",
+          "uuid": "b012638c-785b-4333-bdfe-4159f64f16b2",
+          "stop": 1766676134323
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676134325,
+          "name": "Hover locator('[class=\"product-image-wrapper\"]').first()",
+          "uuid": "eb14d3eb-0493-4d46-911d-f0403e0c3a0d",
+          "stop": 1766676134488
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676134491,
+          "name": "Click getByText('Add to cart').first()",
+          "uuid": "c0d1dada-9884-4509-abbc-5edd55676118",
+          "stop": 1766676134701
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676134703,
+          "name": "Wait for selector getByRole('button', { name: 'Continue Shopping' })",
+          "uuid": "9593aa09-0e40-4e99-8b9e-81c1e522df34",
+          "stop": 1766676135133
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676135135,
+          "name": "Click getByRole('button', { name: 'Continue Shopping' })",
+          "uuid": "5332c8b7-2e67-400c-b997-115db6aaf4db",
+          "stop": 1766676135178
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676135180,
+          "name": "Scroll into view locator('.product-image-wrapper').nth(1)",
+          "uuid": "e8f41e2c-85ed-4757-a3c3-7880960c27e0",
+          "stop": 1766676135223
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676135225,
+          "name": "Hover locator('.product-image-wrapper').nth(1)",
+          "uuid": "817498ff-4ec1-497c-a08b-54a3a8df741c",
+          "stop": 1766676135275
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676135277,
+          "name": "Click locator('.product-image-wrapper').nth(1).locator('a.add-to-cart').last()",
+          "uuid": "08f057d9-9b58-41d4-94b1-13b195d94e57",
+          "stop": 1766676135329
+        },
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Continue Shopping' }) to be visible\n",
+            "trace": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Continue Shopping' }) to be visible\n\n    at automationexercise.continueShopping (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:76:31)\n    at automationexercise.addSecondProductToCart (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:56:20)\n    at D:\\Development\\PlaywrightProject\\tests\\searchProductsAndCart.spec.ts:19:9\n    at D:\\Development\\PlaywrightProject\\tests\\searchProductsAndCart.spec.ts:15:5"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676135331,
+          "name": "Wait for selector getByRole('button', { name: 'Continue Shopping' })",
+          "uuid": "cdb3c8b0-f2cc-4577-bf01-b4bf776afe39",
+          "stop": 1766676140337
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676140339,
+          "name": "Click getByRole('link', { name: ' Cart' })",
+          "uuid": "fd736ac5-5be7-4de5-b28c-e81868612ee9",
+          "stop": 1766676144751
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676144753,
+          "name": "Expect \"toBeVisible\"",
+          "uuid": "c234e8e9-865e-4f95-8b66-5c024e1ae8d4",
+          "stop": 1766676144815
+        },
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Men Tshirt' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Men Tshirt' })\n",
+            "trace": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Men Tshirt' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Men Tshirt' })\n\n    at D:\\Development\\PlaywrightProject\\tests\\searchProductsAndCart.spec.ts:22:70\n    at D:\\Development\\PlaywrightProject\\tests\\searchProductsAndCart.spec.ts:15:5"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676144816,
+          "name": "Expect \"toBeVisible\"",
+          "uuid": "631bf856-c059-4ff4-ada8-d529a4a204fb",
+          "stop": 1766676149827
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766676133590,
+      "name": "Add products to cart and verify in cart before and after login",
+      "uuid": "d9aa233d-1010-44ef-8e53-01722aa99fae",
+      "stop": 1766676149827
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "f7247aff-914b-461f-914f-4d0b46e7b82b-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1766676150789,
+      "name": "screenshot",
+      "stop": 1766676150789
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "error-context",
+          "source": "f40729e2-9cab-46bf-b497-c289c1a14cd0-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1766676150790,
+      "name": "error-context",
+      "stop": 1766676150790
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1766676149958,
+          "uuid": "05ec3369-fba0-45c4-9d09-26316b3ea5b1",
+          "stop": 1766676149959
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Close context",
+              "start": 1766676150018,
+              "uuid": "af558fb8-5203-4533-99c4-8414735567e9",
+              "stop": 1766676150037
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1766676149959,
+          "uuid": "501a22a3-6a17-4f4f-a7f8-3c60e3c1bb8c",
+          "stop": 1766676150037
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1766676149829,
+      "uuid": "594a696a-6397-4870-868f-2f9fcd04fa7b",
+      "stop": 1766676150052
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "firefox" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "searchProductsAndCart.spec.ts" },
+    {
+      "name": "titlePath",
+      "value": " > firefox > searchProductsAndCart.spec.ts"
+    },
+    { "name": "host", "value": "Iacob_Ruben" },
+    { "name": "thread", "value": "pid-1352-worker-2" },
+    { "name": "parentSuite", "value": "firefox" },
+    { "name": "suite", "value": "searchProductsAndCart.spec.ts" }
+  ],
+  "links": [],
+  "start": 1766676122672,
+  "testCaseId": "127c1d6fca5c7dd6f9e03923b61ced71",
+  "fullName": "searchProductsAndCart.spec.ts:7:5",
+  "titlePath": ["searchProductsAndCart.spec.ts"],
+  "stop": 1766676148228
+}

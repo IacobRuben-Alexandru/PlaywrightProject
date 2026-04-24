@@ -1,5 +1,5 @@
-import { test as base } from "@playwright/test";
-import { generateRandomEmail, generateRandomPassword } from "../utils/helpers";
+import { test as base } from '@playwright/test';
+import { generateRandomEmail, generateRandomPassword } from '../utils/helpers';
 
 export const test = base.extend<{
   randomUser: { name: string; email: string };
@@ -13,11 +13,12 @@ export const test = base.extend<{
   },
 
   page: async ({ page }, use) => {
-    await page.route('**/*.{google-analytics.com,googletagservices.com,googleadservices.com,ads.google.com,adservice.google.com,doubleclick.net}/**', 
-        route => route.abort()
+    await page.route(
+      '**/*.{google-analytics.com,googletagservices.com,googleadservices.com,ads.google.com,adservice.google.com,doubleclick.net}/**',
+      (route) => route.abort(),
     );
 
-    await page.route('**/*google_vignette*', route => route.abort());
+    await page.route('**/*google_vignette*', (route) => route.abort());
 
     await page.addInitScript(() => {
       const style = document.createElement('style');
@@ -38,12 +39,15 @@ export const test = base.extend<{
     });
 
     page.on('framenavigated', async (frame) => {
-        if (frame === page.mainFrame() && page.url().includes('#google_vignette')) {
-            const cleanUrl = page.url().split('#')[0];
-            await page.goto(cleanUrl).catch(() => {}); 
-        }
+      if (
+        frame === page.mainFrame() &&
+        page.url().includes('#google_vignette')
+      ) {
+        const cleanUrl = page.url().split('#')[0];
+        await page.goto(cleanUrl).catch(() => {});
+      }
     });
 
     await use(page);
-  }
+  },
 });

@@ -1,1 +1,304 @@
-{"uuid":"69d70446-bdae-4950-87d7-e1e7af968fad","name":"Login with innexistent user","historyId":"de43582e5792c6685cc9d3427d6f2dce:5bd835b0d6b1d4ada3b9f0db936e82c8","status":"broken","statusDetails":{"message":"Test timeout of 60000ms exceeded.","trace":"Test timeout of 60000ms exceeded."},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create context","start":1766674510108,"uuid":"32714a83-f3e4-4346-a845-98af714e8098","stop":1766674510121}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1766674510108,"uuid":"724dda92-376b-46cc-93ee-f114cd3780dd","stop":1766674510122},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create page","start":1766674510124,"uuid":"f013f81e-762b-4482-bf03-dd48d6c90671","stop":1766674510196}],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1766674510122,"uuid":"a182a76d-ecf5-4519-8638-a64e62d4c370","stop":1766674510196},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"randomUser\"","start":1766674510197,"uuid":"9819a11a-0e49-4477-a9f7-7cf9a4db755e","stop":1766674510197}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1766674510100,"uuid":"b41d4f31-d277-4457-b394-437cdbe19676","stop":1766674510197},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766674510200,"name":"Navigate to \"/login\"","uuid":"03522dd1-15d0-4b11-b40e-6fa982205611","stop":1766674511455},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766674511457,"name":"Wait for load state \"load\"","uuid":"5847427c-98aa-44dc-be1d-e77387a3ad57","stop":1766674511454},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766674511459,"name":"Expect \"toHaveURL\"","uuid":"abe561fa-ab8a-42f7-9fbb-b8bbea73f348","stop":1766674511482}],"attachments":[],"parameters":[],"start":1766674510198,"name":"Launch browser and navigate to login page","uuid":"c5e3f1b2-d94f-4040-87eb-3c6b57d0a593","stop":1766674511482},{"status":"failed","statusDetails":{"message":"Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Login' })\n    - locator resolved to <button type=\"submit\" data-qa=\"login-button\" class=\"btn btn-default\">Login</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    111 × waiting for element to be visible, enabled and stable\n        - element is visible, enabled and stable\n        - scrolling into view if needed\n        - done scrolling\n        - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n      - retrying click action\n        - waiting 500ms\n","trace":"Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Login' })\n    - locator resolved to <button type=\"submit\" data-qa=\"login-button\" class=\"btn btn-default\">Login</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    111 × waiting for element to be visible, enabled and stable\n        - element is visible, enabled and stable\n        - scrolling into view if needed\n        - done scrolling\n        - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n      - retrying click action\n        - waiting 500ms\n\n    at ReachLoginPage.login (D:\\Development\\PlaywrightProject\\pages\\LoginPage.ts:22:62)\n    at D:\\Development\\PlaywrightProject\\tests\\Login.wrongUser.spec.ts:11:9\n    at D:\\Development\\PlaywrightProject\\tests\\Login.wrongUser.spec.ts:10:5"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766674511484,"name":"Fill \"user20894@gmail.com\" getByRole('textbox', { name: 'Email Address' }).first()","uuid":"15e4d834-bb47-4b9b-afb5-0cda716c35f1","stop":1766674511516},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766674511517,"name":"Fill \"GKgpwSDXS\" getByRole('textbox', { name: 'Password' })","uuid":"06cce4c3-6c1a-4488-90d6-eba5fa55d6c2","stop":1766674511534},{"status":"failed","statusDetails":{"message":"Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Login' })\n    - locator resolved to <button type=\"submit\" data-qa=\"login-button\" class=\"btn btn-default\">Login</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    111 × waiting for element to be visible, enabled and stable\n        - element is visible, enabled and stable\n        - scrolling into view if needed\n        - done scrolling\n        - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n      - retrying click action\n        - waiting 500ms\n","trace":"Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Login' })\n    - locator resolved to <button type=\"submit\" data-qa=\"login-button\" class=\"btn btn-default\">Login</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    111 × waiting for element to be visible, enabled and stable\n        - element is visible, enabled and stable\n        - scrolling into view if needed\n        - done scrolling\n        - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n      - retrying click action\n        - waiting 500ms\n\n    at ReachLoginPage.login (D:\\Development\\PlaywrightProject\\pages\\LoginPage.ts:22:62)\n    at D:\\Development\\PlaywrightProject\\tests\\Login.wrongUser.spec.ts:11:9\n    at D:\\Development\\PlaywrightProject\\tests\\Login.wrongUser.spec.ts:10:5"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766674511536,"name":"Click getByRole('button', { name: 'Login' })","uuid":"36d08042-b4fc-4ebd-85df-410a20c165f2","stop":1766674570343}],"attachments":[],"parameters":[],"start":1766674511483,"name":"Attempt to login with innexistent user credentials","uuid":"b7c76347-0a0f-4bc6-b4e4-9686cabc5d5b","stop":1766674570343},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"63443886-f5bf-456e-9f2c-716dbd00bfec-attachment.png","type":"image/png"}],"parameters":[],"start":1766674570463,"name":"screenshot","stop":1766674570463},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"error-context","source":"3d23f8ac-cd79-4fe6-a6cf-9b9c47177601-attachment.md","type":"text/markdown"}],"parameters":[],"start":1766674570465,"name":"error-context","stop":1766674570465},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"randomUser\"","start":1766674570169,"uuid":"daf20f1c-b52b-4204-98d4-38092dcce805","stop":1766674570169},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1766674570169,"uuid":"e544fb0b-3465-4ffa-aa1a-c3405d1b6d83","stop":1766674570169},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Close context","start":1766674570314,"uuid":"ba0d4e65-a482-4a53-9798-08d1a1d9995a","stop":1766674570345}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1766674570170,"uuid":"a40aff4b-ac41-44b9-a07a-f3ab27caedc2","stop":1766674570345}],"attachments":[],"parameters":[],"name":"After Hooks","start":1766674570110,"uuid":"a6cf25ec-3595-4093-b7d0-9461472e05b0","stop":1766674570358}],"attachments":[],"parameters":[{"name":"Project","value":"chromium"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"Login.wrongUser.spec.ts"},{"name":"titlePath","value":" > chromium > Login.wrongUser.spec.ts"},{"name":"host","value":"Iacob_Ruben"},{"name":"thread","value":"pid-34416-worker-2"},{"name":"parentSuite","value":"chromium"},{"name":"suite","value":"Login.wrongUser.spec.ts"}],"links":[],"start":1766674510097,"testCaseId":"de43582e5792c6685cc9d3427d6f2dce","fullName":"Login.wrongUser.spec.ts:5:5","titlePath":["Login.wrongUser.spec.ts"],"stop":1766674570332}
+{
+  "uuid": "69d70446-bdae-4950-87d7-e1e7af968fad",
+  "name": "Login with innexistent user",
+  "historyId": "de43582e5792c6685cc9d3427d6f2dce:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "broken",
+  "statusDetails": {
+    "message": "Test timeout of 60000ms exceeded.",
+    "trace": "Test timeout of 60000ms exceeded."
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create context",
+              "start": 1766674510108,
+              "uuid": "32714a83-f3e4-4346-a845-98af714e8098",
+              "stop": 1766674510121
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1766674510108,
+          "uuid": "724dda92-376b-46cc-93ee-f114cd3780dd",
+          "stop": 1766674510122
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create page",
+              "start": 1766674510124,
+              "uuid": "f013f81e-762b-4482-bf03-dd48d6c90671",
+              "stop": 1766674510196
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1766674510122,
+          "uuid": "a182a76d-ecf5-4519-8638-a64e62d4c370",
+          "stop": 1766674510196
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"randomUser\"",
+          "start": 1766674510197,
+          "uuid": "9819a11a-0e49-4477-a9f7-7cf9a4db755e",
+          "stop": 1766674510197
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1766674510100,
+      "uuid": "b41d4f31-d277-4457-b394-437cdbe19676",
+      "stop": 1766674510197
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766674510200,
+          "name": "Navigate to \"/login\"",
+          "uuid": "03522dd1-15d0-4b11-b40e-6fa982205611",
+          "stop": 1766674511455
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766674511457,
+          "name": "Wait for load state \"load\"",
+          "uuid": "5847427c-98aa-44dc-be1d-e77387a3ad57",
+          "stop": 1766674511454
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766674511459,
+          "name": "Expect \"toHaveURL\"",
+          "uuid": "abe561fa-ab8a-42f7-9fbb-b8bbea73f348",
+          "stop": 1766674511482
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766674510198,
+      "name": "Launch browser and navigate to login page",
+      "uuid": "c5e3f1b2-d94f-4040-87eb-3c6b57d0a593",
+      "stop": 1766674511482
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Login' })\n    - locator resolved to <button type=\"submit\" data-qa=\"login-button\" class=\"btn btn-default\">Login</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    111 × waiting for element to be visible, enabled and stable\n        - element is visible, enabled and stable\n        - scrolling into view if needed\n        - done scrolling\n        - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n      - retrying click action\n        - waiting 500ms\n",
+        "trace": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Login' })\n    - locator resolved to <button type=\"submit\" data-qa=\"login-button\" class=\"btn btn-default\">Login</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    111 × waiting for element to be visible, enabled and stable\n        - element is visible, enabled and stable\n        - scrolling into view if needed\n        - done scrolling\n        - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n      - retrying click action\n        - waiting 500ms\n\n    at ReachLoginPage.login (D:\\Development\\PlaywrightProject\\pages\\LoginPage.ts:22:62)\n    at D:\\Development\\PlaywrightProject\\tests\\Login.wrongUser.spec.ts:11:9\n    at D:\\Development\\PlaywrightProject\\tests\\Login.wrongUser.spec.ts:10:5"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766674511484,
+          "name": "Fill \"user20894@gmail.com\" getByRole('textbox', { name: 'Email Address' }).first()",
+          "uuid": "15e4d834-bb47-4b9b-afb5-0cda716c35f1",
+          "stop": 1766674511516
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766674511517,
+          "name": "Fill \"GKgpwSDXS\" getByRole('textbox', { name: 'Password' })",
+          "uuid": "06cce4c3-6c1a-4488-90d6-eba5fa55d6c2",
+          "stop": 1766674511534
+        },
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Login' })\n    - locator resolved to <button type=\"submit\" data-qa=\"login-button\" class=\"btn btn-default\">Login</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    111 × waiting for element to be visible, enabled and stable\n        - element is visible, enabled and stable\n        - scrolling into view if needed\n        - done scrolling\n        - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n      - retrying click action\n        - waiting 500ms\n",
+            "trace": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Login' })\n    - locator resolved to <button type=\"submit\" data-qa=\"login-button\" class=\"btn btn-default\">Login</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    111 × waiting for element to be visible, enabled and stable\n        - element is visible, enabled and stable\n        - scrolling into view if needed\n        - done scrolling\n        - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n      - retrying click action\n        - waiting 500ms\n\n    at ReachLoginPage.login (D:\\Development\\PlaywrightProject\\pages\\LoginPage.ts:22:62)\n    at D:\\Development\\PlaywrightProject\\tests\\Login.wrongUser.spec.ts:11:9\n    at D:\\Development\\PlaywrightProject\\tests\\Login.wrongUser.spec.ts:10:5"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766674511536,
+          "name": "Click getByRole('button', { name: 'Login' })",
+          "uuid": "36d08042-b4fc-4ebd-85df-410a20c165f2",
+          "stop": 1766674570343
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766674511483,
+      "name": "Attempt to login with innexistent user credentials",
+      "uuid": "b7c76347-0a0f-4bc6-b4e4-9686cabc5d5b",
+      "stop": 1766674570343
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "63443886-f5bf-456e-9f2c-716dbd00bfec-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1766674570463,
+      "name": "screenshot",
+      "stop": 1766674570463
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "error-context",
+          "source": "3d23f8ac-cd79-4fe6-a6cf-9b9c47177601-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1766674570465,
+      "name": "error-context",
+      "stop": 1766674570465
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"randomUser\"",
+          "start": 1766674570169,
+          "uuid": "daf20f1c-b52b-4204-98d4-38092dcce805",
+          "stop": 1766674570169
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1766674570169,
+          "uuid": "e544fb0b-3465-4ffa-aa1a-c3405d1b6d83",
+          "stop": 1766674570169
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Close context",
+              "start": 1766674570314,
+              "uuid": "ba0d4e65-a482-4a53-9798-08d1a1d9995a",
+              "stop": 1766674570345
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1766674570170,
+          "uuid": "a40aff4b-ac41-44b9-a07a-f3ab27caedc2",
+          "stop": 1766674570345
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1766674570110,
+      "uuid": "a6cf25ec-3595-4093-b7d0-9461472e05b0",
+      "stop": 1766674570358
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "Login.wrongUser.spec.ts" },
+    { "name": "titlePath", "value": " > chromium > Login.wrongUser.spec.ts" },
+    { "name": "host", "value": "Iacob_Ruben" },
+    { "name": "thread", "value": "pid-34416-worker-2" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "Login.wrongUser.spec.ts" }
+  ],
+  "links": [],
+  "start": 1766674510097,
+  "testCaseId": "de43582e5792c6685cc9d3427d6f2dce",
+  "fullName": "Login.wrongUser.spec.ts:5:5",
+  "titlePath": ["Login.wrongUser.spec.ts"],
+  "stop": 1766674570332
+}

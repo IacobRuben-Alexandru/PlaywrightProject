@@ -1,1 +1,500 @@
-{"uuid":"3d8589b9-9d54-4145-a263-2a12a277e1c0","name":"Login then place an order","historyId":"448f912abe1f452da375643324c8b27d:5bd835b0d6b1d4ada3b9f0db936e82c8","status":"failed","statusDetails":{"message":"Error: locator.click: Error: strict mode violation: locator('a[href=\"/view_cart\"]') resolved to 2 elements:\n    1) <a href=\"/view_cart\">…</a> aka getByRole('link', { name: ' Cart' })\n    2) <a href=\"/view_cart\">…</a> aka locator('a').filter({ hasText: 'View Cart' })\n\nCall log:\n  - waiting for locator('a[href=\"/view_cart\"]')\n","trace":"Error: locator.click: Error: strict mode violation: locator('a[href=\"/view_cart\"]') resolved to 2 elements:\n    1) <a href=\"/view_cart\">…</a> aka getByRole('link', { name: ' Cart' })\n    2) <a href=\"/view_cart\">…</a> aka locator('a').filter({ hasText: 'View Cart' })\n\nCall log:\n  - waiting for locator('a[href=\"/view_cart\"]')\n\n    at automationexercise.navigateToCart (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:64:57)\n    at D:\\Development\\PlaywrightProject\\tests\\ui\\loginPlaceOrder.spec.ts:26:23\n    at D:\\Development\\PlaywrightProject\\tests\\ui\\loginPlaceOrder.spec.ts:25:16"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"connect","start":1770728835278,"uuid":"bf4f42c1-f960-4dc6-86eb-ad2f0d9605a5","stop":1770728835611}],"attachments":[],"parameters":[],"name":"Fixture \"browser\"","start":1770728835274,"uuid":"c6f48f46-5e4f-4c2e-82c6-8fbcc67f538a","stop":1770728835611},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1770728835624,"uuid":"b81096cd-1589-4eba-bfb2-1c851e8ef41e","stop":1770728835664},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create page","start":1770728835667,"uuid":"f0fe124f-dc4b-4481-9513-1efae812a340","stop":1770728835952}],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1770728835664,"uuid":"ce5947a2-081f-49b1-b183-3e53aa9d4ab9","stop":1770728835952},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1770728835953,"uuid":"83fbf9cb-d48c-4bf2-8012-7c553462a2ef","stop":1770728836019}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1770728835255,"uuid":"c8482150-df65-4b62-9819-1d1606a4cf82","stop":1770728836019},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770728836029,"name":"Navigate to \"/\"","uuid":"cf73d06c-915c-4e3a-9507-1fbe9621d480","stop":1770728840900},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770728840905,"name":"Wait for load state \"load\"","uuid":"036ed7cb-c355-4cfd-8817-277777360b90","stop":1770728840910},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770728840987,"name":"Click getByRole('button', { name: 'Consent', exact: true })","uuid":"f5acd1fa-6bf2-4ed0-a265-e6a721af8752","stop":1770728841092},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770728841096,"name":"Expect \"toHaveURL\"","uuid":"e8d0e1e9-58b9-42ab-b073-412cbcae47b1","stop":1770728841107}],"attachments":[],"parameters":[],"start":1770728836021,"name":"Launch browser and navigate to home page","uuid":"b859aeaa-3ee8-459c-b891-42a2fe8de251","stop":1770728841107},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770728841109,"name":"Navigate to \"/login\"","uuid":"b8663a0c-86c9-4f5c-b22b-72379c1e4f07","stop":1770728842029},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770728842031,"name":"Wait for load state \"load\"","uuid":"5afe9058-98d6-4c23-8e41-0ff929810485","stop":1770728842034},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770728842053,"name":"Expect \"toHaveURL\"","uuid":"9fd2497e-3fed-4bdc-bc8b-1cc18cd7724b","stop":1770728842058},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770728842060,"name":"Fill \"RealUser@Real123.com\" getByRole('textbox', { name: 'Email Address' }).first()","uuid":"af3ac4d8-9abd-40e3-814c-476e0d0d7c28","stop":1770728842074},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770728842076,"name":"Fill \"Test@1234\" getByRole('textbox', { name: 'Password' })","uuid":"f7b3c4c3-19d9-4529-8330-9d3c011a1d27","stop":1770728842096},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770728842098,"name":"Click getByRole('button', { name: 'Login' })","uuid":"3908b8bf-7278-4a6a-96ef-0258f8ce2224","stop":1770728842829},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770728842830,"name":"Expect \"toBeVisible\"","uuid":"6e22998e-0fa1-48e1-9406-c73ed898df99","stop":1770728842891}],"attachments":[],"parameters":[],"start":1770728841107,"name":"Navigate to login page and login","uuid":"0d6ebc83-ee33-4c71-b4a8-30d1fe10ad93","stop":1770728842891},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770728842896,"name":"Click locator('a[href=\"/products\"]')","uuid":"007f5de7-da41-4c38-b386-8dc6d6ada134","stop":1770728843975},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770728843977,"name":"Wait for load state \"load\"","uuid":"05c98f56-766c-4d4d-bb08-aa4a7da9259c","stop":1770728844911},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770728844929,"name":"Scroll into view locator('.product-image-wrapper').first()","uuid":"81172289-0286-4a71-abef-e1b94a265203","stop":1770728844972},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770728844973,"name":"Hover locator('.product-image-wrapper').first()","uuid":"dc13921d-ea14-4206-9fa6-133ddadc684a","stop":1770728845022},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770728845024,"name":"Expect \"toBeVisible\"","uuid":"096f8bf4-dc75-40c9-b294-f0593b29b4fd","stop":1770728845029},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770728845031,"name":"Click locator('.product-image-wrapper').first().locator('.product-overlay a.add-to-cart')","uuid":"7bf6c7f7-79e9-496d-a81a-632d547131bb","stop":1770728845946},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770728845947,"name":"Wait for selector getByRole('button', { name: 'Continue Shopping' })","uuid":"964c3f88-cf3a-47ff-beff-4c312fd7742a","stop":1770728846787},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770728846788,"name":"Click getByRole('button', { name: 'Continue Shopping' })","uuid":"78cc0613-76df-42f2-a1d6-9a9a24282d43","stop":1770728846801}],"attachments":[],"parameters":[],"start":1770728842891,"name":"Navigate to products and add a product to cart","uuid":"c57ba345-fe73-491a-b0d8-72b0f7c77587","stop":1770728846801},{"status":"failed","statusDetails":{"message":"Error: locator.click: Error: strict mode violation: locator('a[href=\"/view_cart\"]') resolved to 2 elements:\n    1) <a href=\"/view_cart\">…</a> aka getByRole('link', { name: ' Cart' })\n    2) <a href=\"/view_cart\">…</a> aka locator('a').filter({ hasText: 'View Cart' })\n\nCall log:\n  - waiting for locator('a[href=\"/view_cart\"]')\n","trace":"Error: locator.click: Error: strict mode violation: locator('a[href=\"/view_cart\"]') resolved to 2 elements:\n    1) <a href=\"/view_cart\">…</a> aka getByRole('link', { name: ' Cart' })\n    2) <a href=\"/view_cart\">…</a> aka locator('a').filter({ hasText: 'View Cart' })\n\nCall log:\n  - waiting for locator('a[href=\"/view_cart\"]')\n\n    at automationexercise.navigateToCart (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:64:57)\n    at D:\\Development\\PlaywrightProject\\tests\\ui\\loginPlaceOrder.spec.ts:26:23\n    at D:\\Development\\PlaywrightProject\\tests\\ui\\loginPlaceOrder.spec.ts:25:16"},"stage":"finished","steps":[{"status":"failed","statusDetails":{"message":"Error: locator.click: Error: strict mode violation: locator('a[href=\"/view_cart\"]') resolved to 2 elements:\n    1) <a href=\"/view_cart\">…</a> aka getByRole('link', { name: ' Cart' })\n    2) <a href=\"/view_cart\">…</a> aka locator('a').filter({ hasText: 'View Cart' })\n\nCall log:\n  - waiting for locator('a[href=\"/view_cart\"]')\n","trace":"Error: locator.click: Error: strict mode violation: locator('a[href=\"/view_cart\"]') resolved to 2 elements:\n    1) <a href=\"/view_cart\">…</a> aka getByRole('link', { name: ' Cart' })\n    2) <a href=\"/view_cart\">…</a> aka locator('a').filter({ hasText: 'View Cart' })\n\nCall log:\n  - waiting for locator('a[href=\"/view_cart\"]')\n\n    at automationexercise.navigateToCart (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:64:57)\n    at D:\\Development\\PlaywrightProject\\tests\\ui\\loginPlaceOrder.spec.ts:26:23\n    at D:\\Development\\PlaywrightProject\\tests\\ui\\loginPlaceOrder.spec.ts:25:16"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770728846803,"name":"Click locator('a[href=\"/view_cart\"]')","uuid":"4f708f91-6edc-4472-ae97-953e9b318e5e","stop":1770728846826}],"attachments":[],"parameters":[],"start":1770728846801,"name":"Navigate to cart and checkout","uuid":"1562c4d5-6b87-4d48-b4da-c60364173055","stop":1770728846827},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"2491d237-e869-44da-ba6a-d5470183947e-attachment.png","type":"image/png"}],"parameters":[],"start":1770728847060,"name":"screenshot","stop":1770728847060},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"error-context","source":"18093a78-6e99-4116-84a2-d31c3013c3e0-attachment.md","type":"text/markdown"}],"parameters":[],"start":1770728847062,"name":"error-context","stop":1770728847062},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1770728846947,"uuid":"5beb810b-cc79-4ec8-b67e-24f5d6441095","stop":1770728846947},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1770728846948,"uuid":"286c0edb-4771-44ee-9d9a-6772e0813415","stop":1770728846948},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1770728846948,"uuid":"c8711596-eeef-48b0-b951-078b76897268","stop":1770728847032}],"attachments":[],"parameters":[],"name":"After Hooks","start":1770728846828,"uuid":"0982fc88-370a-4b67-b6c9-ba1833e40ea0","stop":1770728847047}],"attachments":[],"parameters":[{"name":"Project","value":"chromium"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"ui.loginPlaceOrder.spec.ts"},{"name":"titlePath","value":" > chromium > ui\\loginPlaceOrder.spec.ts"},{"name":"host","value":"Iacob_Ruben"},{"name":"thread","value":"pid-31588-worker-0"},{"name":"parentSuite","value":"chromium"},{"name":"suite","value":"ui\\loginPlaceOrder.spec.ts"}],"links":[],"start":1770728835249,"testCaseId":"448f912abe1f452da375643324c8b27d","fullName":"ui/loginPlaceOrder.spec.ts:8:5","titlePath":["ui","loginPlaceOrder.spec.ts"],"stop":1770728846659}
+{
+  "uuid": "3d8589b9-9d54-4145-a263-2a12a277e1c0",
+  "name": "Login then place an order",
+  "historyId": "448f912abe1f452da375643324c8b27d:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: locator.click: Error: strict mode violation: locator('a[href=\"/view_cart\"]') resolved to 2 elements:\n    1) <a href=\"/view_cart\">…</a> aka getByRole('link', { name: ' Cart' })\n    2) <a href=\"/view_cart\">…</a> aka locator('a').filter({ hasText: 'View Cart' })\n\nCall log:\n  - waiting for locator('a[href=\"/view_cart\"]')\n",
+    "trace": "Error: locator.click: Error: strict mode violation: locator('a[href=\"/view_cart\"]') resolved to 2 elements:\n    1) <a href=\"/view_cart\">…</a> aka getByRole('link', { name: ' Cart' })\n    2) <a href=\"/view_cart\">…</a> aka locator('a').filter({ hasText: 'View Cart' })\n\nCall log:\n  - waiting for locator('a[href=\"/view_cart\"]')\n\n    at automationexercise.navigateToCart (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:64:57)\n    at D:\\Development\\PlaywrightProject\\tests\\ui\\loginPlaceOrder.spec.ts:26:23\n    at D:\\Development\\PlaywrightProject\\tests\\ui\\loginPlaceOrder.spec.ts:25:16"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "connect",
+              "start": 1770728835278,
+              "uuid": "bf4f42c1-f960-4dc6-86eb-ad2f0d9605a5",
+              "stop": 1770728835611
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"browser\"",
+          "start": 1770728835274,
+          "uuid": "c6f48f46-5e4f-4c2e-82c6-8fbcc67f538a",
+          "stop": 1770728835611
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1770728835624,
+          "uuid": "b81096cd-1589-4eba-bfb2-1c851e8ef41e",
+          "stop": 1770728835664
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create page",
+              "start": 1770728835667,
+              "uuid": "f0fe124f-dc4b-4481-9513-1efae812a340",
+              "stop": 1770728835952
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1770728835664,
+          "uuid": "ce5947a2-081f-49b1-b183-3e53aa9d4ab9",
+          "stop": 1770728835952
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1770728835953,
+          "uuid": "83fbf9cb-d48c-4bf2-8012-7c553462a2ef",
+          "stop": 1770728836019
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1770728835255,
+      "uuid": "c8482150-df65-4b62-9819-1d1606a4cf82",
+      "stop": 1770728836019
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770728836029,
+          "name": "Navigate to \"/\"",
+          "uuid": "cf73d06c-915c-4e3a-9507-1fbe9621d480",
+          "stop": 1770728840900
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770728840905,
+          "name": "Wait for load state \"load\"",
+          "uuid": "036ed7cb-c355-4cfd-8817-277777360b90",
+          "stop": 1770728840910
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770728840987,
+          "name": "Click getByRole('button', { name: 'Consent', exact: true })",
+          "uuid": "f5acd1fa-6bf2-4ed0-a265-e6a721af8752",
+          "stop": 1770728841092
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770728841096,
+          "name": "Expect \"toHaveURL\"",
+          "uuid": "e8d0e1e9-58b9-42ab-b073-412cbcae47b1",
+          "stop": 1770728841107
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1770728836021,
+      "name": "Launch browser and navigate to home page",
+      "uuid": "b859aeaa-3ee8-459c-b891-42a2fe8de251",
+      "stop": 1770728841107
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770728841109,
+          "name": "Navigate to \"/login\"",
+          "uuid": "b8663a0c-86c9-4f5c-b22b-72379c1e4f07",
+          "stop": 1770728842029
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770728842031,
+          "name": "Wait for load state \"load\"",
+          "uuid": "5afe9058-98d6-4c23-8e41-0ff929810485",
+          "stop": 1770728842034
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770728842053,
+          "name": "Expect \"toHaveURL\"",
+          "uuid": "9fd2497e-3fed-4bdc-bc8b-1cc18cd7724b",
+          "stop": 1770728842058
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770728842060,
+          "name": "Fill \"RealUser@Real123.com\" getByRole('textbox', { name: 'Email Address' }).first()",
+          "uuid": "af3ac4d8-9abd-40e3-814c-476e0d0d7c28",
+          "stop": 1770728842074
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770728842076,
+          "name": "Fill \"Test@1234\" getByRole('textbox', { name: 'Password' })",
+          "uuid": "f7b3c4c3-19d9-4529-8330-9d3c011a1d27",
+          "stop": 1770728842096
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770728842098,
+          "name": "Click getByRole('button', { name: 'Login' })",
+          "uuid": "3908b8bf-7278-4a6a-96ef-0258f8ce2224",
+          "stop": 1770728842829
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770728842830,
+          "name": "Expect \"toBeVisible\"",
+          "uuid": "6e22998e-0fa1-48e1-9406-c73ed898df99",
+          "stop": 1770728842891
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1770728841107,
+      "name": "Navigate to login page and login",
+      "uuid": "0d6ebc83-ee33-4c71-b4a8-30d1fe10ad93",
+      "stop": 1770728842891
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770728842896,
+          "name": "Click locator('a[href=\"/products\"]')",
+          "uuid": "007f5de7-da41-4c38-b386-8dc6d6ada134",
+          "stop": 1770728843975
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770728843977,
+          "name": "Wait for load state \"load\"",
+          "uuid": "05c98f56-766c-4d4d-bb08-aa4a7da9259c",
+          "stop": 1770728844911
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770728844929,
+          "name": "Scroll into view locator('.product-image-wrapper').first()",
+          "uuid": "81172289-0286-4a71-abef-e1b94a265203",
+          "stop": 1770728844972
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770728844973,
+          "name": "Hover locator('.product-image-wrapper').first()",
+          "uuid": "dc13921d-ea14-4206-9fa6-133ddadc684a",
+          "stop": 1770728845022
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770728845024,
+          "name": "Expect \"toBeVisible\"",
+          "uuid": "096f8bf4-dc75-40c9-b294-f0593b29b4fd",
+          "stop": 1770728845029
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770728845031,
+          "name": "Click locator('.product-image-wrapper').first().locator('.product-overlay a.add-to-cart')",
+          "uuid": "7bf6c7f7-79e9-496d-a81a-632d547131bb",
+          "stop": 1770728845946
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770728845947,
+          "name": "Wait for selector getByRole('button', { name: 'Continue Shopping' })",
+          "uuid": "964c3f88-cf3a-47ff-beff-4c312fd7742a",
+          "stop": 1770728846787
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770728846788,
+          "name": "Click getByRole('button', { name: 'Continue Shopping' })",
+          "uuid": "78cc0613-76df-42f2-a1d6-9a9a24282d43",
+          "stop": 1770728846801
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1770728842891,
+      "name": "Navigate to products and add a product to cart",
+      "uuid": "c57ba345-fe73-491a-b0d8-72b0f7c77587",
+      "stop": 1770728846801
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: locator.click: Error: strict mode violation: locator('a[href=\"/view_cart\"]') resolved to 2 elements:\n    1) <a href=\"/view_cart\">…</a> aka getByRole('link', { name: ' Cart' })\n    2) <a href=\"/view_cart\">…</a> aka locator('a').filter({ hasText: 'View Cart' })\n\nCall log:\n  - waiting for locator('a[href=\"/view_cart\"]')\n",
+        "trace": "Error: locator.click: Error: strict mode violation: locator('a[href=\"/view_cart\"]') resolved to 2 elements:\n    1) <a href=\"/view_cart\">…</a> aka getByRole('link', { name: ' Cart' })\n    2) <a href=\"/view_cart\">…</a> aka locator('a').filter({ hasText: 'View Cart' })\n\nCall log:\n  - waiting for locator('a[href=\"/view_cart\"]')\n\n    at automationexercise.navigateToCart (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:64:57)\n    at D:\\Development\\PlaywrightProject\\tests\\ui\\loginPlaceOrder.spec.ts:26:23\n    at D:\\Development\\PlaywrightProject\\tests\\ui\\loginPlaceOrder.spec.ts:25:16"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "Error: locator.click: Error: strict mode violation: locator('a[href=\"/view_cart\"]') resolved to 2 elements:\n    1) <a href=\"/view_cart\">…</a> aka getByRole('link', { name: ' Cart' })\n    2) <a href=\"/view_cart\">…</a> aka locator('a').filter({ hasText: 'View Cart' })\n\nCall log:\n  - waiting for locator('a[href=\"/view_cart\"]')\n",
+            "trace": "Error: locator.click: Error: strict mode violation: locator('a[href=\"/view_cart\"]') resolved to 2 elements:\n    1) <a href=\"/view_cart\">…</a> aka getByRole('link', { name: ' Cart' })\n    2) <a href=\"/view_cart\">…</a> aka locator('a').filter({ hasText: 'View Cart' })\n\nCall log:\n  - waiting for locator('a[href=\"/view_cart\"]')\n\n    at automationexercise.navigateToCart (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:64:57)\n    at D:\\Development\\PlaywrightProject\\tests\\ui\\loginPlaceOrder.spec.ts:26:23\n    at D:\\Development\\PlaywrightProject\\tests\\ui\\loginPlaceOrder.spec.ts:25:16"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770728846803,
+          "name": "Click locator('a[href=\"/view_cart\"]')",
+          "uuid": "4f708f91-6edc-4472-ae97-953e9b318e5e",
+          "stop": 1770728846826
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1770728846801,
+      "name": "Navigate to cart and checkout",
+      "uuid": "1562c4d5-6b87-4d48-b4da-c60364173055",
+      "stop": 1770728846827
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "2491d237-e869-44da-ba6a-d5470183947e-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1770728847060,
+      "name": "screenshot",
+      "stop": 1770728847060
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "error-context",
+          "source": "18093a78-6e99-4116-84a2-d31c3013c3e0-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1770728847062,
+      "name": "error-context",
+      "stop": 1770728847062
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1770728846947,
+          "uuid": "5beb810b-cc79-4ec8-b67e-24f5d6441095",
+          "stop": 1770728846947
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1770728846948,
+          "uuid": "286c0edb-4771-44ee-9d9a-6772e0813415",
+          "stop": 1770728846948
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1770728846948,
+          "uuid": "c8711596-eeef-48b0-b951-078b76897268",
+          "stop": 1770728847032
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1770728846828,
+      "uuid": "0982fc88-370a-4b67-b6c9-ba1833e40ea0",
+      "stop": 1770728847047
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "ui.loginPlaceOrder.spec.ts" },
+    {
+      "name": "titlePath",
+      "value": " > chromium > ui\\loginPlaceOrder.spec.ts"
+    },
+    { "name": "host", "value": "Iacob_Ruben" },
+    { "name": "thread", "value": "pid-31588-worker-0" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "ui\\loginPlaceOrder.spec.ts" }
+  ],
+  "links": [],
+  "start": 1770728835249,
+  "testCaseId": "448f912abe1f452da375643324c8b27d",
+  "fullName": "ui/loginPlaceOrder.spec.ts:8:5",
+  "titlePath": ["ui", "loginPlaceOrder.spec.ts"],
+  "stop": 1770728846659
+}

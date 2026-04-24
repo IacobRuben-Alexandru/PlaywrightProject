@@ -1,1 +1,328 @@
-{"uuid":"be5b92ad-8072-42c1-ba92-00fd05caf588","name":"Login then place an order","historyId":"94ffb3c85acce05dae89e13588330bd0:b444eb0fbe6390c71e68b51dd25701fc","status":"failed","statusDetails":{"message":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Logged in as Real User')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Logged in as Real User')\n","trace":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Logged in as Real User')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Logged in as Real User')\n\n    at D:\\Development\\PlaywrightProject\\tests\\loginPlaceOrder.spec.ts:26:69\n    at D:\\Development\\PlaywrightProject\\tests\\loginPlaceOrder.spec.ts:22:5"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create context","start":1766672615480,"uuid":"0efc502d-9db7-4490-bcab-dea89ab367f5","stop":1766672615493}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1766672615479,"uuid":"3824cc01-1f86-4cd3-b80f-47274b245a8f","stop":1766672615494},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create page","start":1766672615496,"uuid":"34866dfe-df66-4c0f-9af7-d2f5333f39c8","stop":1766672616010}],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1766672615494,"uuid":"9daa58f9-33ce-41c8-b63e-89052780c2aa","stop":1766672616010},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"randomUser\"","start":1766672616011,"uuid":"ab9aefc0-dca2-4610-aba5-6834c72aed44","stop":1766672616011}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1766672615465,"uuid":"c1754996-bb13-437f-840e-905f719a35a9","stop":1766672616011},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766672616015,"name":"Navigate to \"/\"","uuid":"c5bb6ad5-6e54-45ea-95a6-1f36e7b93df7","stop":1766672619867},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766672620306,"name":"Click getByRole('button', { name: 'Consent', exact: true })","uuid":"030b387b-f516-460d-bd69-6eb01938c896","stop":1766672620868},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766672620870,"name":"Expect \"toHaveURL\"","uuid":"aa6f02b6-dca9-45c0-a4fd-b8fa6523ba1d","stop":1766672620877}],"attachments":[],"parameters":[],"start":1766672616013,"name":"Launch browser and navigate to home page","uuid":"e9191511-4c43-4c22-bbbb-c9f7f6e85986","stop":1766672620877},{"status":"failed","statusDetails":{"message":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Logged in as Real User')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Logged in as Real User')\n","trace":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Logged in as Real User')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Logged in as Real User')\n\n    at D:\\Development\\PlaywrightProject\\tests\\loginPlaceOrder.spec.ts:26:69\n    at D:\\Development\\PlaywrightProject\\tests\\loginPlaceOrder.spec.ts:22:5"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766672620881,"name":"Navigate to \"/login\"","uuid":"339f605a-b4e1-4e65-8622-0b75a57bc256","stop":1766672623467},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766672623594,"name":"Fill \"RealUser@Real123.com\" getByRole('textbox', { name: 'Email Address' }).first()","uuid":"04b3c99d-44a5-4244-a483-4c7383f720f9","stop":1766672623631},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766672623632,"name":"Fill \"Test@1234\" getByRole('textbox', { name: 'Password' })","uuid":"6e41969c-facb-4cf7-bf1e-5a00e9e2cf1d","stop":1766672623672},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766672623674,"name":"Click getByRole('button', { name: 'Login' })","uuid":"7f48956c-642d-46b0-afd8-935b4ed32b7f","stop":1766672624076},{"status":"failed","statusDetails":{"message":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Logged in as Real User')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Logged in as Real User')\n","trace":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Logged in as Real User')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Logged in as Real User')\n\n    at D:\\Development\\PlaywrightProject\\tests\\loginPlaceOrder.spec.ts:26:69\n    at D:\\Development\\PlaywrightProject\\tests\\loginPlaceOrder.spec.ts:22:5"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766672624078,"name":"Expect \"toBeVisible\"","uuid":"16d380b7-4327-4649-bdfa-e4c2712801a6","stop":1766672629127}],"attachments":[],"parameters":[],"start":1766672620877,"name":"Navigate to login page and login","uuid":"e21697dc-11c1-44da-b94d-3977f78fa609","stop":1766672629132},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"36eed78a-689b-4ce5-93c5-3145ed3f35ba-attachment.png","type":"image/png"}],"parameters":[],"start":1766672640265,"name":"screenshot","stop":1766672640265},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"error-context","source":"88149d18-b5d4-4663-80f9-76156ed5ea27-attachment.md","type":"text/markdown"}],"parameters":[],"start":1766672640266,"name":"error-context","stop":1766672640266},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"randomUser\"","start":1766672629229,"uuid":"1d58d936-864e-4477-ba8f-782459c27784","stop":1766672629229},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1766672629229,"uuid":"fba513a4-08dd-4d09-b29e-c19298b66712","stop":1766672629230},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Close context","start":1766672629249,"uuid":"008a7bb9-a000-4a8d-8cfc-5e252d6a0757","stop":1766672629263}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1766672629230,"uuid":"1d7e9de9-9776-4426-824e-ac3a71757107","stop":1766672629263}],"attachments":[],"parameters":[],"name":"After Hooks","start":1766672629135,"uuid":"a0aa816c-00ac-402a-ad31-a71b33076e05","stop":1766672629294}],"attachments":[],"parameters":[{"name":"Project","value":"firefox"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"loginPlaceOrder.spec.ts"},{"name":"titlePath","value":" > firefox > loginPlaceOrder.spec.ts"},{"name":"host","value":"Iacob_Ruben"},{"name":"thread","value":"pid-32088-worker-5"},{"name":"parentSuite","value":"firefox"},{"name":"suite","value":"loginPlaceOrder.spec.ts"}],"links":[],"start":1766672615464,"testCaseId":"94ffb3c85acce05dae89e13588330bd0","fullName":"loginPlaceOrder.spec.ts:10:5","titlePath":["loginPlaceOrder.spec.ts"],"stop":1766672629246}
+{
+  "uuid": "be5b92ad-8072-42c1-ba92-00fd05caf588",
+  "name": "Login then place an order",
+  "historyId": "94ffb3c85acce05dae89e13588330bd0:b444eb0fbe6390c71e68b51dd25701fc",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Logged in as Real User')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Logged in as Real User')\n",
+    "trace": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Logged in as Real User')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Logged in as Real User')\n\n    at D:\\Development\\PlaywrightProject\\tests\\loginPlaceOrder.spec.ts:26:69\n    at D:\\Development\\PlaywrightProject\\tests\\loginPlaceOrder.spec.ts:22:5"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create context",
+              "start": 1766672615480,
+              "uuid": "0efc502d-9db7-4490-bcab-dea89ab367f5",
+              "stop": 1766672615493
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1766672615479,
+          "uuid": "3824cc01-1f86-4cd3-b80f-47274b245a8f",
+          "stop": 1766672615494
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create page",
+              "start": 1766672615496,
+              "uuid": "34866dfe-df66-4c0f-9af7-d2f5333f39c8",
+              "stop": 1766672616010
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1766672615494,
+          "uuid": "9daa58f9-33ce-41c8-b63e-89052780c2aa",
+          "stop": 1766672616010
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"randomUser\"",
+          "start": 1766672616011,
+          "uuid": "ab9aefc0-dca2-4610-aba5-6834c72aed44",
+          "stop": 1766672616011
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1766672615465,
+      "uuid": "c1754996-bb13-437f-840e-905f719a35a9",
+      "stop": 1766672616011
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766672616015,
+          "name": "Navigate to \"/\"",
+          "uuid": "c5bb6ad5-6e54-45ea-95a6-1f36e7b93df7",
+          "stop": 1766672619867
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766672620306,
+          "name": "Click getByRole('button', { name: 'Consent', exact: true })",
+          "uuid": "030b387b-f516-460d-bd69-6eb01938c896",
+          "stop": 1766672620868
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766672620870,
+          "name": "Expect \"toHaveURL\"",
+          "uuid": "aa6f02b6-dca9-45c0-a4fd-b8fa6523ba1d",
+          "stop": 1766672620877
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766672616013,
+      "name": "Launch browser and navigate to home page",
+      "uuid": "e9191511-4c43-4c22-bbbb-c9f7f6e85986",
+      "stop": 1766672620877
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Logged in as Real User')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Logged in as Real User')\n",
+        "trace": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Logged in as Real User')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Logged in as Real User')\n\n    at D:\\Development\\PlaywrightProject\\tests\\loginPlaceOrder.spec.ts:26:69\n    at D:\\Development\\PlaywrightProject\\tests\\loginPlaceOrder.spec.ts:22:5"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766672620881,
+          "name": "Navigate to \"/login\"",
+          "uuid": "339f605a-b4e1-4e65-8622-0b75a57bc256",
+          "stop": 1766672623467
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766672623594,
+          "name": "Fill \"RealUser@Real123.com\" getByRole('textbox', { name: 'Email Address' }).first()",
+          "uuid": "04b3c99d-44a5-4244-a483-4c7383f720f9",
+          "stop": 1766672623631
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766672623632,
+          "name": "Fill \"Test@1234\" getByRole('textbox', { name: 'Password' })",
+          "uuid": "6e41969c-facb-4cf7-bf1e-5a00e9e2cf1d",
+          "stop": 1766672623672
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766672623674,
+          "name": "Click getByRole('button', { name: 'Login' })",
+          "uuid": "7f48956c-642d-46b0-afd8-935b4ed32b7f",
+          "stop": 1766672624076
+        },
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Logged in as Real User')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Logged in as Real User')\n",
+            "trace": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Logged in as Real User')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Logged in as Real User')\n\n    at D:\\Development\\PlaywrightProject\\tests\\loginPlaceOrder.spec.ts:26:69\n    at D:\\Development\\PlaywrightProject\\tests\\loginPlaceOrder.spec.ts:22:5"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766672624078,
+          "name": "Expect \"toBeVisible\"",
+          "uuid": "16d380b7-4327-4649-bdfa-e4c2712801a6",
+          "stop": 1766672629127
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766672620877,
+      "name": "Navigate to login page and login",
+      "uuid": "e21697dc-11c1-44da-b94d-3977f78fa609",
+      "stop": 1766672629132
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "36eed78a-689b-4ce5-93c5-3145ed3f35ba-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1766672640265,
+      "name": "screenshot",
+      "stop": 1766672640265
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "error-context",
+          "source": "88149d18-b5d4-4663-80f9-76156ed5ea27-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1766672640266,
+      "name": "error-context",
+      "stop": 1766672640266
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"randomUser\"",
+          "start": 1766672629229,
+          "uuid": "1d58d936-864e-4477-ba8f-782459c27784",
+          "stop": 1766672629229
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1766672629229,
+          "uuid": "fba513a4-08dd-4d09-b29e-c19298b66712",
+          "stop": 1766672629230
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Close context",
+              "start": 1766672629249,
+              "uuid": "008a7bb9-a000-4a8d-8cfc-5e252d6a0757",
+              "stop": 1766672629263
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1766672629230,
+          "uuid": "1d7e9de9-9776-4426-824e-ac3a71757107",
+          "stop": 1766672629263
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1766672629135,
+      "uuid": "a0aa816c-00ac-402a-ad31-a71b33076e05",
+      "stop": 1766672629294
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "firefox" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "loginPlaceOrder.spec.ts" },
+    { "name": "titlePath", "value": " > firefox > loginPlaceOrder.spec.ts" },
+    { "name": "host", "value": "Iacob_Ruben" },
+    { "name": "thread", "value": "pid-32088-worker-5" },
+    { "name": "parentSuite", "value": "firefox" },
+    { "name": "suite", "value": "loginPlaceOrder.spec.ts" }
+  ],
+  "links": [],
+  "start": 1766672615464,
+  "testCaseId": "94ffb3c85acce05dae89e13588330bd0",
+  "fullName": "loginPlaceOrder.spec.ts:10:5",
+  "titlePath": ["loginPlaceOrder.spec.ts"],
+  "stop": 1766672629246
+}

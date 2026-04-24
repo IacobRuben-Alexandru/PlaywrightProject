@@ -1,1 +1,287 @@
-{"uuid":"d11aa5fe-146c-4732-8af4-c3675cb890d3","name":"Login with innexistent user","historyId":"de43582e5792c6685cc9d3427d6f2dce:b444eb0fbe6390c71e68b51dd25701fc","status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create context","start":1766672615117,"uuid":"7a72c297-da20-4a05-a848-8649af7a0f32","stop":1766672615155}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1766672615115,"uuid":"cb8de4df-bfb8-4534-a743-39d97881dad4","stop":1766672615155},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create page","start":1766672615158,"uuid":"4ce1909a-8877-41a2-972c-aaf08515a5cd","stop":1766672615966}],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1766672615156,"uuid":"434568c0-8b5a-4bbe-bcef-a320452d8627","stop":1766672615966},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"randomUser\"","start":1766672615966,"uuid":"f5a93948-57e9-48d6-8a92-5b816a0a881d","stop":1766672615967}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1766672615105,"uuid":"666d968a-1020-4ff5-be98-a1555234deef","stop":1766672615967},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766672615971,"name":"Navigate to \"/login\"","uuid":"cfa95da6-3456-4551-9f3b-5cb3297213a4","stop":1766672619031},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766672619033,"name":"Wait for load state \"load\"","uuid":"31a19977-2380-4081-9e59-0360aecf07ae","stop":1766672619034},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766672619508,"name":"Click getByRole('button', { name: 'Consent', exact: true })","uuid":"7845c4d3-0617-436a-8229-aeb470af4d59","stop":1766672619756},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766672619757,"name":"Expect \"toHaveURL\"","uuid":"27e2db6d-c430-424e-8003-8a2d53343ff1","stop":1766672619764}],"attachments":[],"parameters":[],"start":1766672615968,"name":"Launch browser and navigate to login page","uuid":"bef4083d-d7c2-4ae6-b318-8cf6961e9eff","stop":1766672619764},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766672619767,"name":"Fill \"user97890@gmail.com\" getByRole('textbox', { name: 'Email Address' }).first()","uuid":"4f774f22-7b33-40f7-8d73-29b767e2c207","stop":1766672619841},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766672619843,"name":"Fill \"hnBpXXqBvw\" getByRole('textbox', { name: 'Password' })","uuid":"5d19c298-21ec-454a-bcc9-9afeee8ba688","stop":1766672619872},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766672619873,"name":"Click getByRole('button', { name: 'Login' })","uuid":"53cac223-f318-42d5-afa0-a1982de2db89","stop":1766672621783},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766672621785,"name":"Expect \"toBeVisible\"","uuid":"743c3c02-ca7c-4e4d-980f-15288326a64d","stop":1766672621969}],"attachments":[],"parameters":[],"start":1766672619765,"name":"Attempt to login with innexistent user credentials","uuid":"b70c871a-d9a1-486b-b997-f011331d5c1a","stop":1766672621969},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"randomUser\"","start":1766672621970,"uuid":"3016cb2b-98a8-49e1-9740-48f836d69403","stop":1766672621970},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1766672621970,"uuid":"e460fd74-6bd3-42c3-b257-ac5e89bdb654","stop":1766672621970},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Close context","start":1766672622160,"uuid":"8b6721ec-62ca-468e-9a5a-8c92e2676eb2","stop":1766672622175}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1766672621971,"uuid":"adc7bcf9-7be9-4cda-bd24-915a5ca13416","stop":1766672622175}],"attachments":[],"parameters":[],"name":"After Hooks","start":1766672621969,"uuid":"a6baee4f-de41-4ce3-843c-a193dd2fe560","stop":1766672622185}],"attachments":[],"parameters":[{"name":"Project","value":"firefox"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"Login.wrongUser.spec.ts"},{"name":"titlePath","value":" > firefox > Login.wrongUser.spec.ts"},{"name":"host","value":"Iacob_Ruben"},{"name":"thread","value":"pid-32088-worker-2"},{"name":"parentSuite","value":"firefox"},{"name":"suite","value":"Login.wrongUser.spec.ts"}],"links":[],"start":1766672615101,"testCaseId":"de43582e5792c6685cc9d3427d6f2dce","fullName":"Login.wrongUser.spec.ts:6:5","titlePath":["Login.wrongUser.spec.ts"],"stop":1766672622159}
+{
+  "uuid": "d11aa5fe-146c-4732-8af4-c3675cb890d3",
+  "name": "Login with innexistent user",
+  "historyId": "de43582e5792c6685cc9d3427d6f2dce:b444eb0fbe6390c71e68b51dd25701fc",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create context",
+              "start": 1766672615117,
+              "uuid": "7a72c297-da20-4a05-a848-8649af7a0f32",
+              "stop": 1766672615155
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1766672615115,
+          "uuid": "cb8de4df-bfb8-4534-a743-39d97881dad4",
+          "stop": 1766672615155
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create page",
+              "start": 1766672615158,
+              "uuid": "4ce1909a-8877-41a2-972c-aaf08515a5cd",
+              "stop": 1766672615966
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1766672615156,
+          "uuid": "434568c0-8b5a-4bbe-bcef-a320452d8627",
+          "stop": 1766672615966
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"randomUser\"",
+          "start": 1766672615966,
+          "uuid": "f5a93948-57e9-48d6-8a92-5b816a0a881d",
+          "stop": 1766672615967
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1766672615105,
+      "uuid": "666d968a-1020-4ff5-be98-a1555234deef",
+      "stop": 1766672615967
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766672615971,
+          "name": "Navigate to \"/login\"",
+          "uuid": "cfa95da6-3456-4551-9f3b-5cb3297213a4",
+          "stop": 1766672619031
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766672619033,
+          "name": "Wait for load state \"load\"",
+          "uuid": "31a19977-2380-4081-9e59-0360aecf07ae",
+          "stop": 1766672619034
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766672619508,
+          "name": "Click getByRole('button', { name: 'Consent', exact: true })",
+          "uuid": "7845c4d3-0617-436a-8229-aeb470af4d59",
+          "stop": 1766672619756
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766672619757,
+          "name": "Expect \"toHaveURL\"",
+          "uuid": "27e2db6d-c430-424e-8003-8a2d53343ff1",
+          "stop": 1766672619764
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766672615968,
+      "name": "Launch browser and navigate to login page",
+      "uuid": "bef4083d-d7c2-4ae6-b318-8cf6961e9eff",
+      "stop": 1766672619764
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766672619767,
+          "name": "Fill \"user97890@gmail.com\" getByRole('textbox', { name: 'Email Address' }).first()",
+          "uuid": "4f774f22-7b33-40f7-8d73-29b767e2c207",
+          "stop": 1766672619841
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766672619843,
+          "name": "Fill \"hnBpXXqBvw\" getByRole('textbox', { name: 'Password' })",
+          "uuid": "5d19c298-21ec-454a-bcc9-9afeee8ba688",
+          "stop": 1766672619872
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766672619873,
+          "name": "Click getByRole('button', { name: 'Login' })",
+          "uuid": "53cac223-f318-42d5-afa0-a1982de2db89",
+          "stop": 1766672621783
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766672621785,
+          "name": "Expect \"toBeVisible\"",
+          "uuid": "743c3c02-ca7c-4e4d-980f-15288326a64d",
+          "stop": 1766672621969
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766672619765,
+      "name": "Attempt to login with innexistent user credentials",
+      "uuid": "b70c871a-d9a1-486b-b997-f011331d5c1a",
+      "stop": 1766672621969
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"randomUser\"",
+          "start": 1766672621970,
+          "uuid": "3016cb2b-98a8-49e1-9740-48f836d69403",
+          "stop": 1766672621970
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1766672621970,
+          "uuid": "e460fd74-6bd3-42c3-b257-ac5e89bdb654",
+          "stop": 1766672621970
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Close context",
+              "start": 1766672622160,
+              "uuid": "8b6721ec-62ca-468e-9a5a-8c92e2676eb2",
+              "stop": 1766672622175
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1766672621971,
+          "uuid": "adc7bcf9-7be9-4cda-bd24-915a5ca13416",
+          "stop": 1766672622175
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1766672621969,
+      "uuid": "a6baee4f-de41-4ce3-843c-a193dd2fe560",
+      "stop": 1766672622185
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "firefox" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "Login.wrongUser.spec.ts" },
+    { "name": "titlePath", "value": " > firefox > Login.wrongUser.spec.ts" },
+    { "name": "host", "value": "Iacob_Ruben" },
+    { "name": "thread", "value": "pid-32088-worker-2" },
+    { "name": "parentSuite", "value": "firefox" },
+    { "name": "suite", "value": "Login.wrongUser.spec.ts" }
+  ],
+  "links": [],
+  "start": 1766672615101,
+  "testCaseId": "de43582e5792c6685cc9d3427d6f2dce",
+  "fullName": "Login.wrongUser.spec.ts:6:5",
+  "titlePath": ["Login.wrongUser.spec.ts"],
+  "stop": 1766672622159
+}

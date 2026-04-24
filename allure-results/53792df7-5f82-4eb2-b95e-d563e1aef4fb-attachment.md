@@ -2,212 +2,212 @@
 
 ```yaml
 - generic [ref=e1]:
-  - banner [ref=e2]:
-    - generic [ref=e5]:
-      - link "Website for automation practice" [ref=e8] [cursor=pointer]:
-        - /url: /
-        - img "Website for automation practice" [ref=e9]
-      - list [ref=e12]:
-        - listitem [ref=e13]:
-          - link " Home" [ref=e14] [cursor=pointer]:
-            - /url: /
-            - generic [ref=e15]: 
-            - text: Home
-        - listitem [ref=e16]:
-          - link " Products" [ref=e17] [cursor=pointer]:
-            - /url: /products
-            - generic [ref=e18]: 
-            - text: Products
-        - listitem [ref=e19]:
-          - link " Cart" [ref=e20] [cursor=pointer]:
-            - /url: /view_cart
-            - generic [ref=e21]: 
-            - text: Cart
-        - listitem [ref=e22]:
-          - link " Signup / Login" [ref=e23] [cursor=pointer]:
-            - /url: /login
-            - generic [ref=e24]: 
-            - text: Signup / Login
-        - listitem [ref=e25]:
-          - link " Test Cases" [ref=e26] [cursor=pointer]:
-            - /url: /test_cases
-            - generic [ref=e27]: 
-            - text: Test Cases
-        - listitem [ref=e28]:
-          - link " API Testing" [ref=e29] [cursor=pointer]:
-            - /url: /api_list
-            - generic [ref=e30]: 
-            - text: API Testing
-        - listitem [ref=e31]:
-          - link " Video Tutorials" [ref=e32] [cursor=pointer]:
-            - /url: https://www.youtube.com/c/AutomationExercise
-            - generic [ref=e33]: 
-            - text: Video Tutorials
-        - listitem [ref=e34]:
-          - link " Contact us" [ref=e35] [cursor=pointer]:
-            - /url: /contact_us
-            - generic [ref=e36]: 
-            - text: Contact us
-  - generic [ref=e38]:
-    - list [ref=e40]:
-      - listitem [ref=e41]:
-        - link "Products" [ref=e42] [cursor=pointer]:
-          - /url: /products
-      - listitem [ref=e43]: Women > Dress
-    - generic [ref=e44]:
-      - generic [ref=e46]:
-        - heading "Category" [level=2] [ref=e47]
-        - generic [ref=e48]:
-          - generic [ref=e49]:
-            - heading " Women" [level=4] [ref=e51]:
-              - link " Women" [active] [ref=e52] [cursor=pointer]:
-                - /url: "#Women"
-                - generic [ref=e54]: 
-                - text: Women
-            - list [ref=e57]:
-              - listitem [ref=e58]:
-                - link "Dress" [ref=e59] [cursor=pointer]:
-                  - /url: /category_products/1
-              - listitem [ref=e60]:
-                - link "Tops" [ref=e61] [cursor=pointer]:
-                  - /url: /category_products/2
-              - listitem [ref=e62]:
-                - link "Saree" [ref=e63] [cursor=pointer]:
-                  - /url: /category_products/7
-          - heading " Men" [level=4] [ref=e66]:
-            - link " Men" [ref=e67] [cursor=pointer]:
-              - /url: "#Men"
-              - generic [ref=e69]: 
-              - text: Men
-          - heading " Kids" [level=4] [ref=e72]:
-            - link " Kids" [ref=e73] [cursor=pointer]:
-              - /url: "#Kids"
-              - generic [ref=e75]: 
-              - text: Kids
-        - generic [ref=e76]:
-          - heading "Brands" [level=2] [ref=e77]
-          - list [ref=e79]:
-            - listitem [ref=e80]:
-              - link "(6) Polo" [ref=e81] [cursor=pointer]:
-                - /url: /brand_products/Polo
-                - generic [ref=e82]: (6)
-                - text: Polo
-            - listitem [ref=e83]:
-              - link "(5) H&M" [ref=e84] [cursor=pointer]:
-                - /url: /brand_products/H&M
-                - generic [ref=e85]: (5)
-                - text: H&M
-            - listitem [ref=e86]:
-              - link "(5) Madame" [ref=e87] [cursor=pointer]:
-                - /url: /brand_products/Madame
-                - generic [ref=e88]: (5)
-                - text: Madame
-            - listitem [ref=e89]:
-              - link "(3) Mast & Harbour" [ref=e90] [cursor=pointer]:
-                - /url: /brand_products/Mast & Harbour
-                - generic [ref=e91]: (3)
-                - text: Mast & Harbour
-            - listitem [ref=e92]:
-              - link "(4) Babyhug" [ref=e93] [cursor=pointer]:
-                - /url: /brand_products/Babyhug
-                - generic [ref=e94]: (4)
-                - text: Babyhug
-            - listitem [ref=e95]:
-              - link "(3) Allen Solly Junior" [ref=e96] [cursor=pointer]:
-                - /url: /brand_products/Allen Solly Junior
-                - generic [ref=e97]: (3)
-                - text: Allen Solly Junior
-            - listitem [ref=e98]:
-              - link "(3) Kookie Kids" [ref=e99] [cursor=pointer]:
-                - /url: /brand_products/Kookie Kids
-                - generic [ref=e100]: (3)
-                - text: Kookie Kids
-            - listitem [ref=e101]:
-              - link "(5) Biba" [ref=e102] [cursor=pointer]:
-                - /url: /brand_products/Biba
-                - generic [ref=e103]: (5)
-                - text: Biba
-      - generic [ref=e105]:
-        - heading "Women - Dress Products" [level=2] [ref=e106]
-        - generic [ref=e108]:
-          - generic [ref=e109]:
-            - generic [ref=e110]:
-              - img "ecommerce website products" [ref=e111]
-              - heading "Rs. 1000" [level=2] [ref=e112]
-              - paragraph [ref=e113]: Sleeveless Dress
-              - link " Add to cart" [ref=e114] [cursor=pointer]:
-                - /url: javascript:void();
-                - generic [ref=e115]: 
-                - text: Add to cart
-            - generic [ref=e116]:
-              - heading "Rs. 1000" [level=2] [ref=e117]
-              - paragraph [ref=e118]: Sleeveless Dress
-              - link " Add to cart" [ref=e119] [cursor=pointer]:
-                - /url: javascript:void();
-                - generic [ref=e120]: 
-                - text: Add to cart
-          - list [ref=e122]:
-            - listitem [ref=e123]:
-              - link " View Product" [ref=e124] [cursor=pointer]:
-                - /url: /product_details/3
-                - generic [ref=e125]: 
-                - text: View Product
-        - generic [ref=e127]:
-          - generic [ref=e128]:
-            - generic [ref=e129]:
-              - img "ecommerce website products" [ref=e130]
-              - heading "Rs. 1500" [level=2] [ref=e131]
-              - paragraph [ref=e132]: Stylish Dress
-              - link " Add to cart" [ref=e133] [cursor=pointer]:
-                - /url: javascript:void();
-                - generic [ref=e134]: 
-                - text: Add to cart
-            - generic [ref=e135]:
-              - heading "Rs. 1500" [level=2] [ref=e136]
-              - paragraph [ref=e137]: Stylish Dress
-              - link " Add to cart" [ref=e138] [cursor=pointer]:
-                - /url: javascript:void();
-                - generic [ref=e139]: 
-                - text: Add to cart
-          - list [ref=e141]:
-            - listitem [ref=e142]:
-              - link " View Product" [ref=e143] [cursor=pointer]:
-                - /url: /product_details/4
-                - generic [ref=e144]: 
-                - text: View Product
-        - generic [ref=e146]:
-          - generic [ref=e147]:
-            - generic [ref=e148]:
-              - img "ecommerce website products" [ref=e149]
-              - heading "Rs. 2300" [level=2] [ref=e150]
-              - paragraph [ref=e151]: Rose Pink Embroidered Maxi Dress
-              - link " Add to cart" [ref=e152] [cursor=pointer]:
-                - /url: javascript:void();
-                - generic [ref=e153]: 
-                - text: Add to cart
-            - generic [ref=e154]:
-              - heading "Rs. 2300" [level=2] [ref=e155]
-              - paragraph [ref=e156]: Rose Pink Embroidered Maxi Dress
-              - link " Add to cart" [ref=e157] [cursor=pointer]:
-                - /url: javascript:void();
-                - generic [ref=e158]: 
-                - text: Add to cart
-          - list [ref=e160]:
-            - listitem [ref=e161]:
-              - link " View Product" [ref=e162] [cursor=pointer]:
-                - /url: /product_details/38
-                - generic [ref=e163]: 
-                - text: View Product
-  - contentinfo [ref=e164]:
-    - generic [ref=e169]:
-      - heading "Subscription" [level=2] [ref=e170]
-      - generic [ref=e171]:
-        - textbox "Your email address" [ref=e172]
-        - button "" [ref=e173] [cursor=pointer]:
-          - generic [ref=e174]: 
-        - paragraph [ref=e175]:
-          - text: Get the most recent updates from
-          - text: our site and be updated your self...
-    - paragraph [ref=e179]: Copyright © 2021 All rights reserved
-  - text: 
+    - banner [ref=e2]:
+        - generic [ref=e5]:
+            - link "Website for automation practice" [ref=e8] [cursor=pointer]:
+                - /url: /
+                - img "Website for automation practice" [ref=e9]
+            - list [ref=e12]:
+                - listitem [ref=e13]:
+                    - link " Home" [ref=e14] [cursor=pointer]:
+                        - /url: /
+                        - generic [ref=e15]: 
+                        - text: Home
+                - listitem [ref=e16]:
+                    - link " Products" [ref=e17] [cursor=pointer]:
+                        - /url: /products
+                        - generic [ref=e18]: 
+                        - text: Products
+                - listitem [ref=e19]:
+                    - link " Cart" [ref=e20] [cursor=pointer]:
+                        - /url: /view_cart
+                        - generic [ref=e21]: 
+                        - text: Cart
+                - listitem [ref=e22]:
+                    - link " Signup / Login" [ref=e23] [cursor=pointer]:
+                        - /url: /login
+                        - generic [ref=e24]: 
+                        - text: Signup / Login
+                - listitem [ref=e25]:
+                    - link " Test Cases" [ref=e26] [cursor=pointer]:
+                        - /url: /test_cases
+                        - generic [ref=e27]: 
+                        - text: Test Cases
+                - listitem [ref=e28]:
+                    - link " API Testing" [ref=e29] [cursor=pointer]:
+                        - /url: /api_list
+                        - generic [ref=e30]: 
+                        - text: API Testing
+                - listitem [ref=e31]:
+                    - link " Video Tutorials" [ref=e32] [cursor=pointer]:
+                        - /url: https://www.youtube.com/c/AutomationExercise
+                        - generic [ref=e33]: 
+                        - text: Video Tutorials
+                - listitem [ref=e34]:
+                    - link " Contact us" [ref=e35] [cursor=pointer]:
+                        - /url: /contact_us
+                        - generic [ref=e36]: 
+                        - text: Contact us
+    - generic [ref=e38]:
+        - list [ref=e40]:
+            - listitem [ref=e41]:
+                - link "Products" [ref=e42] [cursor=pointer]:
+                    - /url: /products
+            - listitem [ref=e43]: Women > Dress
+        - generic [ref=e44]:
+            - generic [ref=e46]:
+                - heading "Category" [level=2] [ref=e47]
+                - generic [ref=e48]:
+                    - generic [ref=e49]:
+                        - heading " Women" [level=4] [ref=e51]:
+                            - link " Women" [active] [ref=e52] [cursor=pointer]:
+                                - /url: '#Women'
+                                - generic [ref=e54]: 
+                                - text: Women
+                        - list [ref=e57]:
+                            - listitem [ref=e58]:
+                                - link "Dress" [ref=e59] [cursor=pointer]:
+                                    - /url: /category_products/1
+                            - listitem [ref=e60]:
+                                - link "Tops" [ref=e61] [cursor=pointer]:
+                                    - /url: /category_products/2
+                            - listitem [ref=e62]:
+                                - link "Saree" [ref=e63] [cursor=pointer]:
+                                    - /url: /category_products/7
+                    - heading " Men" [level=4] [ref=e66]:
+                        - link " Men" [ref=e67] [cursor=pointer]:
+                            - /url: '#Men'
+                            - generic [ref=e69]: 
+                            - text: Men
+                    - heading " Kids" [level=4] [ref=e72]:
+                        - link " Kids" [ref=e73] [cursor=pointer]:
+                            - /url: '#Kids'
+                            - generic [ref=e75]: 
+                            - text: Kids
+                - generic [ref=e76]:
+                    - heading "Brands" [level=2] [ref=e77]
+                    - list [ref=e79]:
+                        - listitem [ref=e80]:
+                            - link "(6) Polo" [ref=e81] [cursor=pointer]:
+                                - /url: /brand_products/Polo
+                                - generic [ref=e82]: (6)
+                                - text: Polo
+                        - listitem [ref=e83]:
+                            - link "(5) H&M" [ref=e84] [cursor=pointer]:
+                                - /url: /brand_products/H&M
+                                - generic [ref=e85]: (5)
+                                - text: H&M
+                        - listitem [ref=e86]:
+                            - link "(5) Madame" [ref=e87] [cursor=pointer]:
+                                - /url: /brand_products/Madame
+                                - generic [ref=e88]: (5)
+                                - text: Madame
+                        - listitem [ref=e89]:
+                            - link "(3) Mast & Harbour" [ref=e90] [cursor=pointer]:
+                                - /url: /brand_products/Mast & Harbour
+                                - generic [ref=e91]: (3)
+                                - text: Mast & Harbour
+                        - listitem [ref=e92]:
+                            - link "(4) Babyhug" [ref=e93] [cursor=pointer]:
+                                - /url: /brand_products/Babyhug
+                                - generic [ref=e94]: (4)
+                                - text: Babyhug
+                        - listitem [ref=e95]:
+                            - link "(3) Allen Solly Junior" [ref=e96] [cursor=pointer]:
+                                - /url: /brand_products/Allen Solly Junior
+                                - generic [ref=e97]: (3)
+                                - text: Allen Solly Junior
+                        - listitem [ref=e98]:
+                            - link "(3) Kookie Kids" [ref=e99] [cursor=pointer]:
+                                - /url: /brand_products/Kookie Kids
+                                - generic [ref=e100]: (3)
+                                - text: Kookie Kids
+                        - listitem [ref=e101]:
+                            - link "(5) Biba" [ref=e102] [cursor=pointer]:
+                                - /url: /brand_products/Biba
+                                - generic [ref=e103]: (5)
+                                - text: Biba
+            - generic [ref=e105]:
+                - heading "Women - Dress Products" [level=2] [ref=e106]
+                - generic [ref=e108]:
+                    - generic [ref=e109]:
+                        - generic [ref=e110]:
+                            - img "ecommerce website products" [ref=e111]
+                            - heading "Rs. 1000" [level=2] [ref=e112]
+                            - paragraph [ref=e113]: Sleeveless Dress
+                            - link " Add to cart" [ref=e114] [cursor=pointer]:
+                                - /url: javascript:void();
+                                - generic [ref=e115]: 
+                                - text: Add to cart
+                        - generic [ref=e116]:
+                            - heading "Rs. 1000" [level=2] [ref=e117]
+                            - paragraph [ref=e118]: Sleeveless Dress
+                            - link " Add to cart" [ref=e119] [cursor=pointer]:
+                                - /url: javascript:void();
+                                - generic [ref=e120]: 
+                                - text: Add to cart
+                    - list [ref=e122]:
+                        - listitem [ref=e123]:
+                            - link " View Product" [ref=e124] [cursor=pointer]:
+                                - /url: /product_details/3
+                                - generic [ref=e125]: 
+                                - text: View Product
+                - generic [ref=e127]:
+                    - generic [ref=e128]:
+                        - generic [ref=e129]:
+                            - img "ecommerce website products" [ref=e130]
+                            - heading "Rs. 1500" [level=2] [ref=e131]
+                            - paragraph [ref=e132]: Stylish Dress
+                            - link " Add to cart" [ref=e133] [cursor=pointer]:
+                                - /url: javascript:void();
+                                - generic [ref=e134]: 
+                                - text: Add to cart
+                        - generic [ref=e135]:
+                            - heading "Rs. 1500" [level=2] [ref=e136]
+                            - paragraph [ref=e137]: Stylish Dress
+                            - link " Add to cart" [ref=e138] [cursor=pointer]:
+                                - /url: javascript:void();
+                                - generic [ref=e139]: 
+                                - text: Add to cart
+                    - list [ref=e141]:
+                        - listitem [ref=e142]:
+                            - link " View Product" [ref=e143] [cursor=pointer]:
+                                - /url: /product_details/4
+                                - generic [ref=e144]: 
+                                - text: View Product
+                - generic [ref=e146]:
+                    - generic [ref=e147]:
+                        - generic [ref=e148]:
+                            - img "ecommerce website products" [ref=e149]
+                            - heading "Rs. 2300" [level=2] [ref=e150]
+                            - paragraph [ref=e151]: Rose Pink Embroidered Maxi Dress
+                            - link " Add to cart" [ref=e152] [cursor=pointer]:
+                                - /url: javascript:void();
+                                - generic [ref=e153]: 
+                                - text: Add to cart
+                        - generic [ref=e154]:
+                            - heading "Rs. 2300" [level=2] [ref=e155]
+                            - paragraph [ref=e156]: Rose Pink Embroidered Maxi Dress
+                            - link " Add to cart" [ref=e157] [cursor=pointer]:
+                                - /url: javascript:void();
+                                - generic [ref=e158]: 
+                                - text: Add to cart
+                    - list [ref=e160]:
+                        - listitem [ref=e161]:
+                            - link " View Product" [ref=e162] [cursor=pointer]:
+                                - /url: /product_details/38
+                                - generic [ref=e163]: 
+                                - text: View Product
+    - contentinfo [ref=e164]:
+        - generic [ref=e169]:
+            - heading "Subscription" [level=2] [ref=e170]
+            - generic [ref=e171]:
+                - textbox "Your email address" [ref=e172]
+                - button "" [ref=e173] [cursor=pointer]:
+                    - generic [ref=e174]: 
+                - paragraph [ref=e175]:
+                    - text: Get the most recent updates from
+                    - text: our site and be updated your self...
+        - paragraph [ref=e179]: Copyright © 2021 All rights reserved
+    - text: 
 ```

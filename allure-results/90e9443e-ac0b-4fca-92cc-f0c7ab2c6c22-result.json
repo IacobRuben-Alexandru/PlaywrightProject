@@ -1,1 +1,360 @@
-{"uuid":"90e9443e-ac0b-4fca-92cc-f0c7ab2c6c22","name":"Add products to cart","historyId":"d5395c6986f9511361585bcbeea70f78:5bd835b0d6b1d4ada3b9f0db936e82c8","status":"failed","statusDetails":{"message":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Blue Top' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Blue Top' })\n","trace":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Blue Top' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Blue Top' })\n\n    at D:\\Development\\PlaywrightProject\\tests\\addProducts.spec.ts:17:68\n    at D:\\Development\\PlaywrightProject\\tests\\addProducts.spec.ts:15:5"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Launch browser","start":1766677243772,"uuid":"377cd5c4-f1de-4272-8400-af0223088a75","stop":1766677244011}],"attachments":[],"parameters":[],"name":"Fixture \"browser\"","start":1766677243759,"uuid":"a984eaa5-9fa3-48ed-adf3-9924854bb400","stop":1766677244011},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create context","start":1766677244019,"uuid":"26a731a0-533f-4c35-a9ef-da1e64c602ea","stop":1766677244035}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1766677244014,"uuid":"5f6248a8-f377-443b-b9a9-141040bb9d53","stop":1766677244037},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create page","start":1766677244042,"uuid":"a3ce6a60-ebaa-482d-9c8f-91660bfb6fe2","stop":1766677244428}],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1766677244038,"uuid":"a32f91ca-ad25-4c4c-9a4e-4f78bef1b57c","stop":1766677244428}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1766677243729,"uuid":"252bc9c9-226f-44a6-b039-182f0200f79d","stop":1766677244428},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766677244443,"name":"Navigate to \"/\"","uuid":"2d8c60cc-b083-4bec-9405-1b099e1f02ff","stop":1766677247912},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766677247916,"name":"Wait for load state \"load\"","uuid":"17e82814-cfd5-4995-9d65-734a48411020","stop":1766677247918},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766677248055,"name":"Click getByRole('button', { name: 'Consent', exact: true })","uuid":"acbe4b8c-8ec4-4605-b4e8-901ab22f011a","stop":1766677248433},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766677248438,"name":"Expect \"toHaveURL\"","uuid":"690a6d6e-b3c4-444c-a07e-4de30c71525d","stop":1766677248459}],"attachments":[],"parameters":[],"start":1766677244433,"name":"Launch browser and navigate to home page","uuid":"932e8ffb-cbf9-4552-85ed-5d782800100e","stop":1766677248460},{"status":"failed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766677248464,"name":"Click getByRole('link', { name: ' Products' })","uuid":"4e04a63f-cc7d-4f96-84d0-64274f42e8ab","stop":1766677249525},{"status":"failed","statusDetails":{"message":"TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Continue Shopping' }) to be visible\n","trace":"TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Continue Shopping' }) to be visible\n\n    at automationexercise.continueShopping (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:74:31)\n    at automationexercise.addProductToCartByIndex (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:54:20)\n    at D:\\Development\\PlaywrightProject\\tests\\addProducts.spec.ts:12:9\n    at D:\\Development\\PlaywrightProject\\tests\\addProducts.spec.ts:10:5"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766677249620,"name":"Wait for selector getByRole('button', { name: 'Continue Shopping' })","uuid":"ca476b49-27c1-4457-870c-541f59dd4bea","stop":1766677254623},{"status":"failed","statusDetails":{"message":"TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Continue Shopping' }) to be visible\n","trace":"TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Continue Shopping' }) to be visible\n\n    at automationexercise.continueShopping (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:74:31)\n    at automationexercise.addProductToCartByIndex (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:54:20)\n    at D:\\Development\\PlaywrightProject\\tests\\addProducts.spec.ts:13:9\n    at D:\\Development\\PlaywrightProject\\tests\\addProducts.spec.ts:10:5"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766677254648,"name":"Wait for selector getByRole('button', { name: 'Continue Shopping' })","uuid":"6fa41caa-1ce6-4d5d-8e6d-dd65e4929a4d","stop":1766677259655}],"attachments":[],"parameters":[],"start":1766677248460,"name":"Click on 'Products' and add 2 products to cart","uuid":"8a89b214-9526-4c08-952c-23e612d406e7","stop":1766677259656},{"status":"failed","statusDetails":{"message":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Blue Top' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Blue Top' })\n","trace":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Blue Top' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Blue Top' })\n\n    at D:\\Development\\PlaywrightProject\\tests\\addProducts.spec.ts:17:68\n    at D:\\Development\\PlaywrightProject\\tests\\addProducts.spec.ts:15:5"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766677259658,"name":"Click getByRole('link', { name: ' Cart' })","uuid":"e01fc683-4e7c-40b2-8e46-f6b1e14f725d","stop":1766677260219},{"status":"failed","statusDetails":{"message":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Blue Top' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Blue Top' })\n","trace":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Blue Top' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Blue Top' })\n\n    at D:\\Development\\PlaywrightProject\\tests\\addProducts.spec.ts:17:68\n    at D:\\Development\\PlaywrightProject\\tests\\addProducts.spec.ts:15:5"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766677260222,"name":"Expect \"toBeVisible\"","uuid":"5fc52159-5b5e-4d65-991f-629970d8ad5d","stop":1766677265235}],"attachments":[],"parameters":[],"start":1766677259656,"name":"Navigate to cart and verify both products were added","uuid":"62de23f0-8c08-4cd9-8852-77d7283c5336","stop":1766677265236},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"bc7b4fd5-2916-4496-9666-e976ac0f2e3f-attachment.png","type":"image/png"}],"parameters":[],"start":1766677265836,"name":"screenshot","stop":1766677265836},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"error-context","source":"f7c73c33-900d-4695-b69e-1e24fc8f8d11-attachment.md","type":"text/markdown"}],"parameters":[],"start":1766677265838,"name":"error-context","stop":1766677265838},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1766677265373,"uuid":"54f27112-b92a-4c41-af78-b7547d02098c","stop":1766677265373},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Close context","start":1766677265436,"uuid":"ef368850-97bd-4410-99b6-5449cfc9061c","stop":1766677265449}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1766677265373,"uuid":"73c2c3fc-dd62-455c-b40a-e85124f07fc9","stop":1766677265449}],"attachments":[],"parameters":[],"name":"After Hooks","start":1766677265239,"uuid":"143dfbbd-dfdb-49f9-b4ff-d530acf8bd88","stop":1766677265478}],"attachments":[],"parameters":[{"name":"Project","value":"chromium"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"addProducts.spec.ts"},{"name":"titlePath","value":" > chromium > addProducts.spec.ts"},{"name":"host","value":"Iacob_Ruben"},{"name":"thread","value":"pid-37132-worker-1"},{"name":"parentSuite","value":"chromium"},{"name":"suite","value":"addProducts.spec.ts"}],"links":[],"start":1766677243743,"testCaseId":"d5395c6986f9511361585bcbeea70f78","fullName":"addProducts.spec.ts:5:5","titlePath":["addProducts.spec.ts"],"stop":1766677265182}
+{
+  "uuid": "90e9443e-ac0b-4fca-92cc-f0c7ab2c6c22",
+  "name": "Add products to cart",
+  "historyId": "d5395c6986f9511361585bcbeea70f78:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Blue Top' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Blue Top' })\n",
+    "trace": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Blue Top' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Blue Top' })\n\n    at D:\\Development\\PlaywrightProject\\tests\\addProducts.spec.ts:17:68\n    at D:\\Development\\PlaywrightProject\\tests\\addProducts.spec.ts:15:5"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Launch browser",
+              "start": 1766677243772,
+              "uuid": "377cd5c4-f1de-4272-8400-af0223088a75",
+              "stop": 1766677244011
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"browser\"",
+          "start": 1766677243759,
+          "uuid": "a984eaa5-9fa3-48ed-adf3-9924854bb400",
+          "stop": 1766677244011
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create context",
+              "start": 1766677244019,
+              "uuid": "26a731a0-533f-4c35-a9ef-da1e64c602ea",
+              "stop": 1766677244035
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1766677244014,
+          "uuid": "5f6248a8-f377-443b-b9a9-141040bb9d53",
+          "stop": 1766677244037
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create page",
+              "start": 1766677244042,
+              "uuid": "a3ce6a60-ebaa-482d-9c8f-91660bfb6fe2",
+              "stop": 1766677244428
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1766677244038,
+          "uuid": "a32f91ca-ad25-4c4c-9a4e-4f78bef1b57c",
+          "stop": 1766677244428
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1766677243729,
+      "uuid": "252bc9c9-226f-44a6-b039-182f0200f79d",
+      "stop": 1766677244428
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766677244443,
+          "name": "Navigate to \"/\"",
+          "uuid": "2d8c60cc-b083-4bec-9405-1b099e1f02ff",
+          "stop": 1766677247912
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766677247916,
+          "name": "Wait for load state \"load\"",
+          "uuid": "17e82814-cfd5-4995-9d65-734a48411020",
+          "stop": 1766677247918
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766677248055,
+          "name": "Click getByRole('button', { name: 'Consent', exact: true })",
+          "uuid": "acbe4b8c-8ec4-4605-b4e8-901ab22f011a",
+          "stop": 1766677248433
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766677248438,
+          "name": "Expect \"toHaveURL\"",
+          "uuid": "690a6d6e-b3c4-444c-a07e-4de30c71525d",
+          "stop": 1766677248459
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766677244433,
+      "name": "Launch browser and navigate to home page",
+      "uuid": "932e8ffb-cbf9-4552-85ed-5d782800100e",
+      "stop": 1766677248460
+    },
+    {
+      "status": "failed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766677248464,
+          "name": "Click getByRole('link', { name: ' Products' })",
+          "uuid": "4e04a63f-cc7d-4f96-84d0-64274f42e8ab",
+          "stop": 1766677249525
+        },
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Continue Shopping' }) to be visible\n",
+            "trace": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Continue Shopping' }) to be visible\n\n    at automationexercise.continueShopping (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:74:31)\n    at automationexercise.addProductToCartByIndex (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:54:20)\n    at D:\\Development\\PlaywrightProject\\tests\\addProducts.spec.ts:12:9\n    at D:\\Development\\PlaywrightProject\\tests\\addProducts.spec.ts:10:5"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766677249620,
+          "name": "Wait for selector getByRole('button', { name: 'Continue Shopping' })",
+          "uuid": "ca476b49-27c1-4457-870c-541f59dd4bea",
+          "stop": 1766677254623
+        },
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Continue Shopping' }) to be visible\n",
+            "trace": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Continue Shopping' }) to be visible\n\n    at automationexercise.continueShopping (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:74:31)\n    at automationexercise.addProductToCartByIndex (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:54:20)\n    at D:\\Development\\PlaywrightProject\\tests\\addProducts.spec.ts:13:9\n    at D:\\Development\\PlaywrightProject\\tests\\addProducts.spec.ts:10:5"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766677254648,
+          "name": "Wait for selector getByRole('button', { name: 'Continue Shopping' })",
+          "uuid": "6fa41caa-1ce6-4d5d-8e6d-dd65e4929a4d",
+          "stop": 1766677259655
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766677248460,
+      "name": "Click on 'Products' and add 2 products to cart",
+      "uuid": "8a89b214-9526-4c08-952c-23e612d406e7",
+      "stop": 1766677259656
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Blue Top' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Blue Top' })\n",
+        "trace": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Blue Top' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Blue Top' })\n\n    at D:\\Development\\PlaywrightProject\\tests\\addProducts.spec.ts:17:68\n    at D:\\Development\\PlaywrightProject\\tests\\addProducts.spec.ts:15:5"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766677259658,
+          "name": "Click getByRole('link', { name: ' Cart' })",
+          "uuid": "e01fc683-4e7c-40b2-8e46-f6b1e14f725d",
+          "stop": 1766677260219
+        },
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Blue Top' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Blue Top' })\n",
+            "trace": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('link', { name: 'Blue Top' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByRole('link', { name: 'Blue Top' })\n\n    at D:\\Development\\PlaywrightProject\\tests\\addProducts.spec.ts:17:68\n    at D:\\Development\\PlaywrightProject\\tests\\addProducts.spec.ts:15:5"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766677260222,
+          "name": "Expect \"toBeVisible\"",
+          "uuid": "5fc52159-5b5e-4d65-991f-629970d8ad5d",
+          "stop": 1766677265235
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766677259656,
+      "name": "Navigate to cart and verify both products were added",
+      "uuid": "62de23f0-8c08-4cd9-8852-77d7283c5336",
+      "stop": 1766677265236
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "bc7b4fd5-2916-4496-9666-e976ac0f2e3f-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1766677265836,
+      "name": "screenshot",
+      "stop": 1766677265836
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "error-context",
+          "source": "f7c73c33-900d-4695-b69e-1e24fc8f8d11-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1766677265838,
+      "name": "error-context",
+      "stop": 1766677265838
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1766677265373,
+          "uuid": "54f27112-b92a-4c41-af78-b7547d02098c",
+          "stop": 1766677265373
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Close context",
+              "start": 1766677265436,
+              "uuid": "ef368850-97bd-4410-99b6-5449cfc9061c",
+              "stop": 1766677265449
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1766677265373,
+          "uuid": "73c2c3fc-dd62-455c-b40a-e85124f07fc9",
+          "stop": 1766677265449
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1766677265239,
+      "uuid": "143dfbbd-dfdb-49f9-b4ff-d530acf8bd88",
+      "stop": 1766677265478
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "addProducts.spec.ts" },
+    { "name": "titlePath", "value": " > chromium > addProducts.spec.ts" },
+    { "name": "host", "value": "Iacob_Ruben" },
+    { "name": "thread", "value": "pid-37132-worker-1" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "addProducts.spec.ts" }
+  ],
+  "links": [],
+  "start": 1766677243743,
+  "testCaseId": "d5395c6986f9511361585bcbeea70f78",
+  "fullName": "addProducts.spec.ts:5:5",
+  "titlePath": ["addProducts.spec.ts"],
+  "stop": 1766677265182
+}

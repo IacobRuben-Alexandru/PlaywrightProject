@@ -1,5 +1,5 @@
+/// <reference types="node" />
 import { defineConfig, devices } from '@playwright/test';
-
 
 // import dotenv from 'dotenv';
 // import path from 'path';
@@ -36,19 +36,22 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'],
+      use: {
+        ...devices['Desktop Chrome'],
         launchOptions: {
-          args: ["--disable-ads"] 
-        }
-       },
+          args: ['--disable-ads'],
+        },
+      },
     },
 
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'],
+      use: {
+        ...devices['Desktop Firefox'],
         launchOptions: {
-          args: ["--disable-ads"] 
-        } },
+          args: ['--disable-ads'],
+        },
+      },
     },
 
     // {

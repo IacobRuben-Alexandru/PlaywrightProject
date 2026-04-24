@@ -1,1 +1,593 @@
-{"uuid":"0d0e70f1-7144-45d2-9e38-05a977ddb2fc","name":"Login then place an order","historyId":"448f912abe1f452da375643324c8b27d:b444eb0fbe6390c71e68b51dd25701fc","status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create context","start":1770730196588,"uuid":"6edfd872-050e-44ac-86d3-e168fde57631","stop":1770730196598}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1770730196587,"uuid":"343be0ce-e71d-4979-9fbc-2f3792116038","stop":1770730196599},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create page","start":1770730196601,"uuid":"3aaab56f-a2d1-4d29-aacc-6bea701e6b1e","stop":1770730196836}],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1770730196599,"uuid":"bf18d47b-1a86-43b0-bae5-a5eee3bb20b7","stop":1770730196836},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1770730196836,"uuid":"d0b5a2f6-d341-4fad-b2c5-a9d3115f9113","stop":1770730196845}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1770730196577,"uuid":"876eaa3d-8cbb-4d16-827d-db7449dbae97","stop":1770730196845},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730196847,"name":"Navigate to \"/\"","uuid":"2badb838-30cd-4f91-b317-6d12efae7f40","stop":1770730198735},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730198736,"name":"Wait for load state \"load\"","uuid":"3a249077-35f1-4e8b-b1e3-4fb4be07c31d","stop":1770730198736},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730198910,"name":"Click getByRole('button', { name: 'Consent', exact: true })","uuid":"a169b317-c567-4a11-9909-af7aa7e79c3f","stop":1770730199121},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730199122,"name":"Expect \"toHaveURL\"","uuid":"24211733-1fb7-4c40-baf0-cde811289dce","stop":1770730199132}],"attachments":[],"parameters":[],"start":1770730196846,"name":"Launch browser and navigate to home page","uuid":"f918f17d-d25f-4923-9d4c-6a37e9bea7ed","stop":1770730199132},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730199135,"name":"Navigate to \"/login\"","uuid":"d1e04fcc-19f3-42d1-8924-190fd3871fa5","stop":1770730200010},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730200012,"name":"Wait for load state \"load\"","uuid":"de5031e6-f0c1-45e9-b06d-9a70f13fac53","stop":1770730200012},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730200054,"name":"Expect \"toHaveURL\"","uuid":"c353a387-a8f8-476f-986e-41af7ce94f9c","stop":1770730200058},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730200059,"name":"Fill \"RealUser@Real123.com\" getByRole('textbox', { name: 'Email Address' }).first()","uuid":"0e5aae79-c1e0-4a1a-ad71-bf9358c2f2be","stop":1770730200076},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730200077,"name":"Fill \"Test@1234\" getByRole('textbox', { name: 'Password' })","uuid":"4478e763-36b1-4026-9d6c-3e9d3ac94941","stop":1770730200093},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730200095,"name":"Click getByRole('button', { name: 'Login' })","uuid":"b7ee52f2-eac6-43bd-86f2-5a2b049bb905","stop":1770730201256},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730201257,"name":"Expect \"toBeVisible\"","uuid":"939ba2f4-9824-41ce-b3db-0ae72a3bb307","stop":1770730201523}],"attachments":[],"parameters":[],"start":1770730199133,"name":"Navigate to login page and login","uuid":"b0527207-053d-43de-a1c9-c99d159ceea8","stop":1770730201523},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730201526,"name":"Click locator('a[href=\"/products\"]')","uuid":"f4d8c81f-64f8-4f9c-9b29-b87e127b7ddd","stop":1770730202559},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730202561,"name":"Wait for load state \"load\"","uuid":"9785be32-4f44-4080-acbe-0aa1315b72b9","stop":1770730203808},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730203849,"name":"Scroll into view locator('.product-image-wrapper').first()","uuid":"65cac253-5ca7-4fbb-872d-4487307b9547","stop":1770730203890},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730203891,"name":"Hover locator('.product-image-wrapper').first()","uuid":"221cdf8a-8921-4973-adc3-ef0ddaad5000","stop":1770730203943},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730203944,"name":"Expect \"toBeVisible\"","uuid":"434307f7-a5aa-4139-a11f-43f54f0535d9","stop":1770730203950},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730203951,"name":"Click locator('.product-image-wrapper').first().locator('.product-overlay a.add-to-cart')","uuid":"3f2bd863-d15d-41cc-b7a9-1d7bf3ad3d81","stop":1770730204548},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730204550,"name":"Wait for selector getByRole('button', { name: 'Continue Shopping' })","uuid":"95b1d7fd-174a-41ae-80e2-efc387e91da4","stop":1770730205427},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730205428,"name":"Click getByRole('button', { name: 'Continue Shopping' })","uuid":"9e5f8cee-09c5-46ea-b68a-4264651e73b8","stop":1770730205476}],"attachments":[],"parameters":[],"start":1770730201524,"name":"Navigate to products and add a product to cart","uuid":"611e7453-6670-4141-9e01-6818664e9133","stop":1770730205476},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730205478,"name":"Click locator('a[href=\"/view_cart\"]').first()","uuid":"942985b1-14d5-4777-b051-5c6c244649c3","stop":1770730205876},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730205877,"name":"Wait for load state \"load\"","uuid":"cb3c46a9-abc7-4f58-bc13-370bc459584a","stop":1770730206209},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730206210,"name":"Expect \"toBeVisible\"","uuid":"1b528b45-0613-4439-87f9-6550cde1ac4c","stop":1770730206273},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730206275,"name":"Click getByText('Proceed To Checkout')","uuid":"a9d39450-8753-4763-b707-6b3b22f8b837","stop":1770730206619},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730206620,"name":"Expect \"toBeVisible\"","uuid":"3e577c47-41f9-45ea-85e0-4cab919df0ec","stop":1770730207383},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730207385,"name":"Evaluate getByRole('link', { name: 'Place Order' })","uuid":"84f30905-c49a-4ecd-af22-3b82edfa04b0","stop":1770730207478},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730207480,"name":"Expect \"toBeVisible\"","uuid":"a7db4a8f-f08d-4b2d-8691-d8c3b333deb3","stop":1770730207502},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730207503,"name":"Click getByRole('link', { name: 'Place Order' })","uuid":"2c6c6741-1696-44d3-8ddf-f04edfacf8c8","stop":1770730207903}],"attachments":[],"parameters":[],"start":1770730205476,"name":"Navigate to cart and checkout","uuid":"657574a2-01f0-4608-a4fd-d97d721239d5","stop":1770730207904},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730207905,"name":"Evaluate","uuid":"34a9590a-fa60-4429-a225-5abe269bbd69","stop":1770730207919},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730207921,"name":"Click locator('button:has-text(\"Pay and Confirm Order\")')","uuid":"e4159714-b54b-4a10-8b3c-87f4565b704e","stop":1770730209635},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770730209636,"name":"Expect \"toBeVisible\"","uuid":"392d95d2-d623-4dbc-a5fd-d7520a89179d","stop":1770730209835}],"attachments":[],"parameters":[],"start":1770730207904,"name":"Fill in card details and place order","uuid":"89a49160-cffd-4a87-9a7d-4ec406b4b62b","stop":1770730209835},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1770730209836,"uuid":"f40db384-b1f1-4581-93ad-f4838a9ee849","stop":1770730209836},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1770730209836,"uuid":"f568c7d0-2849-45a2-9c8a-352c71e51598","stop":1770730209836},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Close context","start":1770730209893,"uuid":"4a4ceef2-6037-4661-8607-8f894562915d","stop":1770730209903}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1770730209837,"uuid":"5516b8c6-9aaa-40f7-ac41-1295785bebca","stop":1770730209903}],"attachments":[],"parameters":[],"name":"After Hooks","start":1770730209835,"uuid":"3985f2a4-9500-4bb1-be7e-0f36787c03e0","stop":1770730209913}],"attachments":[],"parameters":[{"name":"Project","value":"firefox"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"ui.loginPlaceOrder.spec.ts"},{"name":"titlePath","value":" > firefox > ui\\loginPlaceOrder.spec.ts"},{"name":"host","value":"Iacob_Ruben"},{"name":"thread","value":"pid-36128-worker-1"},{"name":"parentSuite","value":"firefox"},{"name":"suite","value":"ui\\loginPlaceOrder.spec.ts"}],"links":[],"start":1770730196578,"testCaseId":"448f912abe1f452da375643324c8b27d","fullName":"ui/loginPlaceOrder.spec.ts:8:5","titlePath":["ui","loginPlaceOrder.spec.ts"],"stop":1770730209893}
+{
+  "uuid": "0d0e70f1-7144-45d2-9e38-05a977ddb2fc",
+  "name": "Login then place an order",
+  "historyId": "448f912abe1f452da375643324c8b27d:b444eb0fbe6390c71e68b51dd25701fc",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create context",
+              "start": 1770730196588,
+              "uuid": "6edfd872-050e-44ac-86d3-e168fde57631",
+              "stop": 1770730196598
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1770730196587,
+          "uuid": "343be0ce-e71d-4979-9fbc-2f3792116038",
+          "stop": 1770730196599
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create page",
+              "start": 1770730196601,
+              "uuid": "3aaab56f-a2d1-4d29-aacc-6bea701e6b1e",
+              "stop": 1770730196836
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1770730196599,
+          "uuid": "bf18d47b-1a86-43b0-bae5-a5eee3bb20b7",
+          "stop": 1770730196836
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1770730196836,
+          "uuid": "d0b5a2f6-d341-4fad-b2c5-a9d3115f9113",
+          "stop": 1770730196845
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1770730196577,
+      "uuid": "876eaa3d-8cbb-4d16-827d-db7449dbae97",
+      "stop": 1770730196845
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730196847,
+          "name": "Navigate to \"/\"",
+          "uuid": "2badb838-30cd-4f91-b317-6d12efae7f40",
+          "stop": 1770730198735
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730198736,
+          "name": "Wait for load state \"load\"",
+          "uuid": "3a249077-35f1-4e8b-b1e3-4fb4be07c31d",
+          "stop": 1770730198736
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730198910,
+          "name": "Click getByRole('button', { name: 'Consent', exact: true })",
+          "uuid": "a169b317-c567-4a11-9909-af7aa7e79c3f",
+          "stop": 1770730199121
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730199122,
+          "name": "Expect \"toHaveURL\"",
+          "uuid": "24211733-1fb7-4c40-baf0-cde811289dce",
+          "stop": 1770730199132
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1770730196846,
+      "name": "Launch browser and navigate to home page",
+      "uuid": "f918f17d-d25f-4923-9d4c-6a37e9bea7ed",
+      "stop": 1770730199132
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730199135,
+          "name": "Navigate to \"/login\"",
+          "uuid": "d1e04fcc-19f3-42d1-8924-190fd3871fa5",
+          "stop": 1770730200010
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730200012,
+          "name": "Wait for load state \"load\"",
+          "uuid": "de5031e6-f0c1-45e9-b06d-9a70f13fac53",
+          "stop": 1770730200012
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730200054,
+          "name": "Expect \"toHaveURL\"",
+          "uuid": "c353a387-a8f8-476f-986e-41af7ce94f9c",
+          "stop": 1770730200058
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730200059,
+          "name": "Fill \"RealUser@Real123.com\" getByRole('textbox', { name: 'Email Address' }).first()",
+          "uuid": "0e5aae79-c1e0-4a1a-ad71-bf9358c2f2be",
+          "stop": 1770730200076
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730200077,
+          "name": "Fill \"Test@1234\" getByRole('textbox', { name: 'Password' })",
+          "uuid": "4478e763-36b1-4026-9d6c-3e9d3ac94941",
+          "stop": 1770730200093
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730200095,
+          "name": "Click getByRole('button', { name: 'Login' })",
+          "uuid": "b7ee52f2-eac6-43bd-86f2-5a2b049bb905",
+          "stop": 1770730201256
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730201257,
+          "name": "Expect \"toBeVisible\"",
+          "uuid": "939ba2f4-9824-41ce-b3db-0ae72a3bb307",
+          "stop": 1770730201523
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1770730199133,
+      "name": "Navigate to login page and login",
+      "uuid": "b0527207-053d-43de-a1c9-c99d159ceea8",
+      "stop": 1770730201523
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730201526,
+          "name": "Click locator('a[href=\"/products\"]')",
+          "uuid": "f4d8c81f-64f8-4f9c-9b29-b87e127b7ddd",
+          "stop": 1770730202559
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730202561,
+          "name": "Wait for load state \"load\"",
+          "uuid": "9785be32-4f44-4080-acbe-0aa1315b72b9",
+          "stop": 1770730203808
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730203849,
+          "name": "Scroll into view locator('.product-image-wrapper').first()",
+          "uuid": "65cac253-5ca7-4fbb-872d-4487307b9547",
+          "stop": 1770730203890
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730203891,
+          "name": "Hover locator('.product-image-wrapper').first()",
+          "uuid": "221cdf8a-8921-4973-adc3-ef0ddaad5000",
+          "stop": 1770730203943
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730203944,
+          "name": "Expect \"toBeVisible\"",
+          "uuid": "434307f7-a5aa-4139-a11f-43f54f0535d9",
+          "stop": 1770730203950
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730203951,
+          "name": "Click locator('.product-image-wrapper').first().locator('.product-overlay a.add-to-cart')",
+          "uuid": "3f2bd863-d15d-41cc-b7a9-1d7bf3ad3d81",
+          "stop": 1770730204548
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730204550,
+          "name": "Wait for selector getByRole('button', { name: 'Continue Shopping' })",
+          "uuid": "95b1d7fd-174a-41ae-80e2-efc387e91da4",
+          "stop": 1770730205427
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730205428,
+          "name": "Click getByRole('button', { name: 'Continue Shopping' })",
+          "uuid": "9e5f8cee-09c5-46ea-b68a-4264651e73b8",
+          "stop": 1770730205476
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1770730201524,
+      "name": "Navigate to products and add a product to cart",
+      "uuid": "611e7453-6670-4141-9e01-6818664e9133",
+      "stop": 1770730205476
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730205478,
+          "name": "Click locator('a[href=\"/view_cart\"]').first()",
+          "uuid": "942985b1-14d5-4777-b051-5c6c244649c3",
+          "stop": 1770730205876
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730205877,
+          "name": "Wait for load state \"load\"",
+          "uuid": "cb3c46a9-abc7-4f58-bc13-370bc459584a",
+          "stop": 1770730206209
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730206210,
+          "name": "Expect \"toBeVisible\"",
+          "uuid": "1b528b45-0613-4439-87f9-6550cde1ac4c",
+          "stop": 1770730206273
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730206275,
+          "name": "Click getByText('Proceed To Checkout')",
+          "uuid": "a9d39450-8753-4763-b707-6b3b22f8b837",
+          "stop": 1770730206619
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730206620,
+          "name": "Expect \"toBeVisible\"",
+          "uuid": "3e577c47-41f9-45ea-85e0-4cab919df0ec",
+          "stop": 1770730207383
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730207385,
+          "name": "Evaluate getByRole('link', { name: 'Place Order' })",
+          "uuid": "84f30905-c49a-4ecd-af22-3b82edfa04b0",
+          "stop": 1770730207478
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730207480,
+          "name": "Expect \"toBeVisible\"",
+          "uuid": "a7db4a8f-f08d-4b2d-8691-d8c3b333deb3",
+          "stop": 1770730207502
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730207503,
+          "name": "Click getByRole('link', { name: 'Place Order' })",
+          "uuid": "2c6c6741-1696-44d3-8ddf-f04edfacf8c8",
+          "stop": 1770730207903
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1770730205476,
+      "name": "Navigate to cart and checkout",
+      "uuid": "657574a2-01f0-4608-a4fd-d97d721239d5",
+      "stop": 1770730207904
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730207905,
+          "name": "Evaluate",
+          "uuid": "34a9590a-fa60-4429-a225-5abe269bbd69",
+          "stop": 1770730207919
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730207921,
+          "name": "Click locator('button:has-text(\"Pay and Confirm Order\")')",
+          "uuid": "e4159714-b54b-4a10-8b3c-87f4565b704e",
+          "stop": 1770730209635
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770730209636,
+          "name": "Expect \"toBeVisible\"",
+          "uuid": "392d95d2-d623-4dbc-a5fd-d7520a89179d",
+          "stop": 1770730209835
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1770730207904,
+      "name": "Fill in card details and place order",
+      "uuid": "89a49160-cffd-4a87-9a7d-4ec406b4b62b",
+      "stop": 1770730209835
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1770730209836,
+          "uuid": "f40db384-b1f1-4581-93ad-f4838a9ee849",
+          "stop": 1770730209836
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1770730209836,
+          "uuid": "f568c7d0-2849-45a2-9c8a-352c71e51598",
+          "stop": 1770730209836
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Close context",
+              "start": 1770730209893,
+              "uuid": "4a4ceef2-6037-4661-8607-8f894562915d",
+              "stop": 1770730209903
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1770730209837,
+          "uuid": "5516b8c6-9aaa-40f7-ac41-1295785bebca",
+          "stop": 1770730209903
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1770730209835,
+      "uuid": "3985f2a4-9500-4bb1-be7e-0f36787c03e0",
+      "stop": 1770730209913
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "firefox" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "ui.loginPlaceOrder.spec.ts" },
+    {
+      "name": "titlePath",
+      "value": " > firefox > ui\\loginPlaceOrder.spec.ts"
+    },
+    { "name": "host", "value": "Iacob_Ruben" },
+    { "name": "thread", "value": "pid-36128-worker-1" },
+    { "name": "parentSuite", "value": "firefox" },
+    { "name": "suite", "value": "ui\\loginPlaceOrder.spec.ts" }
+  ],
+  "links": [],
+  "start": 1770730196578,
+  "testCaseId": "448f912abe1f452da375643324c8b27d",
+  "fullName": "ui/loginPlaceOrder.spec.ts:8:5",
+  "titlePath": ["ui", "loginPlaceOrder.spec.ts"],
+  "stop": 1770730209893
+}

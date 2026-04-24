@@ -1,43 +1,43 @@
-import {test} from "../../fixtures/createuserFixture";
-import {expect} from "@playwright/test";
+import { test } from '../../fixtures/createuserFixture';
+import { expect } from '@playwright/test';
 interface Brand {
-    brand: string;
+  brand: string;
 }
 
 interface BrandsResponse {
-    brands: Brand[];
+  brands: Brand[];
 }
 
 interface Product {
-    brand: string;
-    [key: string]: unknown;
+  brand: string;
+  [key: string]: unknown;
 }
 
 interface ProductsResponse {
-    responseCode: number;
-    products: Product[];
+  responseCode: number;
+  products: Product[];
 }
 
-test("Verify all brands in list are valid", async ({request}) => {
-    const brandsResponse = await request.get('/api/brandsList');
-    expect(brandsResponse.status()).toBe(200);
-    const brandsBody = await brandsResponse.json() as BrandsResponse;
-    
-    const brands: string[] = brandsBody.brands.map((b: Brand) => b.brand);
-    expect(Array.isArray(brands)).toBe(true);
-    expect(brands.length).toBeGreaterThan(0);
+test('Verify all brands in list are valid', async ({ request }) => {
+  const brandsResponse = await request.get('/api/brandsList');
+  expect(brandsResponse.status()).toBe(200);
+  const brandsBody = (await brandsResponse.json()) as BrandsResponse;
 
-    const productsResponse = await request.get('/api/productsList');
-    expect(productsResponse.status()).toBe(200);
-    const productsBody = await productsResponse.json() as ProductsResponse;
-    const products: Product[] = productsBody.products;
-    
-    expect(productsBody.responseCode).toBe(200);
-    expect(Array.isArray(products)).toBe(true);
-    expect(products.length).toBeGreaterThan(0);
+  const brands: string[] = brandsBody.brands.map((b: Brand) => b.brand);
+  expect(Array.isArray(brands)).toBe(true);
+  expect(brands.length).toBeGreaterThan(0);
 
-    for (const product of products) {
-        expect(product).toHaveProperty('brand');
-        expect(brands).toContain(product.brand);
-    }
+  const productsResponse = await request.get('/api/productsList');
+  expect(productsResponse.status()).toBe(200);
+  const productsBody = (await productsResponse.json()) as ProductsResponse;
+  const products: Product[] = productsBody.products;
+
+  expect(productsBody.responseCode).toBe(200);
+  expect(Array.isArray(products)).toBe(true);
+  expect(products.length).toBeGreaterThan(0);
+
+  for (const product of products) {
+    expect(product).toHaveProperty('brand');
+    expect(brands).toContain(product.brand);
+  }
 });

@@ -1,1 +1,305 @@
-{"uuid":"b0bb0646-b344-4dd4-9586-a9b8d6c3ef81","name":"Loggin with correct user","historyId":"e49311894968ad800e2ceab12e58411e:5bd835b0d6b1d4ada3b9f0db936e82c8","status":"broken","statusDetails":{"message":"Test timeout of 60000ms exceeded.","trace":"Test timeout of 60000ms exceeded."},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Launch browser","start":1766415617089,"uuid":"ffae0bcc-afa7-43eb-a770-58bd21fefeae","stop":1766415617178}],"attachments":[],"parameters":[],"name":"Fixture \"browser\"","start":1766415617085,"uuid":"ef40d853-d8bb-4425-bb56-99fe30c7a626","stop":1766415617179},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create context","start":1766415617184,"uuid":"3d470b34-fe1c-483d-8691-67b52a439192","stop":1766415617194}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1766415617181,"uuid":"0fdf435b-092b-4ad3-8860-c39a01a1fd8d","stop":1766415617195},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create page","start":1766415617199,"uuid":"46c43964-e24a-4050-b701-11f37bc28b30","stop":1766415617338}],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1766415617196,"uuid":"1898ac52-d39f-4601-8da8-64a55d6ab4fc","stop":1766415617338},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"randomUser\"","start":1766415617338,"uuid":"f4df5fb5-815b-4b69-afdb-6d31b709e7f8","stop":1766415617338}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1766415617074,"uuid":"ada314cd-5902-44c8-aa9b-fe00b7bd2ccf","stop":1766415617338},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766415617343,"name":"Navigate to \"/login\"","uuid":"9130639c-df87-40a7-8a56-70a345c3903d","stop":1766415617631},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766415617633,"name":"Wait for load state \"load\"","uuid":"0e13dffd-f5ef-4dcb-95bc-0f9de534f3b6","stop":1766415617634},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766415617664,"name":"Expect \"toHaveURL\"","uuid":"b3017680-9bdf-4cf0-bffc-fb1d27fc8a30","stop":1766415617670}],"attachments":[],"parameters":[],"start":1766415617339,"name":"Launch browser and navigate to register page","uuid":"8d6255a6-f279-404b-bb89-6cea515f7897","stop":1766415617671},{"status":"failed","statusDetails":{"message":"Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Name' })\n","trace":"Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Name' })\n\n    at RegisterAnAccountPage.register (D:\\Development\\PlaywrightProject\\pages\\RegisterPage.ts:34:64)\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:21:28\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:20:16"},"stage":"finished","steps":[{"status":"failed","statusDetails":{"message":"Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Name' })\n","trace":"Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Name' })\n\n    at RegisterAnAccountPage.register (D:\\Development\\PlaywrightProject\\pages\\RegisterPage.ts:34:64)\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:21:28\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:20:16"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766415617673,"name":"Click getByRole('textbox', { name: 'Name' })","uuid":"5af56826-3992-423e-b1b0-8a17c3a557f5","stop":1766415677268}],"attachments":[],"parameters":[],"start":1766415617671,"name":"Register a new user account and logout","uuid":"7e424efe-22cc-4334-8b29-dbc80d5d0942","stop":1766415677269},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"6a42d622-477c-417b-8d36-0cb4b2330696-attachment.png","type":"image/png"}],"parameters":[],"start":1766415677338,"name":"screenshot","stop":1766415677338},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"error-context","source":"6c1bd976-ad69-4b95-936d-1a9c52ba3296-attachment.md","type":"text/markdown"}],"parameters":[],"start":1766415677339,"name":"error-context","stop":1766415677339},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"randomUser\"","start":1766415677245,"uuid":"8b6077f6-9f8f-48fe-85d1-97915b6e02dc","stop":1766415677245},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1766415677245,"uuid":"451e3f12-f5e3-4ac2-9e40-333214722b07","stop":1766415677245},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Close context","start":1766415677259,"uuid":"2ac19193-0915-4894-a23f-599b7982ac86","stop":1766415677270}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1766415677246,"uuid":"0f1b1f1e-904c-48ce-a0e5-992742b439e8","stop":1766415677270}],"attachments":[],"parameters":[],"name":"After Hooks","start":1766415677195,"uuid":"ebf8c412-5785-4c68-bb37-853e5a9b86f1","stop":1766415677281}],"attachments":[],"parameters":[{"name":"Project","value":"chromium"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"Login.correctUser.spec.ts"},{"name":"titlePath","value":" > chromium > Login.correctUser.spec.ts"},{"name":"host","value":"Iacob_Ruben"},{"name":"thread","value":"pid-34100-worker-3"},{"name":"parentSuite","value":"chromium"},{"name":"suite","value":"Login.correctUser.spec.ts"}],"links":[],"start":1766415617063,"testCaseId":"e49311894968ad800e2ceab12e58411e","fullName":"Login.correctUser.spec.ts:8:5","titlePath":["Login.correctUser.spec.ts"],"stop":1766415677152}
+{
+  "uuid": "b0bb0646-b344-4dd4-9586-a9b8d6c3ef81",
+  "name": "Loggin with correct user",
+  "historyId": "e49311894968ad800e2ceab12e58411e:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "broken",
+  "statusDetails": {
+    "message": "Test timeout of 60000ms exceeded.",
+    "trace": "Test timeout of 60000ms exceeded."
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Launch browser",
+              "start": 1766415617089,
+              "uuid": "ffae0bcc-afa7-43eb-a770-58bd21fefeae",
+              "stop": 1766415617178
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"browser\"",
+          "start": 1766415617085,
+          "uuid": "ef40d853-d8bb-4425-bb56-99fe30c7a626",
+          "stop": 1766415617179
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create context",
+              "start": 1766415617184,
+              "uuid": "3d470b34-fe1c-483d-8691-67b52a439192",
+              "stop": 1766415617194
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1766415617181,
+          "uuid": "0fdf435b-092b-4ad3-8860-c39a01a1fd8d",
+          "stop": 1766415617195
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create page",
+              "start": 1766415617199,
+              "uuid": "46c43964-e24a-4050-b701-11f37bc28b30",
+              "stop": 1766415617338
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1766415617196,
+          "uuid": "1898ac52-d39f-4601-8da8-64a55d6ab4fc",
+          "stop": 1766415617338
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"randomUser\"",
+          "start": 1766415617338,
+          "uuid": "f4df5fb5-815b-4b69-afdb-6d31b709e7f8",
+          "stop": 1766415617338
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1766415617074,
+      "uuid": "ada314cd-5902-44c8-aa9b-fe00b7bd2ccf",
+      "stop": 1766415617338
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766415617343,
+          "name": "Navigate to \"/login\"",
+          "uuid": "9130639c-df87-40a7-8a56-70a345c3903d",
+          "stop": 1766415617631
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766415617633,
+          "name": "Wait for load state \"load\"",
+          "uuid": "0e13dffd-f5ef-4dcb-95bc-0f9de534f3b6",
+          "stop": 1766415617634
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766415617664,
+          "name": "Expect \"toHaveURL\"",
+          "uuid": "b3017680-9bdf-4cf0-bffc-fb1d27fc8a30",
+          "stop": 1766415617670
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766415617339,
+      "name": "Launch browser and navigate to register page",
+      "uuid": "8d6255a6-f279-404b-bb89-6cea515f7897",
+      "stop": 1766415617671
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Name' })\n",
+        "trace": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Name' })\n\n    at RegisterAnAccountPage.register (D:\\Development\\PlaywrightProject\\pages\\RegisterPage.ts:34:64)\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:21:28\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:20:16"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Name' })\n",
+            "trace": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Name' })\n\n    at RegisterAnAccountPage.register (D:\\Development\\PlaywrightProject\\pages\\RegisterPage.ts:34:64)\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:21:28\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:20:16"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766415617673,
+          "name": "Click getByRole('textbox', { name: 'Name' })",
+          "uuid": "5af56826-3992-423e-b1b0-8a17c3a557f5",
+          "stop": 1766415677268
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766415617671,
+      "name": "Register a new user account and logout",
+      "uuid": "7e424efe-22cc-4334-8b29-dbc80d5d0942",
+      "stop": 1766415677269
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "6a42d622-477c-417b-8d36-0cb4b2330696-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1766415677338,
+      "name": "screenshot",
+      "stop": 1766415677338
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "error-context",
+          "source": "6c1bd976-ad69-4b95-936d-1a9c52ba3296-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1766415677339,
+      "name": "error-context",
+      "stop": 1766415677339
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"randomUser\"",
+          "start": 1766415677245,
+          "uuid": "8b6077f6-9f8f-48fe-85d1-97915b6e02dc",
+          "stop": 1766415677245
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1766415677245,
+          "uuid": "451e3f12-f5e3-4ac2-9e40-333214722b07",
+          "stop": 1766415677245
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Close context",
+              "start": 1766415677259,
+              "uuid": "2ac19193-0915-4894-a23f-599b7982ac86",
+              "stop": 1766415677270
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1766415677246,
+          "uuid": "0f1b1f1e-904c-48ce-a0e5-992742b439e8",
+          "stop": 1766415677270
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1766415677195,
+      "uuid": "ebf8c412-5785-4c68-bb37-853e5a9b86f1",
+      "stop": 1766415677281
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "Login.correctUser.spec.ts" },
+    { "name": "titlePath", "value": " > chromium > Login.correctUser.spec.ts" },
+    { "name": "host", "value": "Iacob_Ruben" },
+    { "name": "thread", "value": "pid-34100-worker-3" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "Login.correctUser.spec.ts" }
+  ],
+  "links": [],
+  "start": 1766415617063,
+  "testCaseId": "e49311894968ad800e2ceab12e58411e",
+  "fullName": "Login.correctUser.spec.ts:8:5",
+  "titlePath": ["Login.correctUser.spec.ts"],
+  "stop": 1766415677152
+}

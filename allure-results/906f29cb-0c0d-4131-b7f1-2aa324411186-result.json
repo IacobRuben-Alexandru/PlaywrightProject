@@ -1,1 +1,340 @@
-{"uuid":"906f29cb-0c0d-4131-b7f1-2aa324411186","name":"Add Review","historyId":"e8a5e3dc767044dcc51acbd6e94779f9:5bd835b0d6b1d4ada3b9f0db936e82c8","status":"broken","statusDetails":{"message":"Test timeout of 60000ms exceeded.","trace":"Test timeout of 60000ms exceeded."},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create context","start":1770639457211,"uuid":"1e7d0f2b-178c-4372-8dd0-cb84b3ca75f8","stop":1770639457216}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1770639457210,"uuid":"0b8efcf2-c8bc-46c7-bf55-8eb0143dca2d","stop":1770639457217},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create page","start":1770639457218,"uuid":"950215e5-f752-4c02-aa57-fe306cff8b06","stop":1770639457291}],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1770639457217,"uuid":"505955a4-ad81-4a84-a6a3-919075b78117","stop":1770639457291}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1770639457205,"uuid":"6454f9bf-3bae-4c5d-b410-b766c40c7423","stop":1770639457291},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770639457294,"name":"Navigate to \"/\"","uuid":"d084be52-e2c5-44eb-b5a7-4a2e76f3b6f9","stop":1770639458535},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770639458537,"name":"Wait for load state \"load\"","uuid":"a9b8fa50-e390-4c91-b8ef-7b86bbf04f32","stop":1770639458536},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770639458620,"name":"Click getByRole('button', { name: 'Consent', exact: true })","uuid":"adebfed9-2b20-4444-a40d-a177fe9aa27b","stop":1770639458707},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770639458708,"name":"Add style tag","uuid":"4d5abc2f-0c63-4b5e-9722-524ffea3a732","stop":1770639458722},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770639458723,"name":"Expect \"toHaveURL\"","uuid":"64a0d091-425a-432a-bbbf-81804bf490d6","stop":1770639458740}],"attachments":[],"parameters":[],"start":1770639457292,"name":"Launch browser and navigate to home page","uuid":"f3f0f40a-f9a8-4dd4-8961-0e3b24bfaf66","stop":1770639458740},{"status":"failed","statusDetails":{"message":"Error: locator.fill: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Your Name' })\n","trace":"Error: locator.fill: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Your Name' })\n\n    at automationexercise.addReview (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:107:69)\n    at D:\\Development\\PlaywrightProject\\tests\\ui\\addReview.spec.ts:13:9\n    at D:\\Development\\PlaywrightProject\\tests\\ui\\addReview.spec.ts:10:5"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770639458743,"name":"Click getByRole('link', { name: ' Products' })","uuid":"067faca4-1472-4615-9ce0-d95ef4d5c008","stop":1770639459032},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770639459034,"name":"Wait for load state \"load\"","uuid":"c5789f0e-f860-4fb1-8372-bcee31314c71","stop":1770639459986},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770639459989,"name":"Add style tag","uuid":"3df57573-0354-4f74-b24a-5b644c13635a","stop":1770639460051},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770639460052,"name":"Expect \"toBeVisible\"","uuid":"d3e42045-1671-4aee-b375-2066e31fdeac","stop":1770639460148},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770639460150,"name":"Click getByRole('link', { name: ' View Product' }).first()","uuid":"59ae73cd-0144-41d3-8a11-08cad47adc7f","stop":1770639460490},{"status":"failed","statusDetails":{"message":"Error: locator.fill: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Your Name' })\n","trace":"Error: locator.fill: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Your Name' })\n\n    at automationexercise.addReview (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:107:69)\n    at D:\\Development\\PlaywrightProject\\tests\\ui\\addReview.spec.ts:13:9\n    at D:\\Development\\PlaywrightProject\\tests\\ui\\addReview.spec.ts:10:5"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770639460492,"name":"Fill \"Real User\" getByRole('textbox', { name: 'Your Name' })","uuid":"e157b1da-37fc-4cef-9552-a9834e8dfc25","stop":1770639517443}],"attachments":[],"parameters":[],"start":1770639458741,"name":"Navigate to products, click on 'View Product' and add review","uuid":"0b1b647b-1673-4933-9d32-95708ab48658","stop":1770639517443},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"ece14d60-c21e-4c39-99fd-dcdd83c95956-attachment.png","type":"image/png"}],"parameters":[],"start":1770639517542,"name":"screenshot","stop":1770639517542},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"error-context","source":"e793ddf0-a3f3-45d8-b3df-82950c9cce7a-attachment.md","type":"text/markdown"}],"parameters":[],"start":1770639517544,"name":"error-context","stop":1770639517544},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1770639517383,"uuid":"0561f36c-7179-4770-8a56-335d314825f5","stop":1770639517383},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Close context","start":1770639517432,"uuid":"4bfe2225-ad1e-4925-9daf-e9421d959dc8","stop":1770639517445}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1770639517384,"uuid":"cb04ea4d-d6ce-459a-baa8-7cf193144d72","stop":1770639517445}],"attachments":[],"parameters":[],"name":"After Hooks","start":1770639517225,"uuid":"c28e75a8-49f3-4bf5-ba1e-ec68101c8f05","stop":1770639517458}],"attachments":[],"parameters":[{"name":"Project","value":"chromium"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"ui.addReview.spec.ts"},{"name":"titlePath","value":" > chromium > ui\\addReview.spec.ts"},{"name":"host","value":"Iacob_Ruben"},{"name":"thread","value":"pid-50568-worker-0"},{"name":"parentSuite","value":"chromium"},{"name":"suite","value":"ui\\addReview.spec.ts"}],"links":[],"start":1770639457205,"testCaseId":"e8a5e3dc767044dcc51acbd6e94779f9","fullName":"ui/addReview.spec.ts:5:5","titlePath":["ui","addReview.spec.ts"],"stop":1770639517438}
+{
+  "uuid": "906f29cb-0c0d-4131-b7f1-2aa324411186",
+  "name": "Add Review",
+  "historyId": "e8a5e3dc767044dcc51acbd6e94779f9:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "broken",
+  "statusDetails": {
+    "message": "Test timeout of 60000ms exceeded.",
+    "trace": "Test timeout of 60000ms exceeded."
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create context",
+              "start": 1770639457211,
+              "uuid": "1e7d0f2b-178c-4372-8dd0-cb84b3ca75f8",
+              "stop": 1770639457216
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1770639457210,
+          "uuid": "0b8efcf2-c8bc-46c7-bf55-8eb0143dca2d",
+          "stop": 1770639457217
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create page",
+              "start": 1770639457218,
+              "uuid": "950215e5-f752-4c02-aa57-fe306cff8b06",
+              "stop": 1770639457291
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1770639457217,
+          "uuid": "505955a4-ad81-4a84-a6a3-919075b78117",
+          "stop": 1770639457291
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1770639457205,
+      "uuid": "6454f9bf-3bae-4c5d-b410-b766c40c7423",
+      "stop": 1770639457291
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770639457294,
+          "name": "Navigate to \"/\"",
+          "uuid": "d084be52-e2c5-44eb-b5a7-4a2e76f3b6f9",
+          "stop": 1770639458535
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770639458537,
+          "name": "Wait for load state \"load\"",
+          "uuid": "a9b8fa50-e390-4c91-b8ef-7b86bbf04f32",
+          "stop": 1770639458536
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770639458620,
+          "name": "Click getByRole('button', { name: 'Consent', exact: true })",
+          "uuid": "adebfed9-2b20-4444-a40d-a177fe9aa27b",
+          "stop": 1770639458707
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770639458708,
+          "name": "Add style tag",
+          "uuid": "4d5abc2f-0c63-4b5e-9722-524ffea3a732",
+          "stop": 1770639458722
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770639458723,
+          "name": "Expect \"toHaveURL\"",
+          "uuid": "64a0d091-425a-432a-bbbf-81804bf490d6",
+          "stop": 1770639458740
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1770639457292,
+      "name": "Launch browser and navigate to home page",
+      "uuid": "f3f0f40a-f9a8-4dd4-8961-0e3b24bfaf66",
+      "stop": 1770639458740
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: locator.fill: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Your Name' })\n",
+        "trace": "Error: locator.fill: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Your Name' })\n\n    at automationexercise.addReview (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:107:69)\n    at D:\\Development\\PlaywrightProject\\tests\\ui\\addReview.spec.ts:13:9\n    at D:\\Development\\PlaywrightProject\\tests\\ui\\addReview.spec.ts:10:5"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770639458743,
+          "name": "Click getByRole('link', { name: ' Products' })",
+          "uuid": "067faca4-1472-4615-9ce0-d95ef4d5c008",
+          "stop": 1770639459032
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770639459034,
+          "name": "Wait for load state \"load\"",
+          "uuid": "c5789f0e-f860-4fb1-8372-bcee31314c71",
+          "stop": 1770639459986
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770639459989,
+          "name": "Add style tag",
+          "uuid": "3df57573-0354-4f74-b24a-5b644c13635a",
+          "stop": 1770639460051
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770639460052,
+          "name": "Expect \"toBeVisible\"",
+          "uuid": "d3e42045-1671-4aee-b375-2066e31fdeac",
+          "stop": 1770639460148
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770639460150,
+          "name": "Click getByRole('link', { name: ' View Product' }).first()",
+          "uuid": "59ae73cd-0144-41d3-8a11-08cad47adc7f",
+          "stop": 1770639460490
+        },
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "Error: locator.fill: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Your Name' })\n",
+            "trace": "Error: locator.fill: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Your Name' })\n\n    at automationexercise.addReview (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:107:69)\n    at D:\\Development\\PlaywrightProject\\tests\\ui\\addReview.spec.ts:13:9\n    at D:\\Development\\PlaywrightProject\\tests\\ui\\addReview.spec.ts:10:5"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770639460492,
+          "name": "Fill \"Real User\" getByRole('textbox', { name: 'Your Name' })",
+          "uuid": "e157b1da-37fc-4cef-9552-a9834e8dfc25",
+          "stop": 1770639517443
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1770639458741,
+      "name": "Navigate to products, click on 'View Product' and add review",
+      "uuid": "0b1b647b-1673-4933-9d32-95708ab48658",
+      "stop": 1770639517443
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "ece14d60-c21e-4c39-99fd-dcdd83c95956-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1770639517542,
+      "name": "screenshot",
+      "stop": 1770639517542
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "error-context",
+          "source": "e793ddf0-a3f3-45d8-b3df-82950c9cce7a-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1770639517544,
+      "name": "error-context",
+      "stop": 1770639517544
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1770639517383,
+          "uuid": "0561f36c-7179-4770-8a56-335d314825f5",
+          "stop": 1770639517383
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Close context",
+              "start": 1770639517432,
+              "uuid": "4bfe2225-ad1e-4925-9daf-e9421d959dc8",
+              "stop": 1770639517445
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1770639517384,
+          "uuid": "cb04ea4d-d6ce-459a-baa8-7cf193144d72",
+          "stop": 1770639517445
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1770639517225,
+      "uuid": "c28e75a8-49f3-4bf5-ba1e-ec68101c8f05",
+      "stop": 1770639517458
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "ui.addReview.spec.ts" },
+    { "name": "titlePath", "value": " > chromium > ui\\addReview.spec.ts" },
+    { "name": "host", "value": "Iacob_Ruben" },
+    { "name": "thread", "value": "pid-50568-worker-0" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "ui\\addReview.spec.ts" }
+  ],
+  "links": [],
+  "start": 1770639457205,
+  "testCaseId": "e8a5e3dc767044dcc51acbd6e94779f9",
+  "fullName": "ui/addReview.spec.ts:5:5",
+  "titlePath": ["ui", "addReview.spec.ts"],
+  "stop": 1770639517438
+}

@@ -2,118 +2,118 @@
 
 ```yaml
 - generic [active] [ref=e1]:
-  - banner [ref=e2]:
-    - generic [ref=e5]:
-      - link "Website for automation practice" [ref=e8] [cursor=pointer]:
-        - /url: /
-        - img "Website for automation practice" [ref=e9]
-      - list [ref=e12]:
-        - listitem [ref=e13]:
-          - link " Home" [ref=e14] [cursor=pointer]:
-            - /url: /
-            - generic [ref=e15]: 
-            - text: Home
-        - listitem [ref=e16]:
-          - link " Products" [ref=e17] [cursor=pointer]:
-            - /url: /products
-            - generic [ref=e18]: 
-            - text: Products
-        - listitem [ref=e19]:
-          - link " Cart" [ref=e20] [cursor=pointer]:
-            - /url: /view_cart
-            - generic [ref=e21]: 
-            - text: Cart
-        - listitem [ref=e22]:
-          - link " Signup / Login" [ref=e23] [cursor=pointer]:
-            - /url: /login
-            - generic [ref=e24]: 
-            - text: Signup / Login
-        - listitem [ref=e25]:
-          - link " Test Cases" [ref=e26] [cursor=pointer]:
-            - /url: /test_cases
-            - generic [ref=e27]: 
-            - text: Test Cases
-        - listitem [ref=e28]:
-          - link " API Testing" [ref=e29] [cursor=pointer]:
-            - /url: /api_list
-            - generic [ref=e30]: 
-            - text: API Testing
-        - listitem [ref=e31]:
-          - link " Video Tutorials" [ref=e32] [cursor=pointer]:
-            - /url: https://www.youtube.com/c/AutomationExercise
-            - generic [ref=e33]: 
-            - text: Video Tutorials
-        - listitem [ref=e34]:
-          - link " Contact us" [ref=e35] [cursor=pointer]:
-            - /url: /contact_us
-            - generic [ref=e36]: 
-            - text: Contact us
-  - generic [ref=e39]:
-    - generic [ref=e41]:
-      - heading "Login to your account" [level=2] [ref=e42]
-      - generic [ref=e43]:
-        - textbox "Email Address" [ref=e44]
-        - textbox "Password" [ref=e45]
-        - button "Login" [ref=e46] [cursor=pointer]
-    - heading "OR" [level=2] [ref=e48]
-    - generic [ref=e50]:
-      - heading "New User Signup!" [level=2] [ref=e51]
-      - generic [ref=e52]:
-        - textbox "Name" [ref=e53]: Test User
-        - textbox "Email Address" [ref=e54]: Test321@Test123.com
-        - paragraph [ref=e55]: Email Address already exist!
-        - button "Signup" [ref=e56] [cursor=pointer]
-  - contentinfo [ref=e57]:
-    - generic [ref=e62]:
-      - heading "Subscription" [level=2] [ref=e63]
-      - generic [ref=e64]:
-        - textbox "Your email address" [ref=e65]
-        - button "" [ref=e66] [cursor=pointer]:
-          - generic [ref=e67]: 
-        - paragraph [ref=e68]:
-          - text: Get the most recent updates from
-          - text: our site and be updated your self...
-    - paragraph [ref=e72]: Copyright © 2021 All rights reserved
-  - text: 
-  - generic:
-    - insertion:
-      - generic:
-        - iframe
-  - insertion [ref=e73]:
-    - iframe [ref=e76]:
-      - iframe [ref=f1e1]:
-        - generic [ref=f2e1]:
-          - generic [ref=f2e2]:
+    - banner [ref=e2]:
+        - generic [ref=e5]:
+            - link "Website for automation practice" [ref=e8] [cursor=pointer]:
+                - /url: /
+                - img "Website for automation practice" [ref=e9]
+            - list [ref=e12]:
+                - listitem [ref=e13]:
+                    - link " Home" [ref=e14] [cursor=pointer]:
+                        - /url: /
+                        - generic [ref=e15]: 
+                        - text: Home
+                - listitem [ref=e16]:
+                    - link " Products" [ref=e17] [cursor=pointer]:
+                        - /url: /products
+                        - generic [ref=e18]: 
+                        - text: Products
+                - listitem [ref=e19]:
+                    - link " Cart" [ref=e20] [cursor=pointer]:
+                        - /url: /view_cart
+                        - generic [ref=e21]: 
+                        - text: Cart
+                - listitem [ref=e22]:
+                    - link " Signup / Login" [ref=e23] [cursor=pointer]:
+                        - /url: /login
+                        - generic [ref=e24]: 
+                        - text: Signup / Login
+                - listitem [ref=e25]:
+                    - link " Test Cases" [ref=e26] [cursor=pointer]:
+                        - /url: /test_cases
+                        - generic [ref=e27]: 
+                        - text: Test Cases
+                - listitem [ref=e28]:
+                    - link " API Testing" [ref=e29] [cursor=pointer]:
+                        - /url: /api_list
+                        - generic [ref=e30]: 
+                        - text: API Testing
+                - listitem [ref=e31]:
+                    - link " Video Tutorials" [ref=e32] [cursor=pointer]:
+                        - /url: https://www.youtube.com/c/AutomationExercise
+                        - generic [ref=e33]: 
+                        - text: Video Tutorials
+                - listitem [ref=e34]:
+                    - link " Contact us" [ref=e35] [cursor=pointer]:
+                        - /url: /contact_us
+                        - generic [ref=e36]: 
+                        - text: Contact us
+    - generic [ref=e39]:
+        - generic [ref=e41]:
+            - heading "Login to your account" [level=2] [ref=e42]
+            - generic [ref=e43]:
+                - textbox "Email Address" [ref=e44]
+                - textbox "Password" [ref=e45]
+                - button "Login" [ref=e46] [cursor=pointer]
+        - heading "OR" [level=2] [ref=e48]
+        - generic [ref=e50]:
+            - heading "New User Signup!" [level=2] [ref=e51]
+            - generic [ref=e52]:
+                - textbox "Name" [ref=e53]: Test User
+                - textbox "Email Address" [ref=e54]: Test321@Test123.com
+                - paragraph [ref=e55]: Email Address already exist!
+                - button "Signup" [ref=e56] [cursor=pointer]
+    - contentinfo [ref=e57]:
+        - generic [ref=e62]:
+            - heading "Subscription" [level=2] [ref=e63]
+            - generic [ref=e64]:
+                - textbox "Your email address" [ref=e65]
+                - button "" [ref=e66] [cursor=pointer]:
+                    - generic [ref=e67]: 
+                - paragraph [ref=e68]:
+                    - text: Get the most recent updates from
+                    - text: our site and be updated your self...
+        - paragraph [ref=e72]: Copyright © 2021 All rights reserved
+    - text: 
+    - generic:
+        - insertion:
             - generic:
-              - img [ref=f2e6] [cursor=pointer]
-              - button [ref=f2e9] [cursor=pointer]:
-                - img [ref=f2e10]
-          - iframe [ref=f2e17]:
-            - iframe [ref=f3e2]:
-              - generic [ref=f4e2] [cursor=pointer]:
-                - paragraph [ref=f4e7]: AFLĂ MAI MULTE
-                - generic [ref=f4e16]:
-                  - paragraph [ref=f4e20]: fierăstraie excelente
-                  - paragraph [ref=f4e24]: Tehnologie
-                - paragraph [ref=f4e32]: Optimizate pentru
-                - paragraph [ref=f4e36]: Cea mai mică greutate din clasa sa
-                - paragraph [ref=f4e39]: Tăiere cu până la 40% mai rapidă
-                - paragraph [ref=f4e42]: Până la 50% mai multă putere
-                - paragraph [ref=f4e70]: Echipate cu noul motor fără perii POWERSTATE™
-                - generic [ref=f4e71]:
-                  - paragraph [ref=f4e74]: PENTRU EFICIENȚĂ MAXIMĂ
-                  - paragraph [ref=f4e77]: 36% cupru
-                - generic [ref=f4e78]:
-                  - paragraph [ref=f4e81]: PENTRU CEL MAI BUN RAPORT PUTERE/GREUTATE
-                  - paragraph [ref=f4e84]: 15% mai compact
-                - generic [ref=f4e86]:
-                  - paragraph [ref=f4e90]: M18 FUEL™ Fierăstrău circular cu mâner spate Gen 2
-                  - paragraph [ref=f4e94]: M18 FUEL™ Fierăstrău circular compatibil cu șina de ghidare
-                - generic [ref=f4e97]:
-                  - paragraph [ref=f4e101]: Descoperă
-                  - paragraph [ref=f4e105]: ferăstraie circulare
-                  - paragraph [ref=f4e108]: optimizate pentru
-  - generic [ref=e78]:
-    - button "Privacy and cookie settings" [ref=e79] [cursor=pointer]
-    - generic [ref=e80]: "Managed by Google. Complies with IAB TCF. CMP ID: 300"
+                - iframe
+    - insertion [ref=e73]:
+        - iframe [ref=e76]:
+            - iframe [ref=f1e1]:
+                - generic [ref=f2e1]:
+                    - generic [ref=f2e2]:
+                        - generic:
+                            - img [ref=f2e6] [cursor=pointer]
+                            - button [ref=f2e9] [cursor=pointer]:
+                                - img [ref=f2e10]
+                    - iframe [ref=f2e17]:
+                        - iframe [ref=f3e2]:
+                            - generic [ref=f4e2] [cursor=pointer]:
+                                - paragraph [ref=f4e7]: AFLĂ MAI MULTE
+                                - generic [ref=f4e16]:
+                                    - paragraph [ref=f4e20]: fierăstraie excelente
+                                    - paragraph [ref=f4e24]: Tehnologie
+                                - paragraph [ref=f4e32]: Optimizate pentru
+                                - paragraph [ref=f4e36]: Cea mai mică greutate din clasa sa
+                                - paragraph [ref=f4e39]: Tăiere cu până la 40% mai rapidă
+                                - paragraph [ref=f4e42]: Până la 50% mai multă putere
+                                - paragraph [ref=f4e70]: Echipate cu noul motor fără perii POWERSTATE™
+                                - generic [ref=f4e71]:
+                                    - paragraph [ref=f4e74]: PENTRU EFICIENȚĂ MAXIMĂ
+                                    - paragraph [ref=f4e77]: 36% cupru
+                                - generic [ref=f4e78]:
+                                    - paragraph [ref=f4e81]: PENTRU CEL MAI BUN RAPORT PUTERE/GREUTATE
+                                    - paragraph [ref=f4e84]: 15% mai compact
+                                - generic [ref=f4e86]:
+                                    - paragraph [ref=f4e90]: M18 FUEL™ Fierăstrău circular cu mâner spate Gen 2
+                                    - paragraph [ref=f4e94]: M18 FUEL™ Fierăstrău circular compatibil cu șina de ghidare
+                                - generic [ref=f4e97]:
+                                    - paragraph [ref=f4e101]: Descoperă
+                                    - paragraph [ref=f4e105]: ferăstraie circulare
+                                    - paragraph [ref=f4e108]: optimizate pentru
+    - generic [ref=e78]:
+        - button "Privacy and cookie settings" [ref=e79] [cursor=pointer]
+        - generic [ref=e80]: 'Managed by Google. Complies with IAB TCF. CMP ID: 300'
 ```

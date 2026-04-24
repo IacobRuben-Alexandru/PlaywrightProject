@@ -2,18 +2,17 @@ import { generateRandomEmail, generateRandomPassword } from '../utils/helpers';
 export const URL = 'https://automationexercise.com';
 
 export const PATHS = {
-    login: '/login',
-    contactUs: '/contact_us',
-    file: './ContactUsFile.txt',
+  login: '/login',
+  contactUs: '/contact_us',
+  file: './ContactUsFile.txt',
 };
 export const FileInput = {
-    fileInput: 'input[type="file"]',
+  fileInput: 'input[type="file"]',
 };
 export const USERS = {
-    name: 'Test User',
-    email: 'Test321@Test123.com',
-    password: 'Test@1234',
-    name1: 'Real User',
-    email1: 'RealUser@Real123.com',
-    
+  name: 'Test User',
+  email: 'Test321@Test123.com',
+  password: 'Test@1234',
+  name1: 'Real User',
+  email1: 'RealUser@Real123.com',
 };

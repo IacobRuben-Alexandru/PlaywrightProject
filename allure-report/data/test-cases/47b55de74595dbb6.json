@@ -1,1 +1,994 @@
-{"uid":"47b55de74595dbb6","name":"Loggin with correct user","fullName":"Login.correctUser.spec.ts:8:5","historyId":"e49311894968ad800e2ceab12e58411e:b444eb0fbe6390c71e68b51dd25701fc","time":{"start":1766413436513,"stop":1766413471654,"duration":35141},"status":"passed","flaky":false,"newFailed":false,"newBroken":false,"newPassed":false,"retriesCount":5,"retriesStatusChange":true,"beforeStages":[],"testStage":{"status":"passed","steps":[{"name":"Before Hooks","time":{"start":1766413436504,"stop":1766413436969,"duration":465},"status":"passed","steps":[{"name":"Fixture \"context\"","time":{"start":1766413436515,"stop":1766413436533,"duration":18},"status":"passed","steps":[{"name":"Create context","time":{"start":1766413436516,"stop":1766413436533,"duration":17},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0}],"attachments":[],"parameters":[],"hasContent":true,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":1},{"name":"Fixture \"page\"","time":{"start":1766413436534,"stop":1766413436968,"duration":434},"status":"passed","steps":[{"name":"Create page","time":{"start":1766413436535,"stop":1766413436967,"duration":432},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0}],"attachments":[],"parameters":[],"hasContent":true,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":1},{"name":"Fixture \"randomUser\"","time":{"start":1766413436968,"stop":1766413436968,"duration":0},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0}],"attachments":[],"parameters":[],"hasContent":true,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":5},{"name":"Launch browser and navigate to register page","time":{"start":1766413436969,"stop":1766413439647,"duration":2678},"status":"passed","steps":[{"name":"Navigate to \"/login\"","time":{"start":1766413436974,"stop":1766413438989,"duration":2015},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Wait for load state \"load\"","time":{"start":1766413438992,"stop":1766413438993,"duration":1},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Click getByRole('button', { name: 'Consent', exact: true })","time":{"start":1766413439268,"stop":1766413439620,"duration":352},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Expect \"toHaveURL\"","time":{"start":1766413439621,"stop":1766413439646,"duration":25},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0}],"attachments":[],"parameters":[],"hasContent":true,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":4},{"name":"Register a new user account and logout","time":{"start":1766413439647,"stop":1766413459826,"duration":20179},"status":"passed","steps":[{"name":"Click getByRole('textbox', { name: 'Name' })","time":{"start":1766413439649,"stop":1766413439765,"duration":116},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Fill \"sTJBZYyeWwCSNUX\" getByRole('textbox', { name: 'Name' })","time":{"start":1766413439768,"stop":1766413439800,"duration":32},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Click locator('form').filter({ hasText: 'Signup' }).getByPlaceholder('Email Address')","time":{"start":1766413439802,"stop":1766413439878,"duration":76},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Fill \"user92248@gmail.com\" locator('form').filter({ hasText: 'Signup' }).getByPlaceholder('Email Address')","time":{"start":1766413439881,"stop":1766413439914,"duration":33},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Click getByRole('button', { name: 'Signup' })","time":{"start":1766413439916,"stop":1766413445333,"duration":5417},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Expect \"toBeVisible\"","time":{"start":1766413445335,"stop":1766413445580,"duration":245},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Click getByRole('textbox', { name: 'Password *' })","time":{"start":1766413445582,"stop":1766413445806,"duration":224},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Fill \"Test@1234\" getByRole('textbox', { name: 'Password *' })","time":{"start":1766413445808,"stop":1766413445847,"duration":39},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Click getByRole('textbox', { name: 'First name *' })","time":{"start":1766413445849,"stop":1766413446073,"duration":224},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Fill \"sTJBZYyeWwCSNUX\" getByRole('textbox', { name: 'First name *' })","time":{"start":1766413446075,"stop":1766413446297,"duration":222},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Click getByRole('textbox', { name: 'Last name *' })","time":{"start":1766413446299,"stop":1766413446413,"duration":114},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Fill \"nzRONElVWyRkto\" getByRole('textbox', { name: 'Last name *' })","time":{"start":1766413446415,"stop":1766413446467,"duration":52},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Fill \"MVtaAk\" getByRole('textbox', { name: 'Address * (Street address, P.' })","time":{"start":1766413446469,"stop":1766413446522,"duration":53},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Query count getByLabel('Country *').locator('option')","time":{"start":1766413446525,"stop":1766413446545,"duration":20},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Select option getByLabel('Country *')","time":{"start":1766413446582,"stop":1766413446674,"duration":92},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Click getByRole('textbox', { name: 'State *' })","time":{"start":1766413446676,"stop":1766413446812,"duration":136},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Fill \"AVKzrM\" getByRole('textbox', { name: 'State *' })","time":{"start":1766413446814,"stop":1766413446968,"duration":154},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Click getByRole('textbox', { name: 'City * Zipcode *' })","time":{"start":1766413446969,"stop":1766413448257,"duration":1288},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Fill \"gcfYMBHOuy\" getByRole('textbox', { name: 'City * Zipcode *' })","time":{"start":1766413448258,"stop":1766413449235,"duration":977},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Click locator('#zipcode')","time":{"start":1766413449237,"stop":1766413450976,"duration":1739},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Fill \"XAVhxFIgVxJg\" locator('#zipcode')","time":{"start":1766413450978,"stop":1766413451589,"duration":611},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Click getByRole('textbox', { name: 'Mobile Number *' })","time":{"start":1766413451591,"stop":1766413451817,"duration":226},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Fill \"SHceWxUbxnMDv\" getByRole('textbox', { name: 'Mobile Number *' })","time":{"start":1766413451818,"stop":1766413451879,"duration":61},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Click getByRole('button', { name: 'Create Account' })","time":{"start":1766413451881,"stop":1766413453113,"duration":1232},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Expect \"toContainText\"","time":{"start":1766413453115,"stop":1766413453272,"duration":157},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Click getByRole('link', { name: 'Continue' })","time":{"start":1766413453273,"stop":1766413455523,"duration":2250},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Click getByRole('link', { name: ' Logout' })","time":{"start":1766413455524,"stop":1766413459825,"duration":4301},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0}],"attachments":[],"parameters":[],"hasContent":true,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":27},{"name":"Login with registered user credentials and delete account","time":{"start":1766413459826,"stop":1766413469954,"duration":10128},"status":"passed","steps":[{"name":"Navigate to \"/login\"","time":{"start":1766413459829,"stop":1766413463056,"duration":3227},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Fill \"user92248@gmail.com\" getByRole('textbox', { name: 'Email Address' }).first()","time":{"start":1766413463191,"stop":1766413463312,"duration":121},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Fill \"Test@1234\" getByRole('textbox', { name: 'Password' })","time":{"start":1766413463313,"stop":1766413463479,"duration":166},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Click getByRole('button', { name: 'Login' })","time":{"start":1766413463481,"stop":1766413465357,"duration":1876},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Expect \"toBeVisible\"","time":{"start":1766413465358,"stop":1766413465625,"duration":267},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Click getByRole('link', { name: ' Delete Account' })","time":{"start":1766413465627,"stop":1766413467422,"duration":1795},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Click getByRole('link', { name: 'Continue' })","time":{"start":1766413467624,"stop":1766413469954,"duration":2330},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0}],"attachments":[],"parameters":[],"hasContent":true,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":7},{"name":"After Hooks","time":{"start":1766413469956,"stop":1766413471668,"duration":1712},"status":"passed","steps":[{"name":"Fixture \"randomUser\"","time":{"start":1766413469956,"stop":1766413469957,"duration":1},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Fixture \"page\"","time":{"start":1766413469957,"stop":1766413469958,"duration":1},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0},{"name":"Fixture \"context\"","time":{"start":1766413469958,"stop":1766413471660,"duration":1702},"status":"passed","steps":[{"name":"Close context","time":{"start":1766413471641,"stop":1766413471660,"duration":19},"status":"passed","steps":[],"attachments":[],"parameters":[],"hasContent":false,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":0}],"attachments":[],"parameters":[],"hasContent":true,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":1}],"attachments":[],"parameters":[],"hasContent":true,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":4}],"attachments":[],"parameters":[],"hasContent":true,"shouldDisplayMessage":false,"attachmentsCount":0,"attachmentStep":false,"stepsCount":52},"afterStages":[],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"Login.correctUser.spec.ts"},{"name":"titlePath","value":" > firefox > Login.correctUser.spec.ts"},{"name":"host","value":"Iacob_Ruben"},{"name":"thread","value":"pid-19076-worker-0"},{"name":"parentSuite","value":"firefox"},{"name":"suite","value":"Login.correctUser.spec.ts"},{"name":"resultFormat","value":"allure2"}],"parameters":[{"name":"Project","value":"firefox"}],"links":[],"hidden":false,"retry":false,"extra":{"severity":"normal","retries":[{"uid":"cb61badb7ba5ba5a","status":"failed","statusDetails":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Enter Account Information')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Enter Account Information')\n","time":{"start":1766412625041,"stop":1766412634654,"duration":9613}},{"uid":"c4b8dae13e7ed7f6","status":"failed","statusDetails":"Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Enter Account Information')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Enter Account Information')\n","time":{"start":1766412579337,"stop":1766412588800,"duration":9463}},{"uid":"92283e421b79cb9f","status":"failed","statusDetails":"Error: page.goto: Target page, context or browser has been closed","time":{"start":1766412303447,"stop":1766412361018,"duration":57571}},{"uid":"7d20130b870d7cea","status":"broken","statusDetails":"Test timeout of 60000ms exceeded.","time":{"start":1766412049429,"stop":1766412110178,"duration":60749}},{"uid":"b47e17a149b06dd2","status":"failed","statusDetails":"Error: page.goto: Target page, context or browser has been closed\nCall log:\n  - navigating to \"https://automationexercise.com/login\", waiting until \"load\"\n","time":{"start":1766411844308,"stop":1766411844875,"duration":567}}],"categories":[],"tags":[]},"source":"47b55de74595dbb6.json","parameterValues":["firefox"]}
+{
+  "uid": "47b55de74595dbb6",
+  "name": "Loggin with correct user",
+  "fullName": "Login.correctUser.spec.ts:8:5",
+  "historyId": "e49311894968ad800e2ceab12e58411e:b444eb0fbe6390c71e68b51dd25701fc",
+  "time": { "start": 1766413436513, "stop": 1766413471654, "duration": 35141 },
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 5,
+  "retriesStatusChange": true,
+  "beforeStages": [],
+  "testStage": {
+    "status": "passed",
+    "steps": [
+      {
+        "name": "Before Hooks",
+        "time": {
+          "start": 1766413436504,
+          "stop": 1766413436969,
+          "duration": 465
+        },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "Fixture \"context\"",
+            "time": {
+              "start": 1766413436515,
+              "stop": 1766413436533,
+              "duration": 18
+            },
+            "status": "passed",
+            "steps": [
+              {
+                "name": "Create context",
+                "time": {
+                  "start": 1766413436516,
+                  "stop": 1766413436533,
+                  "duration": 17
+                },
+                "status": "passed",
+                "steps": [],
+                "attachments": [],
+                "parameters": [],
+                "hasContent": false,
+                "shouldDisplayMessage": false,
+                "attachmentsCount": 0,
+                "attachmentStep": false,
+                "stepsCount": 0
+              }
+            ],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": true,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 1
+          },
+          {
+            "name": "Fixture \"page\"",
+            "time": {
+              "start": 1766413436534,
+              "stop": 1766413436968,
+              "duration": 434
+            },
+            "status": "passed",
+            "steps": [
+              {
+                "name": "Create page",
+                "time": {
+                  "start": 1766413436535,
+                  "stop": 1766413436967,
+                  "duration": 432
+                },
+                "status": "passed",
+                "steps": [],
+                "attachments": [],
+                "parameters": [],
+                "hasContent": false,
+                "shouldDisplayMessage": false,
+                "attachmentsCount": 0,
+                "attachmentStep": false,
+                "stepsCount": 0
+              }
+            ],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": true,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 1
+          },
+          {
+            "name": "Fixture \"randomUser\"",
+            "time": {
+              "start": 1766413436968,
+              "stop": 1766413436968,
+              "duration": 0
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          }
+        ],
+        "attachments": [],
+        "parameters": [],
+        "hasContent": true,
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "attachmentStep": false,
+        "stepsCount": 5
+      },
+      {
+        "name": "Launch browser and navigate to register page",
+        "time": {
+          "start": 1766413436969,
+          "stop": 1766413439647,
+          "duration": 2678
+        },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "Navigate to \"/login\"",
+            "time": {
+              "start": 1766413436974,
+              "stop": 1766413438989,
+              "duration": 2015
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Wait for load state \"load\"",
+            "time": {
+              "start": 1766413438992,
+              "stop": 1766413438993,
+              "duration": 1
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Click getByRole('button', { name: 'Consent', exact: true })",
+            "time": {
+              "start": 1766413439268,
+              "stop": 1766413439620,
+              "duration": 352
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Expect \"toHaveURL\"",
+            "time": {
+              "start": 1766413439621,
+              "stop": 1766413439646,
+              "duration": 25
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          }
+        ],
+        "attachments": [],
+        "parameters": [],
+        "hasContent": true,
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "attachmentStep": false,
+        "stepsCount": 4
+      },
+      {
+        "name": "Register a new user account and logout",
+        "time": {
+          "start": 1766413439647,
+          "stop": 1766413459826,
+          "duration": 20179
+        },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "Click getByRole('textbox', { name: 'Name' })",
+            "time": {
+              "start": 1766413439649,
+              "stop": 1766413439765,
+              "duration": 116
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Fill \"sTJBZYyeWwCSNUX\" getByRole('textbox', { name: 'Name' })",
+            "time": {
+              "start": 1766413439768,
+              "stop": 1766413439800,
+              "duration": 32
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Click locator('form').filter({ hasText: 'Signup' }).getByPlaceholder('Email Address')",
+            "time": {
+              "start": 1766413439802,
+              "stop": 1766413439878,
+              "duration": 76
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Fill \"user92248@gmail.com\" locator('form').filter({ hasText: 'Signup' }).getByPlaceholder('Email Address')",
+            "time": {
+              "start": 1766413439881,
+              "stop": 1766413439914,
+              "duration": 33
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Click getByRole('button', { name: 'Signup' })",
+            "time": {
+              "start": 1766413439916,
+              "stop": 1766413445333,
+              "duration": 5417
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Expect \"toBeVisible\"",
+            "time": {
+              "start": 1766413445335,
+              "stop": 1766413445580,
+              "duration": 245
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Click getByRole('textbox', { name: 'Password *' })",
+            "time": {
+              "start": 1766413445582,
+              "stop": 1766413445806,
+              "duration": 224
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Fill \"Test@1234\" getByRole('textbox', { name: 'Password *' })",
+            "time": {
+              "start": 1766413445808,
+              "stop": 1766413445847,
+              "duration": 39
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Click getByRole('textbox', { name: 'First name *' })",
+            "time": {
+              "start": 1766413445849,
+              "stop": 1766413446073,
+              "duration": 224
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Fill \"sTJBZYyeWwCSNUX\" getByRole('textbox', { name: 'First name *' })",
+            "time": {
+              "start": 1766413446075,
+              "stop": 1766413446297,
+              "duration": 222
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Click getByRole('textbox', { name: 'Last name *' })",
+            "time": {
+              "start": 1766413446299,
+              "stop": 1766413446413,
+              "duration": 114
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Fill \"nzRONElVWyRkto\" getByRole('textbox', { name: 'Last name *' })",
+            "time": {
+              "start": 1766413446415,
+              "stop": 1766413446467,
+              "duration": 52
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Fill \"MVtaAk\" getByRole('textbox', { name: 'Address * (Street address, P.' })",
+            "time": {
+              "start": 1766413446469,
+              "stop": 1766413446522,
+              "duration": 53
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Query count getByLabel('Country *').locator('option')",
+            "time": {
+              "start": 1766413446525,
+              "stop": 1766413446545,
+              "duration": 20
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Select option getByLabel('Country *')",
+            "time": {
+              "start": 1766413446582,
+              "stop": 1766413446674,
+              "duration": 92
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Click getByRole('textbox', { name: 'State *' })",
+            "time": {
+              "start": 1766413446676,
+              "stop": 1766413446812,
+              "duration": 136
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Fill \"AVKzrM\" getByRole('textbox', { name: 'State *' })",
+            "time": {
+              "start": 1766413446814,
+              "stop": 1766413446968,
+              "duration": 154
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Click getByRole('textbox', { name: 'City * Zipcode *' })",
+            "time": {
+              "start": 1766413446969,
+              "stop": 1766413448257,
+              "duration": 1288
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Fill \"gcfYMBHOuy\" getByRole('textbox', { name: 'City * Zipcode *' })",
+            "time": {
+              "start": 1766413448258,
+              "stop": 1766413449235,
+              "duration": 977
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Click locator('#zipcode')",
+            "time": {
+              "start": 1766413449237,
+              "stop": 1766413450976,
+              "duration": 1739
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Fill \"XAVhxFIgVxJg\" locator('#zipcode')",
+            "time": {
+              "start": 1766413450978,
+              "stop": 1766413451589,
+              "duration": 611
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Click getByRole('textbox', { name: 'Mobile Number *' })",
+            "time": {
+              "start": 1766413451591,
+              "stop": 1766413451817,
+              "duration": 226
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Fill \"SHceWxUbxnMDv\" getByRole('textbox', { name: 'Mobile Number *' })",
+            "time": {
+              "start": 1766413451818,
+              "stop": 1766413451879,
+              "duration": 61
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Click getByRole('button', { name: 'Create Account' })",
+            "time": {
+              "start": 1766413451881,
+              "stop": 1766413453113,
+              "duration": 1232
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Expect \"toContainText\"",
+            "time": {
+              "start": 1766413453115,
+              "stop": 1766413453272,
+              "duration": 157
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Click getByRole('link', { name: 'Continue' })",
+            "time": {
+              "start": 1766413453273,
+              "stop": 1766413455523,
+              "duration": 2250
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Click getByRole('link', { name: ' Logout' })",
+            "time": {
+              "start": 1766413455524,
+              "stop": 1766413459825,
+              "duration": 4301
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          }
+        ],
+        "attachments": [],
+        "parameters": [],
+        "hasContent": true,
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "attachmentStep": false,
+        "stepsCount": 27
+      },
+      {
+        "name": "Login with registered user credentials and delete account",
+        "time": {
+          "start": 1766413459826,
+          "stop": 1766413469954,
+          "duration": 10128
+        },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "Navigate to \"/login\"",
+            "time": {
+              "start": 1766413459829,
+              "stop": 1766413463056,
+              "duration": 3227
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Fill \"user92248@gmail.com\" getByRole('textbox', { name: 'Email Address' }).first()",
+            "time": {
+              "start": 1766413463191,
+              "stop": 1766413463312,
+              "duration": 121
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Fill \"Test@1234\" getByRole('textbox', { name: 'Password' })",
+            "time": {
+              "start": 1766413463313,
+              "stop": 1766413463479,
+              "duration": 166
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Click getByRole('button', { name: 'Login' })",
+            "time": {
+              "start": 1766413463481,
+              "stop": 1766413465357,
+              "duration": 1876
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Expect \"toBeVisible\"",
+            "time": {
+              "start": 1766413465358,
+              "stop": 1766413465625,
+              "duration": 267
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Click getByRole('link', { name: ' Delete Account' })",
+            "time": {
+              "start": 1766413465627,
+              "stop": 1766413467422,
+              "duration": 1795
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Click getByRole('link', { name: 'Continue' })",
+            "time": {
+              "start": 1766413467624,
+              "stop": 1766413469954,
+              "duration": 2330
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          }
+        ],
+        "attachments": [],
+        "parameters": [],
+        "hasContent": true,
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "attachmentStep": false,
+        "stepsCount": 7
+      },
+      {
+        "name": "After Hooks",
+        "time": {
+          "start": 1766413469956,
+          "stop": 1766413471668,
+          "duration": 1712
+        },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "Fixture \"randomUser\"",
+            "time": {
+              "start": 1766413469956,
+              "stop": 1766413469957,
+              "duration": 1
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Fixture \"page\"",
+            "time": {
+              "start": 1766413469957,
+              "stop": 1766413469958,
+              "duration": 1
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": false,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 0
+          },
+          {
+            "name": "Fixture \"context\"",
+            "time": {
+              "start": 1766413469958,
+              "stop": 1766413471660,
+              "duration": 1702
+            },
+            "status": "passed",
+            "steps": [
+              {
+                "name": "Close context",
+                "time": {
+                  "start": 1766413471641,
+                  "stop": 1766413471660,
+                  "duration": 19
+                },
+                "status": "passed",
+                "steps": [],
+                "attachments": [],
+                "parameters": [],
+                "hasContent": false,
+                "shouldDisplayMessage": false,
+                "attachmentsCount": 0,
+                "attachmentStep": false,
+                "stepsCount": 0
+              }
+            ],
+            "attachments": [],
+            "parameters": [],
+            "hasContent": true,
+            "shouldDisplayMessage": false,
+            "attachmentsCount": 0,
+            "attachmentStep": false,
+            "stepsCount": 1
+          }
+        ],
+        "attachments": [],
+        "parameters": [],
+        "hasContent": true,
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "attachmentStep": false,
+        "stepsCount": 4
+      }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "hasContent": true,
+    "shouldDisplayMessage": false,
+    "attachmentsCount": 0,
+    "attachmentStep": false,
+    "stepsCount": 52
+  },
+  "afterStages": [],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "Login.correctUser.spec.ts" },
+    { "name": "titlePath", "value": " > firefox > Login.correctUser.spec.ts" },
+    { "name": "host", "value": "Iacob_Ruben" },
+    { "name": "thread", "value": "pid-19076-worker-0" },
+    { "name": "parentSuite", "value": "firefox" },
+    { "name": "suite", "value": "Login.correctUser.spec.ts" },
+    { "name": "resultFormat", "value": "allure2" }
+  ],
+  "parameters": [{ "name": "Project", "value": "firefox" }],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "normal",
+    "retries": [
+      {
+        "uid": "cb61badb7ba5ba5a",
+        "status": "failed",
+        "statusDetails": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Enter Account Information')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Enter Account Information')\n",
+        "time": {
+          "start": 1766412625041,
+          "stop": 1766412634654,
+          "duration": 9613
+        }
+      },
+      {
+        "uid": "c4b8dae13e7ed7f6",
+        "status": "failed",
+        "statusDetails": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByText('Enter Account Information')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 5000ms\n  - waiting for getByText('Enter Account Information')\n",
+        "time": {
+          "start": 1766412579337,
+          "stop": 1766412588800,
+          "duration": 9463
+        }
+      },
+      {
+        "uid": "92283e421b79cb9f",
+        "status": "failed",
+        "statusDetails": "Error: page.goto: Target page, context or browser has been closed",
+        "time": {
+          "start": 1766412303447,
+          "stop": 1766412361018,
+          "duration": 57571
+        }
+      },
+      {
+        "uid": "7d20130b870d7cea",
+        "status": "broken",
+        "statusDetails": "Test timeout of 60000ms exceeded.",
+        "time": {
+          "start": 1766412049429,
+          "stop": 1766412110178,
+          "duration": 60749
+        }
+      },
+      {
+        "uid": "b47e17a149b06dd2",
+        "status": "failed",
+        "statusDetails": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  - navigating to \"https://automationexercise.com/login\", waiting until \"load\"\n",
+        "time": {
+          "start": 1766411844308,
+          "stop": 1766411844875,
+          "duration": 567
+        }
+      }
+    ],
+    "categories": [],
+    "tags": []
+  },
+  "source": "47b55de74595dbb6.json",
+  "parameterValues": ["firefox"]
+}

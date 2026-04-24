@@ -1,1 +1,340 @@
-{"uuid":"585926a0-f795-4534-9f9f-ec34b450136e","name":"Remove product from cart","historyId":"226698be95b7dfd826cd4c0a6bf4c8c1:5bd835b0d6b1d4ada3b9f0db936e82c8","status":"broken","statusDetails":{"message":"Test timeout of 60000ms exceeded.","trace":"Test timeout of 60000ms exceeded."},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create context","start":1766415674205,"uuid":"2d732675-2313-4b68-96ee-38aa4215e847","stop":1766415674208}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1766415674204,"uuid":"1da040ab-0a38-4bad-900f-5996f0c5805a","stop":1766415674208},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create page","start":1766415674210,"uuid":"f784a6df-3ba8-443b-8c95-aee2efd12c17","stop":1766415674269}],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1766415674209,"uuid":"7ecf6b46-0020-42a6-b79b-d3d6a2a91e61","stop":1766415674269}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1766415674196,"uuid":"6556e3f1-65de-4806-b44a-7b30de5ca3d2","stop":1766415674269},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766415674272,"name":"Navigate to \"/\"","uuid":"8e11cedc-b5fc-4e76-81ab-d01ba770aab3","stop":1766415676173},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766415676174,"name":"Wait for load state \"load\"","uuid":"8f21e0bf-7ac5-4185-aac9-a33aaaf730a6","stop":1766415676175},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766415676227,"name":"Click getByRole('button', { name: 'Consent', exact: true })","uuid":"362182e8-d80d-45ee-8a76-e200fdd4f49d","stop":1766415676299},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766415676299,"name":"Expect \"toHaveURL\"","uuid":"c9dee82c-e28b-471e-b026-c1625c849c80","stop":1766415676302}],"attachments":[],"parameters":[],"start":1766415674270,"name":"Launch browser and navigate to home page","uuid":"cd44b429-3cf3-40ea-ae19-3e03d080fff3","stop":1766415676302},{"status":"failed","statusDetails":{"message":"Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByText('Add to cart').nth(3)\n    - locator resolved to <a data-product-id=\"2\" class=\"btn btn-default add-to-cart\">…</a>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n      - waiting 100ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div id=\"cartModal\" class=\"modal show\">…</div> intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n    26 × waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"modal-content\">…</div> from <div id=\"cartModal\" class=\"modal show\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe vspace=\"0\" hspace=\"0\" width=\"728\" height=\"90\" tabindex=\"0\" id=\"aswift_2\" scrolling=\"no\" name=\"aswift_2\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" title=\"Advertisement\" allowtransparency=\"true\" data-load-complete=\"true\" aria-label=\"Advertisement\" data-google-container-id=\"a!3\" allow=\"attribution-reporting; run-ad-auction\" data-google-query-id=\"CJimg5e70ZEDFXVHHQkdWxYCaw\" sandbox=\"allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-…></iframe> from <ins data-ad-status=\"filled\" data-anchor-shown=\"true\" data-adsbygoogle-status=\"done\" data-anchor-status=\"displayed\" class=\"adsbygoogle adsbygoogle-noablate\">…</ins> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe vspace=\"0\" hspace=\"0\" width=\"728\" height=\"90\" tabindex=\"0\" id=\"aswift_2\" scrolling=\"no\" name=\"aswift_2\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" title=\"Advertisement\" allowtransparency=\"true\" data-load-complete=\"true\" aria-label=\"Advertisement\" data-google-container-id=\"a!3\" allow=\"attribution-reporting; run-ad-auction\" data-google-query-id=\"CJimg5e70ZEDFXVHHQkdWxYCaw\" sandbox=\"allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-…></iframe> from <ins data-ad-status=\"filled\" data-anchor-shown=\"true\" data-adsbygoogle-status=\"done\" data-anchor-status=\"displayed\" class=\"adsbygoogle adsbygoogle-noablate\">…</ins> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div id=\"cartModal\" class=\"modal show\">…</div> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n    - waiting for element to be visible, enabled and stable\n","trace":"Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByText('Add to cart').nth(3)\n    - locator resolved to <a data-product-id=\"2\" class=\"btn btn-default add-to-cart\">…</a>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n      - waiting 100ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div id=\"cartModal\" class=\"modal show\">…</div> intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n    26 × waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"modal-content\">…</div> from <div id=\"cartModal\" class=\"modal show\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe vspace=\"0\" hspace=\"0\" width=\"728\" height=\"90\" tabindex=\"0\" id=\"aswift_2\" scrolling=\"no\" name=\"aswift_2\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" title=\"Advertisement\" allowtransparency=\"true\" data-load-complete=\"true\" aria-label=\"Advertisement\" data-google-container-id=\"a!3\" allow=\"attribution-reporting; run-ad-auction\" data-google-query-id=\"CJimg5e70ZEDFXVHHQkdWxYCaw\" sandbox=\"allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-…></iframe> from <ins data-ad-status=\"filled\" data-anchor-shown=\"true\" data-adsbygoogle-status=\"done\" data-anchor-status=\"displayed\" class=\"adsbygoogle adsbygoogle-noablate\">…</ins> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe vspace=\"0\" hspace=\"0\" width=\"728\" height=\"90\" tabindex=\"0\" id=\"aswift_2\" scrolling=\"no\" name=\"aswift_2\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" title=\"Advertisement\" allowtransparency=\"true\" data-load-complete=\"true\" aria-label=\"Advertisement\" data-google-container-id=\"a!3\" allow=\"attribution-reporting; run-ad-auction\" data-google-query-id=\"CJimg5e70ZEDFXVHHQkdWxYCaw\" sandbox=\"allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-…></iframe> from <ins data-ad-status=\"filled\" data-anchor-shown=\"true\" data-adsbygoogle-status=\"done\" data-anchor-status=\"displayed\" class=\"adsbygoogle adsbygoogle-noablate\">…</ins> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div id=\"cartModal\" class=\"modal show\">…</div> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n    - waiting for element to be visible, enabled and stable\n\n    at D:\\Development\\PlaywrightProject\\tests\\removeFromCart.spec.ts:30:52\n    at D:\\Development\\PlaywrightProject\\tests\\removeFromCart.spec.ts:16:5"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766415676304,"name":"Click getByRole('link', { name: ' Products' })","uuid":"88de1651-4092-49ec-9c13-8d5ff17d3070","stop":1766415676626},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766415676628,"name":"Scroll into view locator('[class=\"product-image-wrapper\"]').first()","uuid":"d4bea758-9116-4243-a7d6-0599d58c6680","stop":1766415676731},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766415676732,"name":"Hover locator('[class=\"product-image-wrapper\"]').first()","uuid":"3db310e0-96fc-488c-a437-912859024c6b","stop":1766415676783},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766415676784,"name":"Click getByText('Add to cart').first()","uuid":"ddbf9114-19a1-4f9f-bf3e-ff547ac70737","stop":1766415676897},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766415676908,"name":"Scroll into view locator('[class=\"product-image-wrapper\"]').nth(1)","uuid":"a6aae269-c47f-4b0c-96d0-07392ab5d3ee","stop":1766415676952},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766415676953,"name":"Hover locator('[class=\"product-image-wrapper\"]').nth(1)","uuid":"d89ec7a5-7984-419b-badc-c1d2d9af0288","stop":1766415677000},{"status":"failed","statusDetails":{"message":"Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByText('Add to cart').nth(3)\n    - locator resolved to <a data-product-id=\"2\" class=\"btn btn-default add-to-cart\">…</a>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n      - waiting 100ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div id=\"cartModal\" class=\"modal show\">…</div> intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n    26 × waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"modal-content\">…</div> from <div id=\"cartModal\" class=\"modal show\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe vspace=\"0\" hspace=\"0\" width=\"728\" height=\"90\" tabindex=\"0\" id=\"aswift_2\" scrolling=\"no\" name=\"aswift_2\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" title=\"Advertisement\" allowtransparency=\"true\" data-load-complete=\"true\" aria-label=\"Advertisement\" data-google-container-id=\"a!3\" allow=\"attribution-reporting; run-ad-auction\" data-google-query-id=\"CJimg5e70ZEDFXVHHQkdWxYCaw\" sandbox=\"allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-…></iframe> from <ins data-ad-status=\"filled\" data-anchor-shown=\"true\" data-adsbygoogle-status=\"done\" data-anchor-status=\"displayed\" class=\"adsbygoogle adsbygoogle-noablate\">…</ins> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe vspace=\"0\" hspace=\"0\" width=\"728\" height=\"90\" tabindex=\"0\" id=\"aswift_2\" scrolling=\"no\" name=\"aswift_2\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" title=\"Advertisement\" allowtransparency=\"true\" data-load-complete=\"true\" aria-label=\"Advertisement\" data-google-container-id=\"a!3\" allow=\"attribution-reporting; run-ad-auction\" data-google-query-id=\"CJimg5e70ZEDFXVHHQkdWxYCaw\" sandbox=\"allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-…></iframe> from <ins data-ad-status=\"filled\" data-anchor-shown=\"true\" data-adsbygoogle-status=\"done\" data-anchor-status=\"displayed\" class=\"adsbygoogle adsbygoogle-noablate\">…</ins> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div id=\"cartModal\" class=\"modal show\">…</div> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n    - waiting for element to be visible, enabled and stable\n","trace":"Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByText('Add to cart').nth(3)\n    - locator resolved to <a data-product-id=\"2\" class=\"btn btn-default add-to-cart\">…</a>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n      - waiting 100ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div id=\"cartModal\" class=\"modal show\">…</div> intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n    26 × waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"modal-content\">…</div> from <div id=\"cartModal\" class=\"modal show\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe vspace=\"0\" hspace=\"0\" width=\"728\" height=\"90\" tabindex=\"0\" id=\"aswift_2\" scrolling=\"no\" name=\"aswift_2\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" title=\"Advertisement\" allowtransparency=\"true\" data-load-complete=\"true\" aria-label=\"Advertisement\" data-google-container-id=\"a!3\" allow=\"attribution-reporting; run-ad-auction\" data-google-query-id=\"CJimg5e70ZEDFXVHHQkdWxYCaw\" sandbox=\"allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-…></iframe> from <ins data-ad-status=\"filled\" data-anchor-shown=\"true\" data-adsbygoogle-status=\"done\" data-anchor-status=\"displayed\" class=\"adsbygoogle adsbygoogle-noablate\">…</ins> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe vspace=\"0\" hspace=\"0\" width=\"728\" height=\"90\" tabindex=\"0\" id=\"aswift_2\" scrolling=\"no\" name=\"aswift_2\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" title=\"Advertisement\" allowtransparency=\"true\" data-load-complete=\"true\" aria-label=\"Advertisement\" data-google-container-id=\"a!3\" allow=\"attribution-reporting; run-ad-auction\" data-google-query-id=\"CJimg5e70ZEDFXVHHQkdWxYCaw\" sandbox=\"allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-…></iframe> from <ins data-ad-status=\"filled\" data-anchor-shown=\"true\" data-adsbygoogle-status=\"done\" data-anchor-status=\"displayed\" class=\"adsbygoogle adsbygoogle-noablate\">…</ins> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div id=\"cartModal\" class=\"modal show\">…</div> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n    - waiting for element to be visible, enabled and stable\n\n    at D:\\Development\\PlaywrightProject\\tests\\removeFromCart.spec.ts:30:52\n    at D:\\Development\\PlaywrightProject\\tests\\removeFromCart.spec.ts:16:5"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766415677001,"name":"Click getByText('Add to cart').nth(3)","uuid":"7bcbe0ee-303a-4da9-8bb5-8fbb7112d14c","stop":1766415734411}],"attachments":[],"parameters":[],"start":1766415676303,"name":"Navigate to products, add two products to cart","uuid":"fe561f85-aefb-42e2-a6f3-85b0d4d00f43","stop":1766415734412},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"a1948a6e-3cdc-47fa-9220-2958ff78509c-attachment.png","type":"image/png"}],"parameters":[],"start":1766415734510,"name":"screenshot","stop":1766415734510},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"error-context","source":"20b71254-3ebd-4689-b633-21ca6a928562-attachment.md","type":"text/markdown"}],"parameters":[],"start":1766415734510,"name":"error-context","stop":1766415734510},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1766415734286,"uuid":"afc96e99-9bc9-474e-8914-f69849ea05f2","stop":1766415734286},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Close context","start":1766415734381,"uuid":"1d41e5a8-5c1f-4fb7-ab4a-fb33fa47cf43","stop":1766415734413}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1766415734286,"uuid":"df2cf99a-d4be-47a2-a153-b8b4c1fab765","stop":1766415734414}],"attachments":[],"parameters":[],"name":"After Hooks","start":1766415734222,"uuid":"422ca9bb-3edd-4135-9a1d-ffbe49636e98","stop":1766415734422}],"attachments":[],"parameters":[{"name":"Project","value":"chromium"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"removeFromCart.spec.ts"},{"name":"titlePath","value":" > chromium > removeFromCart.spec.ts"},{"name":"host","value":"Iacob_Ruben"},{"name":"thread","value":"pid-34100-worker-1"},{"name":"parentSuite","value":"chromium"},{"name":"suite","value":"removeFromCart.spec.ts"}],"links":[],"start":1766415674197,"testCaseId":"226698be95b7dfd826cd4c0a6bf4c8c1","fullName":"removeFromCart.spec.ts:7:5","titlePath":["removeFromCart.spec.ts"],"stop":1766415734405}
+{
+  "uuid": "585926a0-f795-4534-9f9f-ec34b450136e",
+  "name": "Remove product from cart",
+  "historyId": "226698be95b7dfd826cd4c0a6bf4c8c1:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "broken",
+  "statusDetails": {
+    "message": "Test timeout of 60000ms exceeded.",
+    "trace": "Test timeout of 60000ms exceeded."
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create context",
+              "start": 1766415674205,
+              "uuid": "2d732675-2313-4b68-96ee-38aa4215e847",
+              "stop": 1766415674208
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1766415674204,
+          "uuid": "1da040ab-0a38-4bad-900f-5996f0c5805a",
+          "stop": 1766415674208
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create page",
+              "start": 1766415674210,
+              "uuid": "f784a6df-3ba8-443b-8c95-aee2efd12c17",
+              "stop": 1766415674269
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1766415674209,
+          "uuid": "7ecf6b46-0020-42a6-b79b-d3d6a2a91e61",
+          "stop": 1766415674269
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1766415674196,
+      "uuid": "6556e3f1-65de-4806-b44a-7b30de5ca3d2",
+      "stop": 1766415674269
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766415674272,
+          "name": "Navigate to \"/\"",
+          "uuid": "8e11cedc-b5fc-4e76-81ab-d01ba770aab3",
+          "stop": 1766415676173
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766415676174,
+          "name": "Wait for load state \"load\"",
+          "uuid": "8f21e0bf-7ac5-4185-aac9-a33aaaf730a6",
+          "stop": 1766415676175
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766415676227,
+          "name": "Click getByRole('button', { name: 'Consent', exact: true })",
+          "uuid": "362182e8-d80d-45ee-8a76-e200fdd4f49d",
+          "stop": 1766415676299
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766415676299,
+          "name": "Expect \"toHaveURL\"",
+          "uuid": "c9dee82c-e28b-471e-b026-c1625c849c80",
+          "stop": 1766415676302
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766415674270,
+      "name": "Launch browser and navigate to home page",
+      "uuid": "cd44b429-3cf3-40ea-ae19-3e03d080fff3",
+      "stop": 1766415676302
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByText('Add to cart').nth(3)\n    - locator resolved to <a data-product-id=\"2\" class=\"btn btn-default add-to-cart\">…</a>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n      - waiting 100ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div id=\"cartModal\" class=\"modal show\">…</div> intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n    26 × waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"modal-content\">…</div> from <div id=\"cartModal\" class=\"modal show\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe vspace=\"0\" hspace=\"0\" width=\"728\" height=\"90\" tabindex=\"0\" id=\"aswift_2\" scrolling=\"no\" name=\"aswift_2\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" title=\"Advertisement\" allowtransparency=\"true\" data-load-complete=\"true\" aria-label=\"Advertisement\" data-google-container-id=\"a!3\" allow=\"attribution-reporting; run-ad-auction\" data-google-query-id=\"CJimg5e70ZEDFXVHHQkdWxYCaw\" sandbox=\"allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-…></iframe> from <ins data-ad-status=\"filled\" data-anchor-shown=\"true\" data-adsbygoogle-status=\"done\" data-anchor-status=\"displayed\" class=\"adsbygoogle adsbygoogle-noablate\">…</ins> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe vspace=\"0\" hspace=\"0\" width=\"728\" height=\"90\" tabindex=\"0\" id=\"aswift_2\" scrolling=\"no\" name=\"aswift_2\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" title=\"Advertisement\" allowtransparency=\"true\" data-load-complete=\"true\" aria-label=\"Advertisement\" data-google-container-id=\"a!3\" allow=\"attribution-reporting; run-ad-auction\" data-google-query-id=\"CJimg5e70ZEDFXVHHQkdWxYCaw\" sandbox=\"allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-…></iframe> from <ins data-ad-status=\"filled\" data-anchor-shown=\"true\" data-adsbygoogle-status=\"done\" data-anchor-status=\"displayed\" class=\"adsbygoogle adsbygoogle-noablate\">…</ins> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div id=\"cartModal\" class=\"modal show\">…</div> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n    - waiting for element to be visible, enabled and stable\n",
+        "trace": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByText('Add to cart').nth(3)\n    - locator resolved to <a data-product-id=\"2\" class=\"btn btn-default add-to-cart\">…</a>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n      - waiting 100ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div id=\"cartModal\" class=\"modal show\">…</div> intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n    26 × waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"modal-content\">…</div> from <div id=\"cartModal\" class=\"modal show\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe vspace=\"0\" hspace=\"0\" width=\"728\" height=\"90\" tabindex=\"0\" id=\"aswift_2\" scrolling=\"no\" name=\"aswift_2\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" title=\"Advertisement\" allowtransparency=\"true\" data-load-complete=\"true\" aria-label=\"Advertisement\" data-google-container-id=\"a!3\" allow=\"attribution-reporting; run-ad-auction\" data-google-query-id=\"CJimg5e70ZEDFXVHHQkdWxYCaw\" sandbox=\"allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-…></iframe> from <ins data-ad-status=\"filled\" data-anchor-shown=\"true\" data-adsbygoogle-status=\"done\" data-anchor-status=\"displayed\" class=\"adsbygoogle adsbygoogle-noablate\">…</ins> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe vspace=\"0\" hspace=\"0\" width=\"728\" height=\"90\" tabindex=\"0\" id=\"aswift_2\" scrolling=\"no\" name=\"aswift_2\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" title=\"Advertisement\" allowtransparency=\"true\" data-load-complete=\"true\" aria-label=\"Advertisement\" data-google-container-id=\"a!3\" allow=\"attribution-reporting; run-ad-auction\" data-google-query-id=\"CJimg5e70ZEDFXVHHQkdWxYCaw\" sandbox=\"allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-…></iframe> from <ins data-ad-status=\"filled\" data-anchor-shown=\"true\" data-adsbygoogle-status=\"done\" data-anchor-status=\"displayed\" class=\"adsbygoogle adsbygoogle-noablate\">…</ins> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div id=\"cartModal\" class=\"modal show\">…</div> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n    - waiting for element to be visible, enabled and stable\n\n    at D:\\Development\\PlaywrightProject\\tests\\removeFromCart.spec.ts:30:52\n    at D:\\Development\\PlaywrightProject\\tests\\removeFromCart.spec.ts:16:5"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766415676304,
+          "name": "Click getByRole('link', { name: ' Products' })",
+          "uuid": "88de1651-4092-49ec-9c13-8d5ff17d3070",
+          "stop": 1766415676626
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766415676628,
+          "name": "Scroll into view locator('[class=\"product-image-wrapper\"]').first()",
+          "uuid": "d4bea758-9116-4243-a7d6-0599d58c6680",
+          "stop": 1766415676731
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766415676732,
+          "name": "Hover locator('[class=\"product-image-wrapper\"]').first()",
+          "uuid": "3db310e0-96fc-488c-a437-912859024c6b",
+          "stop": 1766415676783
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766415676784,
+          "name": "Click getByText('Add to cart').first()",
+          "uuid": "ddbf9114-19a1-4f9f-bf3e-ff547ac70737",
+          "stop": 1766415676897
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766415676908,
+          "name": "Scroll into view locator('[class=\"product-image-wrapper\"]').nth(1)",
+          "uuid": "a6aae269-c47f-4b0c-96d0-07392ab5d3ee",
+          "stop": 1766415676952
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766415676953,
+          "name": "Hover locator('[class=\"product-image-wrapper\"]').nth(1)",
+          "uuid": "d89ec7a5-7984-419b-badc-c1d2d9af0288",
+          "stop": 1766415677000
+        },
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByText('Add to cart').nth(3)\n    - locator resolved to <a data-product-id=\"2\" class=\"btn btn-default add-to-cart\">…</a>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n      - waiting 100ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div id=\"cartModal\" class=\"modal show\">…</div> intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n    26 × waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"modal-content\">…</div> from <div id=\"cartModal\" class=\"modal show\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe vspace=\"0\" hspace=\"0\" width=\"728\" height=\"90\" tabindex=\"0\" id=\"aswift_2\" scrolling=\"no\" name=\"aswift_2\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" title=\"Advertisement\" allowtransparency=\"true\" data-load-complete=\"true\" aria-label=\"Advertisement\" data-google-container-id=\"a!3\" allow=\"attribution-reporting; run-ad-auction\" data-google-query-id=\"CJimg5e70ZEDFXVHHQkdWxYCaw\" sandbox=\"allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-…></iframe> from <ins data-ad-status=\"filled\" data-anchor-shown=\"true\" data-adsbygoogle-status=\"done\" data-anchor-status=\"displayed\" class=\"adsbygoogle adsbygoogle-noablate\">…</ins> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe vspace=\"0\" hspace=\"0\" width=\"728\" height=\"90\" tabindex=\"0\" id=\"aswift_2\" scrolling=\"no\" name=\"aswift_2\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" title=\"Advertisement\" allowtransparency=\"true\" data-load-complete=\"true\" aria-label=\"Advertisement\" data-google-container-id=\"a!3\" allow=\"attribution-reporting; run-ad-auction\" data-google-query-id=\"CJimg5e70ZEDFXVHHQkdWxYCaw\" sandbox=\"allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-…></iframe> from <ins data-ad-status=\"filled\" data-anchor-shown=\"true\" data-adsbygoogle-status=\"done\" data-anchor-status=\"displayed\" class=\"adsbygoogle adsbygoogle-noablate\">…</ins> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div id=\"cartModal\" class=\"modal show\">…</div> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n    - waiting for element to be visible, enabled and stable\n",
+            "trace": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByText('Add to cart').nth(3)\n    - locator resolved to <a data-product-id=\"2\" class=\"btn btn-default add-to-cart\">…</a>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n      - waiting 100ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div id=\"cartModal\" class=\"modal show\">…</div> intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n    26 × waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"modal-content\">…</div> from <div id=\"cartModal\" class=\"modal show\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe vspace=\"0\" hspace=\"0\" width=\"728\" height=\"90\" tabindex=\"0\" id=\"aswift_2\" scrolling=\"no\" name=\"aswift_2\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" title=\"Advertisement\" allowtransparency=\"true\" data-load-complete=\"true\" aria-label=\"Advertisement\" data-google-container-id=\"a!3\" allow=\"attribution-reporting; run-ad-auction\" data-google-query-id=\"CJimg5e70ZEDFXVHHQkdWxYCaw\" sandbox=\"allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-…></iframe> from <ins data-ad-status=\"filled\" data-anchor-shown=\"true\" data-adsbygoogle-status=\"done\" data-anchor-status=\"displayed\" class=\"adsbygoogle adsbygoogle-noablate\">…</ins> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <iframe vspace=\"0\" hspace=\"0\" width=\"728\" height=\"90\" tabindex=\"0\" id=\"aswift_2\" scrolling=\"no\" name=\"aswift_2\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" title=\"Advertisement\" allowtransparency=\"true\" data-load-complete=\"true\" aria-label=\"Advertisement\" data-google-container-id=\"a!3\" allow=\"attribution-reporting; run-ad-auction\" data-google-query-id=\"CJimg5e70ZEDFXVHHQkdWxYCaw\" sandbox=\"allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-…></iframe> from <ins data-ad-status=\"filled\" data-anchor-shown=\"true\" data-adsbygoogle-status=\"done\" data-anchor-status=\"displayed\" class=\"adsbygoogle adsbygoogle-noablate\">…</ins> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div id=\"cartModal\" class=\"modal show\">…</div> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n    - waiting for element to be visible, enabled and stable\n\n    at D:\\Development\\PlaywrightProject\\tests\\removeFromCart.spec.ts:30:52\n    at D:\\Development\\PlaywrightProject\\tests\\removeFromCart.spec.ts:16:5"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766415677001,
+          "name": "Click getByText('Add to cart').nth(3)",
+          "uuid": "7bcbe0ee-303a-4da9-8bb5-8fbb7112d14c",
+          "stop": 1766415734411
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766415676303,
+      "name": "Navigate to products, add two products to cart",
+      "uuid": "fe561f85-aefb-42e2-a6f3-85b0d4d00f43",
+      "stop": 1766415734412
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "a1948a6e-3cdc-47fa-9220-2958ff78509c-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1766415734510,
+      "name": "screenshot",
+      "stop": 1766415734510
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "error-context",
+          "source": "20b71254-3ebd-4689-b633-21ca6a928562-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1766415734510,
+      "name": "error-context",
+      "stop": 1766415734510
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1766415734286,
+          "uuid": "afc96e99-9bc9-474e-8914-f69849ea05f2",
+          "stop": 1766415734286
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Close context",
+              "start": 1766415734381,
+              "uuid": "1d41e5a8-5c1f-4fb7-ab4a-fb33fa47cf43",
+              "stop": 1766415734413
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1766415734286,
+          "uuid": "df2cf99a-d4be-47a2-a153-b8b4c1fab765",
+          "stop": 1766415734414
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1766415734222,
+      "uuid": "422ca9bb-3edd-4135-9a1d-ffbe49636e98",
+      "stop": 1766415734422
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "removeFromCart.spec.ts" },
+    { "name": "titlePath", "value": " > chromium > removeFromCart.spec.ts" },
+    { "name": "host", "value": "Iacob_Ruben" },
+    { "name": "thread", "value": "pid-34100-worker-1" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "removeFromCart.spec.ts" }
+  ],
+  "links": [],
+  "start": 1766415674197,
+  "testCaseId": "226698be95b7dfd826cd4c0a6bf4c8c1",
+  "fullName": "removeFromCart.spec.ts:7:5",
+  "titlePath": ["removeFromCart.spec.ts"],
+  "stop": 1766415734405
+}

@@ -1,1 +1,372 @@
-{"uuid":"a91248a2-9cef-4482-9682-671f6fb3d9f7","name":"Quantity Test","historyId":"15fcc2116228ebe292d1d903f617c627:5bd835b0d6b1d4ada3b9f0db936e82c8","status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create context","start":1770729078936,"uuid":"61a0209f-bd35-4bea-b907-6476f222531a","stop":1770729078939}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1770729078935,"uuid":"86dd7172-8d98-464c-a2de-c8d65e95a1dd","stop":1770729078939},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create page","start":1770729078941,"uuid":"0cd97f04-3fca-48f3-80ab-77b20c3ccd67","stop":1770729079007}],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1770729078939,"uuid":"ff4ab827-f66c-4d97-a9b9-c7f5eec74ceb","stop":1770729079007},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1770729079007,"uuid":"4feeb3dc-db55-4ba1-955c-313b5ca0e2ab","stop":1770729079012}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1770729078929,"uuid":"967ab553-9b00-4d05-bcab-7a189c695504","stop":1770729079012},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770729079013,"name":"Navigate to \"/\"","uuid":"641655c0-6627-4966-af3f-8af0d5f96323","stop":1770729080114},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770729080116,"name":"Wait for load state \"load\"","uuid":"b7962f96-5762-4a13-8000-9b99941e3b54","stop":1770729080116},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770729080211,"name":"Click getByRole('button', { name: 'Consent', exact: true })","uuid":"b9be311a-669f-4b7d-81a6-b9e32f200ff0","stop":1770729080328},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770729080329,"name":"Expect \"toHaveURL\"","uuid":"4b03f049-e11a-4329-a077-78feac8ed7f1","stop":1770729080331}],"attachments":[],"parameters":[],"start":1770729079013,"name":"Launch browser and navigate to home page","uuid":"c511924d-3ee6-4ddc-9cbb-8f23b9af6c0f","stop":1770729080331},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770729080333,"name":"Click locator('a[href=\"/products\"]')","uuid":"757819ec-35c3-48e6-90e9-73d835e72a9e","stop":1770729080637},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770729080638,"name":"Wait for load state \"load\"","uuid":"c3abdc6f-f3a3-4fc5-ae48-d547331a6ced","stop":1770729081992},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770729081993,"name":"Expect \"toBeVisible\"","uuid":"41bce9c2-e722-4953-bbb7-4de593f7f359","stop":1770729082019},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770729082020,"name":"Click locator('a[href=\"/product_details/1\"]').first()","uuid":"8bb98c38-b246-4f28-83c0-f72d15e0dbc0","stop":1770729082311},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770729082312,"name":"Expect \"toHaveURL\"","uuid":"56a0826b-f7d2-4a62-9a03-0320d4908d51","stop":1770729082326},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770729082327,"name":"Fill \"4\" locator('#quantity')","uuid":"746ffa4c-1a2b-47aa-a4b2-51e3204d7c9f","stop":1770729082381},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770729082382,"name":"Click locator('[class=\"btn btn-default cart\"]')","uuid":"4671b600-73fd-4541-a31c-f4380ebca1b5","stop":1770729082467}],"attachments":[],"parameters":[],"start":1770729080332,"name":"Navigate to products and add a product with quantity 4 to cart","uuid":"ac4ca827-872a-43c6-8e80-f32c5c3547b4","stop":1770729082467},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770729082475,"name":"Wait for selector getByRole('link', { name: 'View Cart' })","uuid":"484610e3-5766-46a7-81b4-cb02182ee2f9","stop":1770729082697},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770729082698,"name":"Click getByRole('link', { name: 'View Cart' })","uuid":"e7892db8-e15a-4587-8a00-576cd3273d8a","stop":1770729082955},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1770729082957,"name":"Expect \"toBeVisible\"","uuid":"bb2510cf-361a-4d66-8a0d-224c6ec524d6","stop":1770729082975}],"attachments":[],"parameters":[],"start":1770729082467,"name":"Navigate to cart and verify that product quantity is 4","uuid":"fba3a0db-6468-485b-9cca-014243c4adfa","stop":1770729082975},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1770729082976,"uuid":"8980e9f2-82c3-4672-a35c-42284ec1edab","stop":1770729082976},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1770729082976,"uuid":"fc9e80e3-e1ba-4477-a77b-418bd5a7f7af","stop":1770729082976},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Close context","start":1770729083124,"uuid":"6a335cfa-0d46-470f-92a2-b6879e4125ce","stop":1770729083128}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1770729082976,"uuid":"8b4fbab8-c318-4ac4-b7f7-c7e106ace577","stop":1770729083128}],"attachments":[],"parameters":[],"name":"After Hooks","start":1770729082975,"uuid":"896beabe-8941-4255-9d3d-a10065e92822","stop":1770729083134}],"attachments":[],"parameters":[{"name":"Project","value":"chromium"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"ui.quantityTest.spec.ts"},{"name":"titlePath","value":" > chromium > ui\\quantityTest.spec.ts"},{"name":"host","value":"Iacob_Ruben"},{"name":"thread","value":"pid-35832-worker-0"},{"name":"parentSuite","value":"chromium"},{"name":"suite","value":"ui\\quantityTest.spec.ts"}],"links":[],"start":1770729078929,"testCaseId":"15fcc2116228ebe292d1d903f617c627","fullName":"ui/quantityTest.spec.ts:6:5","titlePath":["ui","quantityTest.spec.ts"],"stop":1770729083120}
+{
+  "uuid": "a91248a2-9cef-4482-9682-671f6fb3d9f7",
+  "name": "Quantity Test",
+  "historyId": "15fcc2116228ebe292d1d903f617c627:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create context",
+              "start": 1770729078936,
+              "uuid": "61a0209f-bd35-4bea-b907-6476f222531a",
+              "stop": 1770729078939
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1770729078935,
+          "uuid": "86dd7172-8d98-464c-a2de-c8d65e95a1dd",
+          "stop": 1770729078939
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create page",
+              "start": 1770729078941,
+              "uuid": "0cd97f04-3fca-48f3-80ab-77b20c3ccd67",
+              "stop": 1770729079007
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1770729078939,
+          "uuid": "ff4ab827-f66c-4d97-a9b9-c7f5eec74ceb",
+          "stop": 1770729079007
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1770729079007,
+          "uuid": "4feeb3dc-db55-4ba1-955c-313b5ca0e2ab",
+          "stop": 1770729079012
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1770729078929,
+      "uuid": "967ab553-9b00-4d05-bcab-7a189c695504",
+      "stop": 1770729079012
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770729079013,
+          "name": "Navigate to \"/\"",
+          "uuid": "641655c0-6627-4966-af3f-8af0d5f96323",
+          "stop": 1770729080114
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770729080116,
+          "name": "Wait for load state \"load\"",
+          "uuid": "b7962f96-5762-4a13-8000-9b99941e3b54",
+          "stop": 1770729080116
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770729080211,
+          "name": "Click getByRole('button', { name: 'Consent', exact: true })",
+          "uuid": "b9be311a-669f-4b7d-81a6-b9e32f200ff0",
+          "stop": 1770729080328
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770729080329,
+          "name": "Expect \"toHaveURL\"",
+          "uuid": "4b03f049-e11a-4329-a077-78feac8ed7f1",
+          "stop": 1770729080331
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1770729079013,
+      "name": "Launch browser and navigate to home page",
+      "uuid": "c511924d-3ee6-4ddc-9cbb-8f23b9af6c0f",
+      "stop": 1770729080331
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770729080333,
+          "name": "Click locator('a[href=\"/products\"]')",
+          "uuid": "757819ec-35c3-48e6-90e9-73d835e72a9e",
+          "stop": 1770729080637
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770729080638,
+          "name": "Wait for load state \"load\"",
+          "uuid": "c3abdc6f-f3a3-4fc5-ae48-d547331a6ced",
+          "stop": 1770729081992
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770729081993,
+          "name": "Expect \"toBeVisible\"",
+          "uuid": "41bce9c2-e722-4953-bbb7-4de593f7f359",
+          "stop": 1770729082019
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770729082020,
+          "name": "Click locator('a[href=\"/product_details/1\"]').first()",
+          "uuid": "8bb98c38-b246-4f28-83c0-f72d15e0dbc0",
+          "stop": 1770729082311
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770729082312,
+          "name": "Expect \"toHaveURL\"",
+          "uuid": "56a0826b-f7d2-4a62-9a03-0320d4908d51",
+          "stop": 1770729082326
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770729082327,
+          "name": "Fill \"4\" locator('#quantity')",
+          "uuid": "746ffa4c-1a2b-47aa-a4b2-51e3204d7c9f",
+          "stop": 1770729082381
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770729082382,
+          "name": "Click locator('[class=\"btn btn-default cart\"]')",
+          "uuid": "4671b600-73fd-4541-a31c-f4380ebca1b5",
+          "stop": 1770729082467
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1770729080332,
+      "name": "Navigate to products and add a product with quantity 4 to cart",
+      "uuid": "ac4ca827-872a-43c6-8e80-f32c5c3547b4",
+      "stop": 1770729082467
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770729082475,
+          "name": "Wait for selector getByRole('link', { name: 'View Cart' })",
+          "uuid": "484610e3-5766-46a7-81b4-cb02182ee2f9",
+          "stop": 1770729082697
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770729082698,
+          "name": "Click getByRole('link', { name: 'View Cart' })",
+          "uuid": "e7892db8-e15a-4587-8a00-576cd3273d8a",
+          "stop": 1770729082955
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1770729082957,
+          "name": "Expect \"toBeVisible\"",
+          "uuid": "bb2510cf-361a-4d66-8a0d-224c6ec524d6",
+          "stop": 1770729082975
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1770729082467,
+      "name": "Navigate to cart and verify that product quantity is 4",
+      "uuid": "fba3a0db-6468-485b-9cca-014243c4adfa",
+      "stop": 1770729082975
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1770729082976,
+          "uuid": "8980e9f2-82c3-4672-a35c-42284ec1edab",
+          "stop": 1770729082976
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1770729082976,
+          "uuid": "fc9e80e3-e1ba-4477-a77b-418bd5a7f7af",
+          "stop": 1770729082976
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Close context",
+              "start": 1770729083124,
+              "uuid": "6a335cfa-0d46-470f-92a2-b6879e4125ce",
+              "stop": 1770729083128
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1770729082976,
+          "uuid": "8b4fbab8-c318-4ac4-b7f7-c7e106ace577",
+          "stop": 1770729083128
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1770729082975,
+      "uuid": "896beabe-8941-4255-9d3d-a10065e92822",
+      "stop": 1770729083134
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "ui.quantityTest.spec.ts" },
+    { "name": "titlePath", "value": " > chromium > ui\\quantityTest.spec.ts" },
+    { "name": "host", "value": "Iacob_Ruben" },
+    { "name": "thread", "value": "pid-35832-worker-0" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "ui\\quantityTest.spec.ts" }
+  ],
+  "links": [],
+  "start": 1770729078929,
+  "testCaseId": "15fcc2116228ebe292d1d903f617c627",
+  "fullName": "ui/quantityTest.spec.ts:6:5",
+  "titlePath": ["ui", "quantityTest.spec.ts"],
+  "stop": 1770729083120
+}

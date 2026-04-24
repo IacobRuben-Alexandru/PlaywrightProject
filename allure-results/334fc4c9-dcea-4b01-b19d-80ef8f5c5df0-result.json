@@ -1,1 +1,280 @@
-{"uuid":"334fc4c9-dcea-4b01-b19d-80ef8f5c5df0","name":"Loggin with correct user","historyId":"e49311894968ad800e2ceab12e58411e:5bd835b0d6b1d4ada3b9f0db936e82c8","status":"broken","statusDetails":{"message":"Test timeout of 60000ms exceeded.","trace":"Test timeout of 60000ms exceeded."},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create context","start":1766674509586,"uuid":"8e11453a-711c-44a9-bac1-e079f2a85354","stop":1766674509601}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1766674509585,"uuid":"b1f700f3-b2a0-4dc5-8e3b-9d024f0a8c6b","stop":1766674509601},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create page","start":1766674509604,"uuid":"0945bf35-cc11-42f9-a6d3-e6c5492de408","stop":1766674509665}],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1766674509602,"uuid":"b3e93ca2-3527-4404-ad7b-3bf4a0fd2b59","stop":1766674509665},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"randomUser\"","start":1766674509665,"uuid":"d6d78a70-97a9-431e-84bb-c4f5fbce03dd","stop":1766674509666}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1766674509579,"uuid":"4e32b5b4-55d9-435e-8f41-34ff310dfbcb","stop":1766674509666},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766674509670,"name":"Navigate to \"/login\"","uuid":"c0c8e134-c0ea-446a-a86d-189d976cf0e9","stop":1766674510978},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766674510979,"name":"Wait for load state \"load\"","uuid":"c19febf5-5143-4f65-a722-413bb14af00e","stop":1766674510978},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766674510980,"name":"Expect \"toHaveURL\"","uuid":"fdd3e604-2a70-408e-aafd-a11d69681406","stop":1766674511006}],"attachments":[],"parameters":[],"start":1766674509667,"name":"Launch browser and navigate to register page","uuid":"01cd67c0-2117-46e8-99fe-fef40b648a62","stop":1766674511006},{"status":"failed","statusDetails":{"message":"Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Name' })\n    - locator resolved to <input value=\"\" type=\"text\" name=\"name\" required=\"\" placeholder=\"Name\" data-qa=\"signup-name\"/>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  2 × retrying click action\n      - waiting 100ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  27 × retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  2 × retrying click action\n      - waiting 500ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 500ms\n    - waiting for element to be visible, enabled and stable\n","trace":"Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Name' })\n    - locator resolved to <input value=\"\" type=\"text\" name=\"name\" required=\"\" placeholder=\"Name\" data-qa=\"signup-name\"/>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  2 × retrying click action\n      - waiting 100ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  27 × retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  2 × retrying click action\n      - waiting 500ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 500ms\n    - waiting for element to be visible, enabled and stable\n\n    at RegisterAnAccountPage.register (D:\\Development\\PlaywrightProject\\pages\\RegisterPage.ts:34:64)\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:20:28\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:19:16"},"stage":"finished","steps":[{"status":"failed","statusDetails":{"message":"Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Name' })\n    - locator resolved to <input value=\"\" type=\"text\" name=\"name\" required=\"\" placeholder=\"Name\" data-qa=\"signup-name\"/>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  2 × retrying click action\n      - waiting 100ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  27 × retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  2 × retrying click action\n      - waiting 500ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 500ms\n    - waiting for element to be visible, enabled and stable\n","trace":"Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Name' })\n    - locator resolved to <input value=\"\" type=\"text\" name=\"name\" required=\"\" placeholder=\"Name\" data-qa=\"signup-name\"/>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  2 × retrying click action\n      - waiting 100ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  27 × retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  2 × retrying click action\n      - waiting 500ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 500ms\n    - waiting for element to be visible, enabled and stable\n\n    at RegisterAnAccountPage.register (D:\\Development\\PlaywrightProject\\pages\\RegisterPage.ts:34:64)\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:20:28\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:19:16"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766674511009,"name":"Click getByRole('textbox', { name: 'Name' })","uuid":"a1175ab0-c997-462b-ac6b-47f4f9f8a577","stop":1766674569884}],"attachments":[],"parameters":[],"start":1766674511006,"name":"Register a new user account and logout","uuid":"b0a89e59-65a9-4719-9af8-b99c6f4a4c4a","stop":1766674569884},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"3336eb99-f02b-4a86-999a-af691c04779d-attachment.png","type":"image/png"}],"parameters":[],"start":1766674570002,"name":"screenshot","stop":1766674570002},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"error-context","source":"0310d330-8a1e-4efe-8903-a8a7e8916fc5-attachment.md","type":"text/markdown"}],"parameters":[],"start":1766674570003,"name":"error-context","stop":1766674570003},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"randomUser\"","start":1766674569656,"uuid":"8fed55e3-0244-4a24-a012-c5b9fb5b46c9","stop":1766674569656},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1766674569657,"uuid":"ae741c52-c139-4226-a139-c059ead4b5be","stop":1766674569657},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Close context","start":1766674569847,"uuid":"32fef4a9-9ece-4b65-a3d0-73b3ef3c20ae","stop":1766674569885}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1766674569657,"uuid":"df7e00ef-a0c1-4817-a641-27c5057487ab","stop":1766674569885}],"attachments":[],"parameters":[],"name":"After Hooks","start":1766674569592,"uuid":"b236956b-1816-47ed-b351-f16fa2358e0e","stop":1766674569896}],"attachments":[],"parameters":[{"name":"Project","value":"chromium"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"Login.correctUser.spec.ts"},{"name":"titlePath","value":" > chromium > Login.correctUser.spec.ts"},{"name":"host","value":"Iacob_Ruben"},{"name":"thread","value":"pid-34416-worker-1"},{"name":"parentSuite","value":"chromium"},{"name":"suite","value":"Login.correctUser.spec.ts"}],"links":[],"start":1766674509577,"testCaseId":"e49311894968ad800e2ceab12e58411e","fullName":"Login.correctUser.spec.ts:9:5","titlePath":["Login.correctUser.spec.ts"],"stop":1766674569873}
+{
+  "uuid": "334fc4c9-dcea-4b01-b19d-80ef8f5c5df0",
+  "name": "Loggin with correct user",
+  "historyId": "e49311894968ad800e2ceab12e58411e:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "broken",
+  "statusDetails": {
+    "message": "Test timeout of 60000ms exceeded.",
+    "trace": "Test timeout of 60000ms exceeded."
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create context",
+              "start": 1766674509586,
+              "uuid": "8e11453a-711c-44a9-bac1-e079f2a85354",
+              "stop": 1766674509601
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1766674509585,
+          "uuid": "b1f700f3-b2a0-4dc5-8e3b-9d024f0a8c6b",
+          "stop": 1766674509601
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create page",
+              "start": 1766674509604,
+              "uuid": "0945bf35-cc11-42f9-a6d3-e6c5492de408",
+              "stop": 1766674509665
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1766674509602,
+          "uuid": "b3e93ca2-3527-4404-ad7b-3bf4a0fd2b59",
+          "stop": 1766674509665
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"randomUser\"",
+          "start": 1766674509665,
+          "uuid": "d6d78a70-97a9-431e-84bb-c4f5fbce03dd",
+          "stop": 1766674509666
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1766674509579,
+      "uuid": "4e32b5b4-55d9-435e-8f41-34ff310dfbcb",
+      "stop": 1766674509666
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766674509670,
+          "name": "Navigate to \"/login\"",
+          "uuid": "c0c8e134-c0ea-446a-a86d-189d976cf0e9",
+          "stop": 1766674510978
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766674510979,
+          "name": "Wait for load state \"load\"",
+          "uuid": "c19febf5-5143-4f65-a722-413bb14af00e",
+          "stop": 1766674510978
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766674510980,
+          "name": "Expect \"toHaveURL\"",
+          "uuid": "fdd3e604-2a70-408e-aafd-a11d69681406",
+          "stop": 1766674511006
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766674509667,
+      "name": "Launch browser and navigate to register page",
+      "uuid": "01cd67c0-2117-46e8-99fe-fef40b648a62",
+      "stop": 1766674511006
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Name' })\n    - locator resolved to <input value=\"\" type=\"text\" name=\"name\" required=\"\" placeholder=\"Name\" data-qa=\"signup-name\"/>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  2 × retrying click action\n      - waiting 100ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  27 × retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  2 × retrying click action\n      - waiting 500ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 500ms\n    - waiting for element to be visible, enabled and stable\n",
+        "trace": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Name' })\n    - locator resolved to <input value=\"\" type=\"text\" name=\"name\" required=\"\" placeholder=\"Name\" data-qa=\"signup-name\"/>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  2 × retrying click action\n      - waiting 100ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  27 × retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  2 × retrying click action\n      - waiting 500ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 500ms\n    - waiting for element to be visible, enabled and stable\n\n    at RegisterAnAccountPage.register (D:\\Development\\PlaywrightProject\\pages\\RegisterPage.ts:34:64)\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:20:28\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:19:16"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Name' })\n    - locator resolved to <input value=\"\" type=\"text\" name=\"name\" required=\"\" placeholder=\"Name\" data-qa=\"signup-name\"/>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  2 × retrying click action\n      - waiting 100ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  27 × retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  2 × retrying click action\n      - waiting 500ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 500ms\n    - waiting for element to be visible, enabled and stable\n",
+            "trace": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Name' })\n    - locator resolved to <input value=\"\" type=\"text\" name=\"name\" required=\"\" placeholder=\"Name\" data-qa=\"signup-name\"/>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  2 × retrying click action\n      - waiting 100ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  27 × retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n       - waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div class=\"fc-dialog-overlay\"></div> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  2 × retrying click action\n      - waiting 500ms\n      - waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button tabindex=\"0\" role=\"button\" aria-label=\"Learn more\" class=\"fc-faq-header fc-dialog-restricted-content\">…</button> from <div class=\"fc-consent-root\">…</div> subtree intercepts pointer events\n  - retrying click action\n    - waiting 500ms\n    - waiting for element to be visible, enabled and stable\n\n    at RegisterAnAccountPage.register (D:\\Development\\PlaywrightProject\\pages\\RegisterPage.ts:34:64)\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:20:28\n    at D:\\Development\\PlaywrightProject\\tests\\Login.correctUser.spec.ts:19:16"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766674511009,
+          "name": "Click getByRole('textbox', { name: 'Name' })",
+          "uuid": "a1175ab0-c997-462b-ac6b-47f4f9f8a577",
+          "stop": 1766674569884
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766674511006,
+      "name": "Register a new user account and logout",
+      "uuid": "b0a89e59-65a9-4719-9af8-b99c6f4a4c4a",
+      "stop": 1766674569884
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "3336eb99-f02b-4a86-999a-af691c04779d-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1766674570002,
+      "name": "screenshot",
+      "stop": 1766674570002
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "error-context",
+          "source": "0310d330-8a1e-4efe-8903-a8a7e8916fc5-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1766674570003,
+      "name": "error-context",
+      "stop": 1766674570003
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"randomUser\"",
+          "start": 1766674569656,
+          "uuid": "8fed55e3-0244-4a24-a012-c5b9fb5b46c9",
+          "stop": 1766674569656
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1766674569657,
+          "uuid": "ae741c52-c139-4226-a139-c059ead4b5be",
+          "stop": 1766674569657
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Close context",
+              "start": 1766674569847,
+              "uuid": "32fef4a9-9ece-4b65-a3d0-73b3ef3c20ae",
+              "stop": 1766674569885
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1766674569657,
+          "uuid": "df7e00ef-a0c1-4817-a641-27c5057487ab",
+          "stop": 1766674569885
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1766674569592,
+      "uuid": "b236956b-1816-47ed-b351-f16fa2358e0e",
+      "stop": 1766674569896
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "Login.correctUser.spec.ts" },
+    { "name": "titlePath", "value": " > chromium > Login.correctUser.spec.ts" },
+    { "name": "host", "value": "Iacob_Ruben" },
+    { "name": "thread", "value": "pid-34416-worker-1" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "Login.correctUser.spec.ts" }
+  ],
+  "links": [],
+  "start": 1766674509577,
+  "testCaseId": "e49311894968ad800e2ceab12e58411e",
+  "fullName": "Login.correctUser.spec.ts:9:5",
+  "titlePath": ["Login.correctUser.spec.ts"],
+  "stop": 1766674569873
+}

@@ -1,1 +1,328 @@
-{"uuid":"aa55ad6b-900c-43c1-be27-f1e0abca1632","name":"Download Invoice","historyId":"66fa70e0a979be0bf1e8cb5450a4d817:b444eb0fbe6390c71e68b51dd25701fc","status":"broken","statusDetails":{"message":"Test timeout of 90000ms exceeded.","trace":"Test timeout of 90000ms exceeded."},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create context","start":1766414328403,"uuid":"ee28f547-149d-494f-bc69-ac00f00e1c85","stop":1766414328413}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1766414328402,"uuid":"daf5ba11-69de-481d-addc-5e6004f7da0c","stop":1766414328414},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create page","start":1766414328416,"uuid":"d9d21b4e-df3c-451c-827e-d21d0d189157","stop":1766414328923}],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1766414328414,"uuid":"04336785-bea8-4b51-a900-0e2cb1fd13f4","stop":1766414328924},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"randomUser\"","start":1766414328924,"uuid":"5bc666ec-b80e-41f4-a672-ae477135c9e9","stop":1766414328925}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1766414328393,"uuid":"1673b69c-2a35-4f8a-867d-24cb5b45b762","stop":1766414328925},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766414328928,"name":"Navigate to \"/\"","uuid":"71d2093a-593b-494e-b0c4-c9933a347092","stop":1766414331662},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766414332338,"name":"Click getByRole('button', { name: 'Consent', exact: true })","uuid":"bef699b5-a5cb-4e34-b17a-2b758fa5c0b6","stop":1766414332975},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766414332977,"name":"Expect \"toHaveURL\"","uuid":"1b46f807-f852-470e-9427-3aa05344c9bb","stop":1766414332991}],"attachments":[],"parameters":[],"start":1766414328926,"name":"Launch browser and navigate to home page","uuid":"16145009-6f3f-4ffe-a302-2f45755a936d","stop":1766414332991},{"status":"failed","statusDetails":{"message":"Error: locator.click: Test timeout of 90000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Continue Shopping' })\n","trace":"Error: locator.click: Test timeout of 90000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Continue Shopping' })\n\n    at D:\\Development\\PlaywrightProject\\tests\\downloadInvoice.spec.ts:27:71\n    at D:\\Development\\PlaywrightProject\\tests\\downloadInvoice.spec.ts:20:5"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766414332993,"name":"Click getByRole('link', { name: ' Products' })","uuid":"d677c9fe-48bd-4fca-b188-a83714265286","stop":1766414334147},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766414334154,"name":"Scroll into view locator('[class=\"product-image-wrapper\"]').first()","uuid":"09e9708c-af76-4091-b503-db6801b8d78a","stop":1766414334542},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766414334545,"name":"Hover locator('[class=\"product-image-wrapper\"]').first()","uuid":"ce473524-38e3-4326-b8b5-78ecd28bba2d","stop":1766414334679},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766414334681,"name":"Click getByText('Add to cart').first()","uuid":"bd3d5795-13b5-429f-87fa-3eb1fe2ef192","stop":1766414335230},{"status":"failed","statusDetails":{"message":"Error: locator.click: Test timeout of 90000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Continue Shopping' })\n","trace":"Error: locator.click: Test timeout of 90000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Continue Shopping' })\n\n    at D:\\Development\\PlaywrightProject\\tests\\downloadInvoice.spec.ts:27:71\n    at D:\\Development\\PlaywrightProject\\tests\\downloadInvoice.spec.ts:20:5"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766414335233,"name":"Click getByRole('button', { name: 'Continue Shopping' })","uuid":"66e00f6f-05ee-46d9-99ff-7291761a57c3","stop":1766414418766}],"attachments":[],"parameters":[],"start":1766414332991,"name":"Add product to cart and proceed to checkout","uuid":"513580fd-1f74-45a2-b814-404e95624866","stop":1766414418766},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"5117b9e2-24f7-4969-992f-24a75394b871-attachment.png","type":"image/png"}],"parameters":[],"start":1766414419415,"name":"screenshot","stop":1766414419415},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"error-context","source":"00bbd75e-62d9-4027-aaad-f3618ccf6e47-attachment.md","type":"text/markdown"}],"parameters":[],"start":1766414419417,"name":"error-context","stop":1766414419417},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"randomUser\"","start":1766414418503,"uuid":"03fcbd30-7975-4f2d-af5a-af299fe7db26","stop":1766414418503},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1766414418503,"uuid":"ddf7fff8-c581-45a6-a6fc-a4fc5635f6d5","stop":1766414418503},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Close context","start":1766414418752,"uuid":"06fd4fcc-501e-4884-b359-fedd875dacdf","stop":1766414418768}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1766414418503,"uuid":"ec84a91e-7d0d-48c3-bfb3-d86c7b7195d9","stop":1766414418768}],"attachments":[],"parameters":[],"name":"After Hooks","start":1766414418417,"uuid":"fd33ea61-cf00-4dee-961d-dd4f4982b970","stop":1766414418781}],"attachments":[],"parameters":[{"name":"Project","value":"firefox"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"downloadInvoice.spec.ts"},{"name":"titlePath","value":" > firefox > downloadInvoice.spec.ts"},{"name":"host","value":"Iacob_Ruben"},{"name":"thread","value":"pid-42208-worker-2"},{"name":"parentSuite","value":"firefox"},{"name":"suite","value":"downloadInvoice.spec.ts"}],"links":[],"start":1766414328402,"testCaseId":"66fa70e0a979be0bf1e8cb5450a4d817","fullName":"downloadInvoice.spec.ts:9:5","titlePath":["downloadInvoice.spec.ts"],"stop":1766414418768}
+{
+  "uuid": "aa55ad6b-900c-43c1-be27-f1e0abca1632",
+  "name": "Download Invoice",
+  "historyId": "66fa70e0a979be0bf1e8cb5450a4d817:b444eb0fbe6390c71e68b51dd25701fc",
+  "status": "broken",
+  "statusDetails": {
+    "message": "Test timeout of 90000ms exceeded.",
+    "trace": "Test timeout of 90000ms exceeded."
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create context",
+              "start": 1766414328403,
+              "uuid": "ee28f547-149d-494f-bc69-ac00f00e1c85",
+              "stop": 1766414328413
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1766414328402,
+          "uuid": "daf5ba11-69de-481d-addc-5e6004f7da0c",
+          "stop": 1766414328414
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create page",
+              "start": 1766414328416,
+              "uuid": "d9d21b4e-df3c-451c-827e-d21d0d189157",
+              "stop": 1766414328923
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1766414328414,
+          "uuid": "04336785-bea8-4b51-a900-0e2cb1fd13f4",
+          "stop": 1766414328924
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"randomUser\"",
+          "start": 1766414328924,
+          "uuid": "5bc666ec-b80e-41f4-a672-ae477135c9e9",
+          "stop": 1766414328925
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1766414328393,
+      "uuid": "1673b69c-2a35-4f8a-867d-24cb5b45b762",
+      "stop": 1766414328925
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766414328928,
+          "name": "Navigate to \"/\"",
+          "uuid": "71d2093a-593b-494e-b0c4-c9933a347092",
+          "stop": 1766414331662
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766414332338,
+          "name": "Click getByRole('button', { name: 'Consent', exact: true })",
+          "uuid": "bef699b5-a5cb-4e34-b17a-2b758fa5c0b6",
+          "stop": 1766414332975
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766414332977,
+          "name": "Expect \"toHaveURL\"",
+          "uuid": "1b46f807-f852-470e-9427-3aa05344c9bb",
+          "stop": 1766414332991
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766414328926,
+      "name": "Launch browser and navigate to home page",
+      "uuid": "16145009-6f3f-4ffe-a302-2f45755a936d",
+      "stop": 1766414332991
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: locator.click: Test timeout of 90000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Continue Shopping' })\n",
+        "trace": "Error: locator.click: Test timeout of 90000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Continue Shopping' })\n\n    at D:\\Development\\PlaywrightProject\\tests\\downloadInvoice.spec.ts:27:71\n    at D:\\Development\\PlaywrightProject\\tests\\downloadInvoice.spec.ts:20:5"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766414332993,
+          "name": "Click getByRole('link', { name: ' Products' })",
+          "uuid": "d677c9fe-48bd-4fca-b188-a83714265286",
+          "stop": 1766414334147
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766414334154,
+          "name": "Scroll into view locator('[class=\"product-image-wrapper\"]').first()",
+          "uuid": "09e9708c-af76-4091-b503-db6801b8d78a",
+          "stop": 1766414334542
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766414334545,
+          "name": "Hover locator('[class=\"product-image-wrapper\"]').first()",
+          "uuid": "ce473524-38e3-4326-b8b5-78ecd28bba2d",
+          "stop": 1766414334679
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766414334681,
+          "name": "Click getByText('Add to cart').first()",
+          "uuid": "bd3d5795-13b5-429f-87fa-3eb1fe2ef192",
+          "stop": 1766414335230
+        },
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "Error: locator.click: Test timeout of 90000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Continue Shopping' })\n",
+            "trace": "Error: locator.click: Test timeout of 90000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Continue Shopping' })\n\n    at D:\\Development\\PlaywrightProject\\tests\\downloadInvoice.spec.ts:27:71\n    at D:\\Development\\PlaywrightProject\\tests\\downloadInvoice.spec.ts:20:5"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766414335233,
+          "name": "Click getByRole('button', { name: 'Continue Shopping' })",
+          "uuid": "66e00f6f-05ee-46d9-99ff-7291761a57c3",
+          "stop": 1766414418766
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766414332991,
+      "name": "Add product to cart and proceed to checkout",
+      "uuid": "513580fd-1f74-45a2-b814-404e95624866",
+      "stop": 1766414418766
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "5117b9e2-24f7-4969-992f-24a75394b871-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1766414419415,
+      "name": "screenshot",
+      "stop": 1766414419415
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "error-context",
+          "source": "00bbd75e-62d9-4027-aaad-f3618ccf6e47-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1766414419417,
+      "name": "error-context",
+      "stop": 1766414419417
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"randomUser\"",
+          "start": 1766414418503,
+          "uuid": "03fcbd30-7975-4f2d-af5a-af299fe7db26",
+          "stop": 1766414418503
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1766414418503,
+          "uuid": "ddf7fff8-c581-45a6-a6fc-a4fc5635f6d5",
+          "stop": 1766414418503
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Close context",
+              "start": 1766414418752,
+              "uuid": "06fd4fcc-501e-4884-b359-fedd875dacdf",
+              "stop": 1766414418768
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1766414418503,
+          "uuid": "ec84a91e-7d0d-48c3-bfb3-d86c7b7195d9",
+          "stop": 1766414418768
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1766414418417,
+      "uuid": "fd33ea61-cf00-4dee-961d-dd4f4982b970",
+      "stop": 1766414418781
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "firefox" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "downloadInvoice.spec.ts" },
+    { "name": "titlePath", "value": " > firefox > downloadInvoice.spec.ts" },
+    { "name": "host", "value": "Iacob_Ruben" },
+    { "name": "thread", "value": "pid-42208-worker-2" },
+    { "name": "parentSuite", "value": "firefox" },
+    { "name": "suite", "value": "downloadInvoice.spec.ts" }
+  ],
+  "links": [],
+  "start": 1766414328402,
+  "testCaseId": "66fa70e0a979be0bf1e8cb5450a4d817",
+  "fullName": "downloadInvoice.spec.ts:9:5",
+  "titlePath": ["downloadInvoice.spec.ts"],
+  "stop": 1766414418768
+}

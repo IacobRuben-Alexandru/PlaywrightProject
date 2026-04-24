@@ -1,11 +1,11 @@
 export function generateRandomEmail(): string {
-    const id = Math.floor(Math.random() * 100000);
-    return `user${id}@gmail.com`;
+  const id = Math.floor(Math.random() * 100000);
+  return `user${id}@gmail.com`;
 }
 
 export function generateRandomPassword(): string {
-    const id = randomString(randomNumber());
-    return `${id}`;
+  const id = randomString(randomNumber());
+  return `${id}`;
 }
 export function randomString(length: number): string {
   const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';

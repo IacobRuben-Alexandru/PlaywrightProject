@@ -1,1 +1,319 @@
-{"uuid":"06a974bd-60db-433f-9807-1aa0f96a226d","name":"Place order then register","historyId":"aed40f869939649ff463609e950b8c4b:5bd835b0d6b1d4ada3b9f0db936e82c8","status":"failed","statusDetails":{"message":"Error: locator.click: Error: strict mode violation: locator('.product-image-wrapper').first().locator('a.add-to-cart:visible') resolved to 2 elements:\n    1) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').first()\n    2) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').nth(1)\n\nCall log:\n  - waiting for locator('.product-image-wrapper').first().locator('a.add-to-cart:visible')\n","trace":"Error: locator.click: Error: strict mode violation: locator('.product-image-wrapper').first().locator('a.add-to-cart:visible') resolved to 2 elements:\n    1) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').first()\n    2) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').nth(1)\n\nCall log:\n  - waiting for locator('.product-image-wrapper').first().locator('a.add-to-cart:visible')\n\n    at automationexercise.addProductToCartByIndex (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:47:28)\n    at D:\\Development\\PlaywrightProject\\tests\\placeOrderRegister.spec.ts:18:9\n    at D:\\Development\\PlaywrightProject\\tests\\placeOrderRegister.spec.ts:16:5"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create context","start":1766676452356,"uuid":"b4e947b8-328f-441c-a4d3-a58e69ab081c","stop":1766676452359}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1766676452355,"uuid":"49acac3e-9ac4-4821-88d0-88d18c97d926","stop":1766676452360},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create page","start":1766676452362,"uuid":"b21704ba-58d8-4750-bab5-01f2283b0507","stop":1766676452428}],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1766676452360,"uuid":"622b3674-3b34-47f4-8fe4-4ba3df9883bf","stop":1766676452429},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"randomUser\"","start":1766676452429,"uuid":"ce9d45b8-4bd4-481f-b9cc-a774c56f5f64","stop":1766676452429}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1766676452348,"uuid":"6fbeb823-8554-4dbf-8ee5-40f05a66bfaa","stop":1766676452429},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676452432,"name":"Navigate to \"/\"","uuid":"7058bb2b-4d7a-43c0-9398-7811da5f5716","stop":1766676454073},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676454075,"name":"Wait for load state \"load\"","uuid":"f3d583db-8bcf-43dd-a585-83ee0c1c2d2e","stop":1766676454076},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676454366,"name":"Click getByRole('button', { name: 'Consent', exact: true })","uuid":"262d4d59-f1d6-4b14-af21-b26a7a72a3d6","stop":1766676454639},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676454640,"name":"Expect \"toHaveURL\"","uuid":"2d798ccd-2be3-4527-ba84-9c78b7ec8c33","stop":1766676454650}],"attachments":[],"parameters":[],"start":1766676452430,"name":"Launch browser and navigate to home page","uuid":"4aff360c-50cd-45fa-833e-48533bc4ac47","stop":1766676454650},{"status":"failed","statusDetails":{"message":"Error: locator.click: Error: strict mode violation: locator('.product-image-wrapper').first().locator('a.add-to-cart:visible') resolved to 2 elements:\n    1) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').first()\n    2) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').nth(1)\n\nCall log:\n  - waiting for locator('.product-image-wrapper').first().locator('a.add-to-cart:visible')\n","trace":"Error: locator.click: Error: strict mode violation: locator('.product-image-wrapper').first().locator('a.add-to-cart:visible') resolved to 2 elements:\n    1) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').first()\n    2) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').nth(1)\n\nCall log:\n  - waiting for locator('.product-image-wrapper').first().locator('a.add-to-cart:visible')\n\n    at automationexercise.addProductToCartByIndex (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:47:28)\n    at D:\\Development\\PlaywrightProject\\tests\\placeOrderRegister.spec.ts:18:9\n    at D:\\Development\\PlaywrightProject\\tests\\placeOrderRegister.spec.ts:16:5"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676454653,"name":"Click getByRole('link', { name: ' Products' })","uuid":"4e52cb79-954f-405a-a985-f8c980da5d52","stop":1766676455153},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676455156,"name":"Hover locator('.product-image-wrapper').first()","uuid":"780d87e6-7e92-4b43-bc57-0a6836f5b138","stop":1766676455381},{"status":"failed","statusDetails":{"message":"Error: locator.click: Error: strict mode violation: locator('.product-image-wrapper').first().locator('a.add-to-cart:visible') resolved to 2 elements:\n    1) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').first()\n    2) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').nth(1)\n\nCall log:\n  - waiting for locator('.product-image-wrapper').first().locator('a.add-to-cart:visible')\n","trace":"Error: locator.click: Error: strict mode violation: locator('.product-image-wrapper').first().locator('a.add-to-cart:visible') resolved to 2 elements:\n    1) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').first()\n    2) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').nth(1)\n\nCall log:\n  - waiting for locator('.product-image-wrapper').first().locator('a.add-to-cart:visible')\n\n    at automationexercise.addProductToCartByIndex (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:47:28)\n    at D:\\Development\\PlaywrightProject\\tests\\placeOrderRegister.spec.ts:18:9\n    at D:\\Development\\PlaywrightProject\\tests\\placeOrderRegister.spec.ts:16:5"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1766676455383,"name":"Click locator('.product-image-wrapper').first().locator('a.add-to-cart:visible')","uuid":"87881a5d-deff-4ca1-a99b-27ccf3800041","stop":1766676455439}],"attachments":[],"parameters":[],"start":1766676454651,"name":"Navigate to products and add a product to cart","uuid":"bf062201-04e6-4ee6-a593-98718cb3c60b","stop":1766676455440},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"f019ea7d-9185-43d3-afc0-0aaa97d73395-attachment.png","type":"image/png"}],"parameters":[],"start":1766676459387,"name":"screenshot","stop":1766676459387},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"error-context","source":"73092ee6-a793-43fb-908a-f1067cd000a6-attachment.md","type":"text/markdown"}],"parameters":[],"start":1766676459388,"name":"error-context","stop":1766676459388},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"randomUser\"","start":1766676457368,"uuid":"e44d2bdc-f96b-4758-8cb9-7cf10d98342e","stop":1766676457369},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"page\"","start":1766676457369,"uuid":"c3c5ee93-4282-4a50-a230-f11c6db9345b","stop":1766676457369},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Close context","start":1766676458687,"uuid":"95522d88-9dd1-4037-89cc-9f989a371e78","stop":1766676458705}],"attachments":[],"parameters":[],"name":"Fixture \"context\"","start":1766676457370,"uuid":"08ced576-f6e5-4f8b-856e-c6187b6f9ff4","stop":1766676458705}],"attachments":[],"parameters":[],"name":"After Hooks","start":1766676455442,"uuid":"8155c7f2-b60b-42a9-9efd-74ef7b2f25b5","stop":1766676458718}],"attachments":[],"parameters":[{"name":"Project","value":"chromium"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"placeOrderRegister.spec.ts"},{"name":"titlePath","value":" > chromium > placeOrderRegister.spec.ts"},{"name":"host","value":"Iacob_Ruben"},{"name":"thread","value":"pid-37352-worker-1"},{"name":"parentSuite","value":"chromium"},{"name":"suite","value":"placeOrderRegister.spec.ts"}],"links":[],"start":1766676452348,"testCaseId":"aed40f869939649ff463609e950b8c4b","fullName":"placeOrderRegister.spec.ts:7:5","titlePath":["placeOrderRegister.spec.ts"],"stop":1766676458696}
+{
+  "uuid": "06a974bd-60db-433f-9807-1aa0f96a226d",
+  "name": "Place order then register",
+  "historyId": "aed40f869939649ff463609e950b8c4b:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: locator.click: Error: strict mode violation: locator('.product-image-wrapper').first().locator('a.add-to-cart:visible') resolved to 2 elements:\n    1) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').first()\n    2) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').nth(1)\n\nCall log:\n  - waiting for locator('.product-image-wrapper').first().locator('a.add-to-cart:visible')\n",
+    "trace": "Error: locator.click: Error: strict mode violation: locator('.product-image-wrapper').first().locator('a.add-to-cart:visible') resolved to 2 elements:\n    1) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').first()\n    2) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').nth(1)\n\nCall log:\n  - waiting for locator('.product-image-wrapper').first().locator('a.add-to-cart:visible')\n\n    at automationexercise.addProductToCartByIndex (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:47:28)\n    at D:\\Development\\PlaywrightProject\\tests\\placeOrderRegister.spec.ts:18:9\n    at D:\\Development\\PlaywrightProject\\tests\\placeOrderRegister.spec.ts:16:5"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create context",
+              "start": 1766676452356,
+              "uuid": "b4e947b8-328f-441c-a4d3-a58e69ab081c",
+              "stop": 1766676452359
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1766676452355,
+          "uuid": "49acac3e-9ac4-4821-88d0-88d18c97d926",
+          "stop": 1766676452360
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create page",
+              "start": 1766676452362,
+              "uuid": "b21704ba-58d8-4750-bab5-01f2283b0507",
+              "stop": 1766676452428
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1766676452360,
+          "uuid": "622b3674-3b34-47f4-8fe4-4ba3df9883bf",
+          "stop": 1766676452429
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"randomUser\"",
+          "start": 1766676452429,
+          "uuid": "ce9d45b8-4bd4-481f-b9cc-a774c56f5f64",
+          "stop": 1766676452429
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1766676452348,
+      "uuid": "6fbeb823-8554-4dbf-8ee5-40f05a66bfaa",
+      "stop": 1766676452429
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676452432,
+          "name": "Navigate to \"/\"",
+          "uuid": "7058bb2b-4d7a-43c0-9398-7811da5f5716",
+          "stop": 1766676454073
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676454075,
+          "name": "Wait for load state \"load\"",
+          "uuid": "f3d583db-8bcf-43dd-a585-83ee0c1c2d2e",
+          "stop": 1766676454076
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676454366,
+          "name": "Click getByRole('button', { name: 'Consent', exact: true })",
+          "uuid": "262d4d59-f1d6-4b14-af21-b26a7a72a3d6",
+          "stop": 1766676454639
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676454640,
+          "name": "Expect \"toHaveURL\"",
+          "uuid": "2d798ccd-2be3-4527-ba84-9c78b7ec8c33",
+          "stop": 1766676454650
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766676452430,
+      "name": "Launch browser and navigate to home page",
+      "uuid": "4aff360c-50cd-45fa-833e-48533bc4ac47",
+      "stop": 1766676454650
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: locator.click: Error: strict mode violation: locator('.product-image-wrapper').first().locator('a.add-to-cart:visible') resolved to 2 elements:\n    1) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').first()\n    2) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').nth(1)\n\nCall log:\n  - waiting for locator('.product-image-wrapper').first().locator('a.add-to-cart:visible')\n",
+        "trace": "Error: locator.click: Error: strict mode violation: locator('.product-image-wrapper').first().locator('a.add-to-cart:visible') resolved to 2 elements:\n    1) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').first()\n    2) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').nth(1)\n\nCall log:\n  - waiting for locator('.product-image-wrapper').first().locator('a.add-to-cart:visible')\n\n    at automationexercise.addProductToCartByIndex (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:47:28)\n    at D:\\Development\\PlaywrightProject\\tests\\placeOrderRegister.spec.ts:18:9\n    at D:\\Development\\PlaywrightProject\\tests\\placeOrderRegister.spec.ts:16:5"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676454653,
+          "name": "Click getByRole('link', { name: ' Products' })",
+          "uuid": "4e52cb79-954f-405a-a985-f8c980da5d52",
+          "stop": 1766676455153
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676455156,
+          "name": "Hover locator('.product-image-wrapper').first()",
+          "uuid": "780d87e6-7e92-4b43-bc57-0a6836f5b138",
+          "stop": 1766676455381
+        },
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "Error: locator.click: Error: strict mode violation: locator('.product-image-wrapper').first().locator('a.add-to-cart:visible') resolved to 2 elements:\n    1) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').first()\n    2) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').nth(1)\n\nCall log:\n  - waiting for locator('.product-image-wrapper').first().locator('a.add-to-cart:visible')\n",
+            "trace": "Error: locator.click: Error: strict mode violation: locator('.product-image-wrapper').first().locator('a.add-to-cart:visible') resolved to 2 elements:\n    1) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').first()\n    2) <a data-product-id=\"1\" class=\"btn btn-default add-to-cart\">…</a> aka getByText('Add to cart').nth(1)\n\nCall log:\n  - waiting for locator('.product-image-wrapper').first().locator('a.add-to-cart:visible')\n\n    at automationexercise.addProductToCartByIndex (D:\\Development\\PlaywrightProject\\pages\\AutomationPage.ts:47:28)\n    at D:\\Development\\PlaywrightProject\\tests\\placeOrderRegister.spec.ts:18:9\n    at D:\\Development\\PlaywrightProject\\tests\\placeOrderRegister.spec.ts:16:5"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1766676455383,
+          "name": "Click locator('.product-image-wrapper').first().locator('a.add-to-cart:visible')",
+          "uuid": "87881a5d-deff-4ca1-a99b-27ccf3800041",
+          "stop": 1766676455439
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1766676454651,
+      "name": "Navigate to products and add a product to cart",
+      "uuid": "bf062201-04e6-4ee6-a593-98718cb3c60b",
+      "stop": 1766676455440
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "f019ea7d-9185-43d3-afc0-0aaa97d73395-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1766676459387,
+      "name": "screenshot",
+      "stop": 1766676459387
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "error-context",
+          "source": "73092ee6-a793-43fb-908a-f1067cd000a6-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1766676459388,
+      "name": "error-context",
+      "stop": 1766676459388
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"randomUser\"",
+          "start": 1766676457368,
+          "uuid": "e44d2bdc-f96b-4758-8cb9-7cf10d98342e",
+          "stop": 1766676457369
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"page\"",
+          "start": 1766676457369,
+          "uuid": "c3c5ee93-4282-4a50-a230-f11c6db9345b",
+          "stop": 1766676457369
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Close context",
+              "start": 1766676458687,
+              "uuid": "95522d88-9dd1-4037-89cc-9f989a371e78",
+              "stop": 1766676458705
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"context\"",
+          "start": 1766676457370,
+          "uuid": "08ced576-f6e5-4f8b-856e-c6187b6f9ff4",
+          "stop": 1766676458705
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1766676455442,
+      "uuid": "8155c7f2-b60b-42a9-9efd-74ef7b2f25b5",
+      "stop": 1766676458718
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "placeOrderRegister.spec.ts" },
+    {
+      "name": "titlePath",
+      "value": " > chromium > placeOrderRegister.spec.ts"
+    },
+    { "name": "host", "value": "Iacob_Ruben" },
+    { "name": "thread", "value": "pid-37352-worker-1" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "placeOrderRegister.spec.ts" }
+  ],
+  "links": [],
+  "start": 1766676452348,
+  "testCaseId": "aed40f869939649ff463609e950b8c4b",
+  "fullName": "placeOrderRegister.spec.ts:7:5",
+  "titlePath": ["placeOrderRegister.spec.ts"],
+  "stop": 1766676458696
+}
