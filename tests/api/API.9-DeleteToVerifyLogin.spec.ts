@@ -1,14 +1,12 @@
 import { test } from '../../fixtures/createuserFixture';
 import { expect } from '@playwright/test';
-import { USERS } from '../../config/constants';
+import { ProductRequests } from './requests/ProductRequests';
 
 test('Delete to verify invalid login', async ({ request }) => {
-  const response = await request.delete('/api/verifyLogin', {
-    form: {
-      email: USERS.email,
-      password: USERS.password,
-    },
-  });
+  const api = new ProductRequests(request);
+    
+  const response = await api.deleteToVerifyLogin();
+
   const responseBody = await response.json();
   expect(response.status()).toBe(200);
 

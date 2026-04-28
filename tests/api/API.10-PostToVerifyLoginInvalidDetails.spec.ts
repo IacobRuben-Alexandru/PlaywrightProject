@@ -1,14 +1,12 @@
 import { test } from '../../fixtures/createuserFixture';
 import { expect } from '@playwright/test';
-import { faker } from '@faker-js/faker'
+import { ProductRequests } from './requests/ProductRequests';
 
 test('Post to verify invalid login', async ({ request }) => {
-  const response = await request.post('/api/verifyLogin', {
-    form: {
-      email: faker.internet.email(),
-      password: faker.internet.password(),
-    },
-  });
+  const api = new ProductRequests(request);
+    
+  const response = await api.postToVerifyLoginInvalidDetails();
+
   const responseBody = await response.json();
   expect(response.status()).toBe(200);
 

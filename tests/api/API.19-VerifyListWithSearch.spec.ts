@@ -1,10 +1,13 @@
 import { test } from '../../fixtures/createuserFixture';
 import { expect } from '@playwright/test';
+import { ProductRequests } from './requests/ProductRequests';
 
 test('Verify that all all products in list can be searched', async ({
   request,
 }) => {
-  const response = await request.get('/api/productsList');
+  const api = new ProductRequests(request);
+
+  const response = await api.getProductList();
 
   expect(response.status()).toBe(200);
 
@@ -16,11 +19,8 @@ test('Verify that all all products in list can be searched', async ({
   expect(responseBody.products.length).toBeGreaterThan(0);
 
   for (const product of responseBody.products) {
-    const searchResponse = await request.post('/api/searchProduct', {
-      form: {
-        search_product: product.name,
-      },
-    });
+    const searchResponse = await api.postToSearchProduct(product.name);
+    
     expect(searchResponse.status()).toBe(200);
 
     const searchResponseBody = await searchResponse.json();

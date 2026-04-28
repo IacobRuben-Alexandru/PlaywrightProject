@@ -1,5 +1,6 @@
 import { test } from '../../fixtures/createuserFixture';
 import { expect } from '@playwright/test';
+import { ProductRequests } from './requests/ProductRequests';
 interface Brand {
   brand: string;
 }
@@ -19,7 +20,9 @@ interface ProductsResponse {
 }
 
 test('Verify all brands in list are valid', async ({ request }) => {
-  const brandsResponse = await request.get('/api/brandsList');
+  const api = new ProductRequests(request);
+
+  const brandsResponse = await api.getAllBrandsList();
   expect(brandsResponse.status()).toBe(200);
   const brandsBody = (await brandsResponse.json()) as BrandsResponse;
 
@@ -27,7 +30,8 @@ test('Verify all brands in list are valid', async ({ request }) => {
   expect(Array.isArray(brands)).toBe(true);
   expect(brands.length).toBeGreaterThan(0);
 
-  const productsResponse = await request.get('/api/productsList');
+  const productsResponse = await api.getProductList();
+
   expect(productsResponse.status()).toBe(200);
   const productsBody = (await productsResponse.json()) as ProductsResponse;
   const products: Product[] = productsBody.products;

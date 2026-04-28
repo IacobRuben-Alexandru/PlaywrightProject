@@ -1,12 +1,15 @@
 import { test } from '../../fixtures/createuserFixture';
 import { expect } from '@playwright/test';
+import { ProductRequests } from './requests/ProductRequests';
 
 test('Get all products list and verify response headers and time', async ({
   request,
 }) => {
   const start = Date.now();
 
-  const response = await request.get('/api/productsList');
+  const api = new ProductRequests(request);
+
+  const response = await api.getProductList();
 
   expect(response.status()).toBe(200);
 

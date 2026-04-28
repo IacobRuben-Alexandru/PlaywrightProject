@@ -1,14 +1,12 @@
 import { test } from '../../fixtures/createuserFixture';
 import { expect } from '@playwright/test';
+import { ProductRequests } from './requests/ProductRequests';
 
 test('Post to all products list', async ({ request }) => {
-  const response = await request.post('/api/productsList', {
-    data: {
-      name: 'Test Product',
-      id: 999,
-      price: 100,
-    },
-  });
+  const api = new ProductRequests(request);
+
+  const response = await api.postToAllProductList();
+
   const responseBody = await response.json();
   expect(response.status()).toBe(200);
 
